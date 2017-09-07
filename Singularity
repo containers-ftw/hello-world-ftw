@@ -278,12 +278,17 @@ container. Example usage:
 
 
 %apprun ooc
-
+    exec hello-world.ooc    
+%appfiles ooc
+    data/hello-world.ooc
 %appinstall ooc
     git clone https://github.com/nddrylliog/rock.git rock
     cd rock
     make rescue
     mv * ../
+    bin/rock hello-world.ooc
+    mv hello-world.ooc bin/hello-world.ooc
+
 
 %apprun python
     exec python hello-world.py
