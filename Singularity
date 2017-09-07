@@ -266,6 +266,24 @@ container. Example usage:
     mv hello-world bin/hello-world.nim
    
 
+%apprun octave
+%appenvironment octave
+    DISPLAY=localhost:0.0
+    export DISPLAY
+    exec octave --no-gui --silent hello-world.octave
+%appfiles octave
+    data/hello-world.octave bin/hello-world.octave
+%appinstall octave
+    apt-get install -y octave
+
+
+%apprun ooc
+
+%appinstall ooc
+    git clone https://github.com/nddrylliog/rock.git rock
+    cd rock
+    make rescue
+    mv * ../
 
 %apprun python
     exec python hello-world.py
