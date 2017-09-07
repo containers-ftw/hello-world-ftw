@@ -290,6 +290,24 @@ container. Example usage:
     mv hello-world.ooc bin/hello-world.ooc
 
 
+%apprun pascal
+    exec hello-world.pascal
+%appfiles pascal
+    data/hello-world.pas
+%appinstall pascal
+    apt-get install -y fp-compiler
+    fpc hello-world.pas
+    mv hello-world bin/hello-world.pas
+
+
+%apprun perl
+    exec perl6 hello-world.perl
+%appfiles perl
+    data/hello-world.perl bin/hello-world.perl
+%appinstall perl
+    apt-get install -y perl6
+    
+
 %apprun python
     exec python hello-world.py
 %appfiles python
@@ -300,8 +318,23 @@ container. Example usage:
 
 
 %apprun R
-    Rscript hello-world.R
+    exec Rscript hello-world.R
 %appfiles R
     data/hello-world.R bin/hello-world.R
 %appinstall R
     apt-get install -y r-base
+
+
+%apprun ruby
+    exec ruby hello-world.rb
+%appfiles ruby
+    data/hello-world.rb bin/hello-world.rb
+%appinstall ruby
+    apt-get install -y ruby
+
+%apprun zsh
+    exec /bin/zsh hello-world.zsh
+%appfiles zsh
+    data/hello-world.zsh bin/hello-world.zsh
+%appinstall zsh
+    apt-get install -y zsh
