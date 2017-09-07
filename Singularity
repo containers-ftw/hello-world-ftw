@@ -16,7 +16,7 @@ From: ubuntu:14.04
 
 %post
     locale-gen "en_US.UTF-8"
-    apt-get update && apt-get install -y wget vim curl unzip git python python-dev build-essential
+    apt-get update && apt-get install -y wget vim curl unzip git build-essential
     apt-get install -y cpp gcc g++
 
 %labels
@@ -265,6 +265,16 @@ container. Example usage:
     bin/nim compile hello-world.nim
     mv hello-world bin/hello-world.nim
    
+
+
+%apprun python
+    exec python hello-world.py
+%appfiles python
+    data/hello-world.py bin/hello-world.py
+%appinstall python
+    apt-get install -y python python-dev
+    
+
 
 %apprun R
     Rscript hello-world.R
