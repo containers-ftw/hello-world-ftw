@@ -65,6 +65,11 @@ container. Example usage:
     gcc hello-world.c -o bin/hello-world.c
 
 
+%apprun cat
+    exec cat hello-world.cat
+%appfiles cat
+    data/hello-world.cat bin/hello-world.cat
+
 
 %apprun cpp
     exec hello-world.cpp
@@ -331,6 +336,35 @@ container. Example usage:
     data/hello-world.rb bin/hello-world.rb
 %appinstall ruby
     apt-get install -y ruby
+
+
+%apprun rust
+    exec hello-world.rs
+%appfiles rust
+%appinstall rust
+    curl -f -L https://static.rust-lang.org/rustup.sh -O
+    chmod u+x rustup.sh
+    RUSTUP_PREFIX=$PWD ./rustup.sh
+    bin/rustc hello-world.rs -o bin/hello-world.rust
+
+
+%apprun scala
+    exec scala HelloWorld
+%appfiles scala
+    data/hello-world.scala
+%appinstall scala
+    apt-get install -y scala
+    scalac hello-world.scala
+    mv HelloWorld* bin
+
+
+%apprun tcsh
+    exec tsch hello-world.tcsh
+%appfiles tcsh
+    data/hello-world.tcsh bin/hello-world.tcsh
+%appinstall tcsh
+    apt-get install -y tcsh
+
 
 %apprun zsh
     exec /bin/zsh hello-world.zsh

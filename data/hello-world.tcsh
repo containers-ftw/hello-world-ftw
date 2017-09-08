@@ -1,2 +1,2 @@
-#!/bin/zsh
+#!/bin/tcsh
 echo "Hello, World!"
