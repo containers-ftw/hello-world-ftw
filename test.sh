@@ -49,3 +49,6 @@ done
 
 # Remove empty lines
 sed -i '/^$/d' $TIME_LOG
+
+# Generate static output
+python generate_result.py $TIME_LOG
