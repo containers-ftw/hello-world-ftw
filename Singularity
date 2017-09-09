@@ -44,17 +44,15 @@ container. Example usage:
 
 
 %apprun awk
-    exec awk -f hello-world.awk
+    exec awk -f $SINGULARITY_APPROOT/hello-world.awk
 %appfiles awk
-    data/hello-world.awk bin/hello-world.awk
-
+    data/hello-world.awk
 
 
 %apprun bash
     exec /bin/bash hello-world.bash
 %appfiles bash
     data/hello-world.bash bin/hello-world.bash
-
 
 
 %apprun c
@@ -66,9 +64,9 @@ container. Example usage:
 
 
 %apprun cat
-    exec cat hello-world.cat
+    exec cat $SINGULARITY_APPROOT/hello-world.cat
 %appfiles cat
-    data/hello-world.cat bin/hello-world.cat
+    data/hello-world.cat
 
 
 %apprun cpp
@@ -92,8 +90,6 @@ container. Example usage:
     CHPL_TASKS=fifo
     CHPL_MEM=cstdlib
     export CHPL_TASKS CHPL_MEM
-
-
 %appinstall chapel
     wget https://github.com/chapel-lang/chapel/releases/download/1.15.0/chapel-1.15.0.tar.gz
     tar --strip-components=1 -zxf chapel-1.15.0.tar.gz
@@ -105,9 +101,9 @@ container. Example usage:
 
 
 %apprun clisp
-    exec clisp hello-world.clisp
+    exec clisp $SINGULARITY_APPROOT/hello-world.clisp
 %appfiles clisp
-    data/hello-world.clisp bin/hello-world.clisp
+    data/hello-world.clisp
 %appinstall clisp
     apt-get install -y clisp
 
@@ -121,32 +117,30 @@ container. Example usage:
     apt-get install -y default-jre
     wget https://repo1.maven.org/maven2/org/clojure/clojure/1.8.0/clojure-1.8.0.zip
     unzip clojure-1.8.0.zip
-    mv clojure-1.8.0/clojure-1.8.0* bin
+    mv clojure-1.8.0/clojure* bin
 
 
 
 %apprun csh
-    exec csh hello-world.csh
+    exec csh $SINGULARITY_APPROOT/hello-world.csh
 %appfiles csh
-    data/hello-world.csh bin/hello-world.csh
+    data/hello-world.csh
 %appinstall clisp
     apt-get install -y csh
 
 
 
 %apprun csharp
-    exec mono hello-world.exe
+    exec mono $SINGULARITY_APPROOT/hello-world.exe
 %appfiles csharp
     data/hello-world.cs
 %appinstall csharp
     apt-get install -y mono-gmcs
     gmcs hello-world.cs
-    mv hello-world.exe bin/hello-world.exe
-
 
 
 %apprun fsharp
-    exec hello-world.exe
+    exec $SINGULARITY_APPROOT/hello-world.exe
 %appfiles fsharp
     data/hello-world.fs
 %appinstall fsharp
@@ -156,12 +150,12 @@ container. Example usage:
 
 
 %apprun gfortran
-    exec hello-world.gfortran
+    exec $SINGULARITY_APPROOT/hello-world.gfortran
 %appfiles gfortran
     data/hello-world.f90
 %appinstall gfortran
     apt-get install -y gfortran
-    gfortran -o bin/hello-world.gfortran hello-world.f90
+    gfortran -o hello-world.gfortran hello-world.f90
 
 
 
@@ -180,114 +174,110 @@ container. Example usage:
 
 
 %apprun groovy
-    exec hello-world.groovy
+    exec $SINGULARITY_APPROOT/hello-world.groovy
 %appfiles groovy
-    data/hello-world.groovy bin/hello-world.groovy
+    data/hello-world.groovy
 %appinstall groovy
     apt-get install -y groovy
 
 
-
 %apprun haskell
-    ghc hello-world.hs -o bin/hello-world.haskell
+    exec $SINGULARITY_APPROOT/hello-world.haskell
 %appfiles haskell
     data/hello-world.hs
 %appinstall haskell
     apt-get install -y ghc
+    ghc hello-world.hs -o hello-world.haskell
 
 
 
 %apprun jade
-    exec jade hello-world.jade
+    exec jade $SINGULARITY_APPROOT/hello-world.jade
 %appfiles jade
-    data/hello-world.jade bin/hello-world.jade
+    data/hello-world.jade
 %appinstall jade
     apt-get install -y jade
 
 
 
 %apprun java
-    cd /scif/apps/java
-    java HelloWorld
+    java $SINGULARITY_APPROOT/HelloWorld
 %appfiles java
     data/HelloWorld.java
 %appinstall java
     apt-get install -y openjdk-7-jdk
     javac HelloWorld.java
-    mv HelloWorld.class bin/HelloWorld.class
-
-
+    
 
 %apprun julia
-    exec julia hello-world.jl
+    exec julia $SINGULARITY_APPROOT/hello-world.jl
 %appfiles julia
-    data/hello-world.jl bin/hello-world.jl
+    data/hello-world.jl
 %appinstall julia
     apt-get install -y julia
     
 
 
 %apprun latex
-    detex hello-world.tex
+    detex $SINGULARITY_APPROOT/hello-world.tex
 %appfiles latex
-    data/hello-world.tex bin/hello-world.tex
+    data/hello-world.tex
 %appinstall latex
     apt-get install -y make gcc flex
     wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/opendetex/opendetex-2.8.1.tar.bz2
     tar --strip-components=1 -xvjf opendetex-2.8.1.tar.bz2
     make
-    install -c -m 775 -g staff -s detex bin
+    install -c -m 775 -g staff -s detex
 
    
 %apprun octave
-    exec octave --no-gui --silent hello-world.octave
+    exec octave --no-gui --silent $SINGULARITY_APPROOT/hello-world.octave
 %appenv octave
     DISPLAY=localhost:0.0
     export DISPLAY
 %appfiles octave
-    data/hello-world.octave bin/hello-world.octave
+    data/hello-world.octave
 %appinstall octave
     apt-get install -y octave
 
 
 %apprun pascal
-    exec hello-world.pascal
+    exec $SINGULARITY_APPROOT/hello-world
 %appfiles pascal
     data/hello-world.pas
 %appinstall pascal
     apt-get install -y fp-compiler
     fpc hello-world.pas
-    mv hello-world bin/hello-world.pas
 
 
 %apprun perl
-    exec perl6 hello-world.pl
+    exec perl6 $SINGULARITY_APPROOT/hello-world.pl
 %appfiles perl
-    data/hello-world.pl bin/hello-world.pl
+    data/hello-world.pl
 %appinstall perl
     apt-get install -y perl6
     
 
 %apprun python
-    exec python hello-world.py
+    exec python $SINGULARITY_APPROOT/hello-world.py
 %appfiles python
-    data/hello-world.py bin/hello-world.py
+    data/hello-world.py
 %appinstall python
     apt-get install -y python python-dev
     
 
 %apprun R
-    exec Rscript hello-world.R
+    exec Rscript $SINGULARITY_APPROOT/hello-world.R
 %appfiles R
-    data/hello-world.R bin/hello-world.R
+    data/hello-world.R
 %appinstall R
     apt-get install -y r-base
 
 
 %apprun ruby
-    exec ruby hello-world.rb
+    exec ruby $SINGULARITY_APPROOT/hello-world.rb
 %appfiles ruby
-    data/hello-world.rb bin/hello-world.rb
+    data/hello-world.rb
 %appinstall ruby
     apt-get install -y ruby
 
@@ -307,6 +297,7 @@ container. Example usage:
     exec scala HelloWorld
 %appfiles scala
     data/hello-world.scala
+    data/hello-world.scala bin/hello-world.scala
 %appinstall scala
     apt-get install -y scala
     scalac hello-world.scala
@@ -314,16 +305,16 @@ container. Example usage:
 
 
 %apprun tcsh
-    exec tsch hello-world.tcsh
+    exec tcsh $SINGULARITY_APPROOT/hello-world.tcsh
 %appfiles tcsh
-    data/hello-world.tcsh bin/hello-world.tcsh
+    data/hello-world.tcsh
 %appinstall tcsh
     apt-get install -y tcsh
 
 
 %apprun zsh
-    exec /bin/zsh hello-world.zsh
+    exec /bin/zsh $SINGULARITY_APPROOT/hello-world.zsh
 %appfiles zsh
-    data/hello-world.zsh bin/hello-world.zsh
+    data/hello-world.zsh
 %appinstall zsh
     apt-get install -y zsh
