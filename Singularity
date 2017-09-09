@@ -2,17 +2,17 @@ BootStrap: docker
 From: ubuntu:14.04
 
 #
-# singularity create --size 8000 helloworld.img
-# sudo singularity bootstrap helloworld.img Singularity
+# singularity create --size 8000 container.ftw
+# sudo singularity bootstrap container.ftw Singularity
 #
 
 %runscript
 
-    echo "This container will say hello-world!"
+    echo "This container will say hello-world (in dinosaur)!"
     echo "The languages provided include:"
     tree /scif/apps
 
-    echo "Type singularity --app <language> <container>.img help to see help
+    echo "Type singularity --app <language> <container> help to see help
 
 %post
     locale-gen "en_US.UTF-8"
@@ -21,14 +21,14 @@ From: ubuntu:14.04
 
 %labels
 CONTAINERSFTW_TEMPLATE scif-apps
-CONTAINERSFTW_COMPETITION_HOST containersftw
-CONTAINERSFTW_COMPETITION_NAME hello-world-ftw
+CONTAINERSFTW_HOST containersftw
+CONTAINERSFTW_NAME hello-world-ftw
 MAINTAINER Vanessasaur
 
 %environment
 # Here I have global variables for each app section to access
-SCIF_METRICS=/scif/data/metrics.py
 DEBIAN_FRONTEND=noninteractive
+export DEBIAN_FRONTEND
 
 %apprun awk
     exec awk -f $SINGULARITY_APPROOT/hello-world.awk
