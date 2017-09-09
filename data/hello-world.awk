@@ -1,2 +1,1 @@
-# awk -f awk.awk
-BEGIN { print "Hello World" }
+BEGIN { print "RaawwWWWWWRRRR!!" }

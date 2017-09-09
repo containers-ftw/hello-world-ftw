@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Containers-FTW Hello World FTW</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto" type="text/css">
+    <link rel="stylesheet" href="css/jquery.dataTables.min.css" type="text/css">
+    
+    <style>
+
+    #header {
+        padding-bottom:30px;
+    }
+
+    body {font-family: 'Roboto', sans-serif;}
+
+    #ftw{
+        background-color:#4192da;
+        border: 1px solid #333;
+        border-radius: 10px;
+    }
+
+
+    /*Allow column header names to wrap lines*/
+    #ftw .col,
+    #ftw .col-row-handle {
+        white-space: normal;
+    }
+
+    /*Color the table rows*/
+    #ftw .row{
+        color:#fff;
+        background-color: #666;
+    }
+
+    /*Color even rows*/
+        #ftw .table .row:nth-child(even) {
+        background-color: #444;
+    }
+    </style>
+
+</head>
+<body>
+
+      <div id="header">
+        <h3>Hello World, FTW!</h3>
+      </div>
+      <table id="ftw" class="display" cellspacing="0" width="100%">
+          <thead>
+            <tr>
+		<th>COMMAND</th>
+		<th>ELAPSED_TIME_HMS</th>
+		<th>AVERAGE_MEM</th>
+		<th>FS_INPUTS</th>
+		<th>MAX_RES_SIZE_KB</th>
+		<th>FS_OUTPUTS</th>
+		<th>PERC_CPU_ALLOCATED</th>
+		<th>CPU_SECONDS_USED</th>
+		<th>W_TIMES_SWAPPED</th>
+		<th>SHARED_TEXT_KB</th>
+		<th>ELAPSED_TIME_SECONDS</th>
+		<th>NUMBER_SIGNALS_DELIVERED</th>
+		<th>AVG_UNSHARED_STACK_SIZE</th>
+		<th>SOCKET_MSG_RECEIVED</th>
+		<th>SOCKET_MSG_SENT</th>
+		<th>AVG_RESIDENT_SET_SIZE</th>
+		<th>CONTEXT_SWITCHES</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+		<th>COMMAND</th>
+		<th>ELAPSED_TIME_HMS</th>
+		<th>AVERAGE_MEM</th>
+		<th>FS_INPUTS</th>
+		<th>MAX_RES_SIZE_KB</th>
+		<th>FS_OUTPUTS</th>
+		<th>PERC_CPU_ALLOCATED</th>
+		<th>CPU_SECONDS_USED</th>
+		<th>W_TIMES_SWAPPED</th>
+		<th>SHARED_TEXT_KB</th>
+		<th>ELAPSED_TIME_SECONDS</th>
+		<th>NUMBER_SIGNALS_DELIVERED</th>
+		<th>AVG_UNSHARED_STACK_SIZE</th>
+		<th>SOCKET_MSG_RECEIVED</th>
+		<th>SOCKET_MSG_SENT</th>
+		<th>AVG_RESIDENT_SET_SIZE</th>
+		<th>CONTEXT_SWITCHES</th>
+            </tr>
+        </tfoot>
+    </table>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#ftw').DataTable( {
+            "ajax": "data.json",
+            "columns": [
+		{"data": "COMMAND"},
+		{"data": "ELAPSED_TIME_HMS"},
+		{"data": "AVERAGE_MEM"},
+		{"data": "FS_INPUTS"},
+		{"data": "MAX_RES_SIZE_KB"},
+		{"data": "FS_OUTPUTS"},
+		{"data": "PERC_CPU_ALLOCATED"},
+		{"data": "CPU_SECONDS_USED"},
+		{"data": "W_TIMES_SWAPPED"},
+		{"data": "SHARED_TEXT_KB"},
+		{"data": "ELAPSED_TIME_SECONDS"},
+		{"data": "NUMBER_SIGNALS_DELIVERED"},
+		{"data": "AVG_UNSHARED_STACK_SIZE"},
+		{"data": "SOCKET_MSG_RECEIVED"},
+		{"data": "SOCKET_MSG_SENT"},
+		{"data": "AVG_RESIDENT_SET_SIZE"},
+		{"data": "CONTEXT_SWITCHES"}
+            ]
+        } );
+
+        $("#ftw_filter").css('padding-bottom','30px')
+    } );
+    </script>    
+
+</body>
+</html>
