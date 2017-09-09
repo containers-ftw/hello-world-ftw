@@ -26,10 +26,12 @@ install:
 
 script:
   - /bin/bash $TRAVIS_BUILD_DIR/test.sh $TRAVIS_BUILD_DIR/container-ftw.results
+  - mkdir -p assets/data && cp -R $TRAVIS_BUILD_DIR/data assets/data
+  - ls assets/data 
 
 # containers-ftw.surge.sh
 
 deploy:
   provider: surge
-  project: ./analysis
+  project: ./assets
   domain: containers-ftw.surge.sh

@@ -10,6 +10,6 @@ df=pandas.read_csv(result_input,sep='\t')
 df=df.dropna()
 
 output = {"data": df.to_dict(orient="records")}
-output_file = 'analysis/data.json'
+output_file = 'assets/data.json'
 with open(output_file, 'w') as filey:
     filey.writelines(json.dumps(output, indent=4, separators=(',', ': ')))

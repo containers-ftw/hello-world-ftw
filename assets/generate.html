@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:site" content="@researchapps">
+        <meta property="og:site_name" content="JobMaker">
+        <meta property="og:title" content="JobMaker">
+        <meta property="og:image" content="">
+        <meta property="og:description" content="JobMaker is a SLURM job submission script generator.">
+        <meta property="og:url" content="https://oss.stanford.edu/job-maker">
+
+        <title>Stanford Job Generator</title>
+
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css" />
+          
+    </head>
+
+    <body>
+
+    <div id="nav" class="row" style="padding-bottom:20px">
+        <div class="col-md-12">
+            <a class="navbar-brand" 
+               href="http://oss.stanford.edu" 
+               style="padding:8px 8px;">
+               <img src="assets/img/logo.png" height=35>
+            </a>
+
+            <!-- Top Navigation to show user where they are -->
+            <nav v-bind:class="active">
+                <a href="#" class="generate" 
+                            style="font-weight:800" 
+                            v-on:click="makeActive('generate')">Stanford Compute Job Maker</a>
+                <a style="float:right; padding:10px 15px 0px 0px;" 
+                   href="https://www.github.com/researchapps/job-maker" 
+                   target="_blank"><i class="fa fa-2x fa-github"></i></a>
+            </nav>
+
+            <p style="display:none">You chose <b>{{ active }}</b></p>
+            <p style="margin:0px" id="message" class="alert alert-danger" v-if="message">{{ message }}</p>
+            <p style="margin:0px" id="warning" class="alert alert-info" v-if="warning">{{ warning }}</p>
+
+        </div>
+
+    </div>
+
+    <div class="container" id="main">
+
+    <!-- Icons -->
+    <div class="row" style="padding-bottom:20px">        
+        <div class="col-md-6">
+            <h2 class="center"><i class="fa fa-code blue"></i></h2>
+            <small class="grey">Enter your cluster and job specs to create a job script on the right.</small>
+        </div>
+        <div class="col-md-6">
+            <h4 style="padding-top:40px" v-if="job_name">{{ job_name}}.job</h4>
+        </div>
+    </div>
+
+    <!-- Information -->
+    <div class="row">
+
+        <!-- USER CONFIGURATION -->
+        <div class="col-md-6" id="machine-group">
+
+            <!-- Machine Selection -->
+            <div id="cluster-group" class="form-group">
+                <label class="control-label">Cluster: {{ cluster_name }}</label>
+                <select v-model="cluster_name"
+                        v-on:input="updatePartitions()"  
+                        id='cluster-select' 
+                        class="form-control">
+                    <option disabled value="">Please select your cluster</option>
+                </select>
+            </div>
+
+            <!-- Partition -->
+            <div v-show="cluster_name" id="partitions-group" class="form-group">
+                <label class="control-label">Partition: {{ partition_name }}</label>
+                    <select v-model="partition_name"
+                            v-on:input="selectPartition()"
+                            id='partition-select' 
+                            class="form-control">
+                     <option disabled value="">Please select a partition</option>
+                </select>
+            </div>
+
+            <div class="form-group" v-show="partition_name"> 
+
+                <!-- Qos --> 
+                <label class="control-label">Quality of service (qos): {{ qos_choice }}</label>
+                <select v-model="qos_choice"
+                        id='qos-select' 
+                        class="form-control">
+                        <option disabled value="">You can optionally select a qos</option>
+                        <option v-for="qos_option in qos">
+                        {{ qos_option }}
+                        </option>
+
+                </select>
+            </div>
+
+            <!-- Script Name -->
+            <div id="script-group" class="form-group">
+                <label class="control-label">Script: {{ script_name }}</label>
+                <span class="help-block">Specify your script including the full path.</span>
+                <input v-model.trim="script_name" 
+                       id="script-text" 
+                       type="text" 
+                       class="form-control" 
+                       value="start.sh">
+            </div>
+
+            <!-- Job Name -->
+            <div id="jobname-group" class="form-group">
+                <label v-if="job_name" class="control-label">Job Name: {{ job_name }}.job</label>
+                <label v-else="job_name" class="control-label">Job Name:</label>
+                <input v-model.trim="job_name"
+                       id="jobname-text" 
+                       type="text" 
+                       class="form-control">
+            </div>
+
+            <!-- Email -->
+            <div id="email-group" class="form-group">
+                 <label class="control-label">Email Address: {{ email_address }}</label>
+                 <input v-model.trim="email_address"
+                        id="email-text" 
+                        type="email" 
+                        class="form-control">
+            </div>
+
+            <!--Time-->
+            <div id="time-group" class="form-group">
+                <label class="control-label">Job Duration: {{ time_hours }}:{{ time_minutes}}:{{ time_seconds }}</label>
+                <span class="help-block">Specify the duration of the job.</span>
+
+                <!-- Hours -->
+                <div class="col-md-4">
+                    <input v-model.number="time_hours"
+                           id="wc-hours-text" 
+                           type="number" 
+                           class="form-control" 
+                           min="0" 
+                           value=1>
+                    <span class="help-block">hours</span>
+                </div>
+
+                <!-- Minutes -->
+                <div class="col-md-4">
+                    <input v-model.number="time_minutes"
+                           id="wc-minutes-text" 
+                           type="number" 
+                           class="form-control" 
+                           min="0" max="59" value=30>
+                    <span class="help-block">minutes</span>
+                </div>
+
+                <!-- Seconds -->
+                <div class="col-md-4">
+                    <input v-model.number="time_seconds"
+                           id="wc-seconds-text" 
+                           type="number" 
+                           class="form-control" 
+                           min="0" 
+                           max="59" 
+                           value=0>
+                    <span class="help-block">seconds</span>
+                </div>
+            </div>
+
+            <div id="nodes-group" class="form-group">
+
+                <!-- Number nodes -->
+                <div id="number-nodes-group" class="col-md-6">
+                    <label class="control-label">Number of Nodes: {{ number_nodes }}</label>
+                    <input v-model.number="number_nodes"
+                           id="nodes-text" 
+                           type="number" 
+                           class="form-control" 
+                           min="1" 
+                           value=1>
+                </div>
+
+                <!-- Memory -->
+                <div id="memory-group" class="col-md-6">
+                    <label class="control-label">Memory: {{ memory }}</label>
+                    <input v-model.number="memory"
+                           id="memory-text" 
+                           type="number" 
+                           class="form-control" 
+                           min="1" 
+                           value=1200>
+                </div>
+
+
+
+            </div>
+
+            <div id="output-group" class="form-group">                
+
+                <!-- Output File --> 
+                <div class="col-md-6">
+
+                    <label v-if="output_file" class="control-label">Output File: {{ output_file }}.%j.out</label>
+                    <label v-else="output_file" class="control-label">Output File:</label>
+                    <input v-model.trim="output_file"
+                           type="text" 
+                           id="output_file" 
+                           class="form-control">
+                </div>
+
+                <!-- Error File -->
+                <div class="col-md-6">
+
+                    <label v-if="error_file" class="control-label">Error File: {{ error_file }}.%j.err</label>
+                    <label v-else="error_file" class="control-label">Error File:</label>
+                        <input v-model.trim="error_file"
+                               type="text" 
+                               id="error_file" 
+                               class="form-control">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SCRIPT GENERATION -->
+        <div class="col-md-6">
+            <div id="output-group" class="form-group">
+                <textarea v-model='output'
+                          class="form-control" 
+                          rows="15" 
+                          id="script-output" 
+                          style="resize: vertical" 
+                          readonly="true">{{ output }}</textarea>
+            </div>
+
+
+            <!-- Features --> 
+            <label v-if="features" class="control-label">select features for {{ partition_name }}</label><br>
+ 
+            <ul class="list-group" 
+                id='features-list' 
+                v-show="features">
+                <li class="list-group-item"
+                    v-on:click="addFeature"
+                    v-for="feature in features">
+                    {{ feature }}
+               </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+                                        
+    <!-- Take me home, country road... to the top... where i belong!-->
+    <button v-on:click="generateScript()" 
+            title="generateJump"
+            value="Generate Script"
+            id="generateJump"
+            class="btn btn-secondary">
+            Generate</button>
+
+    <div id="robot" style="display:none">
+        <img src="assets/img/robot.png" width="200px">
+    </div>
+
+    <br><br>
+
+    <hr>
+
+</div>
+
+    <!--  Scripts-->
+    <script src="assets/js/jquery-2.1.1.min.js"></script>
+    <script src="assets/js/vue.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>

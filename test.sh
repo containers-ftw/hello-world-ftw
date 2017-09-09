@@ -59,5 +59,10 @@ done
 # Remove empty lines
 sed -i '/^$/d' $TIME_LOG
 
-# Generate static output
-python generate_result.py $TIME_LOG
+## Generate static output
+
+# json of TIME_LOG to render into index.html
+python helpers/generate_result.py $TIME_LOG 
+
+# json of recipe sections to render into assets/data/<recipe>.json
+python helpers/generate_sections.py Singularity assets/data

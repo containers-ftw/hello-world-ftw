@@ -1,3 +1,5 @@
-container.ftw
-analysis/data.json
+container.ftw*
+container-ftw*
+containers-ftw*
+assets/data.json
 helloworld.img
