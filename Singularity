@@ -167,7 +167,7 @@ container. Example usage:
 
 %apprun go
     exec hello-world.go
-%appen go
+%appenv go
     GOROOT=/scif/apps/go
     export GOROOT
 %appfiles go
@@ -238,39 +238,7 @@ container. Example usage:
     make
     install -c -m 775 -g staff -s detex bin
 
-
-    
-%apprun node
-    node hello-world.js
-%appfiles node
-    data/hello-world.js
-%appinstall node
-    wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | NVM_DIR=$PWD PROFILE=/db bash
-    NVM_DIR="/scif/apps/nvm"
-    export NVM_DIR
-    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" > /dev/null 2>&1
-    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" > /dev/null 2>&1   
-    nvm install node
-    nvm use node
-%appenv node
-    NVM_DIR=/scif/apps/nvm
-
-
-%apprun nim
-    exec hello-world.nim
-%appfiles nim
-    data/hello-world.nim
-%appinstall nim
-    wget https://nim-lang.org/download/nim-0.17.0.tar.xz
-    tar --strip-components=1 -xf nim-0.17.0.tar.xz
-    sh build.sh
-    bin/nim c koch
-    ./koch tools
-    ./install.sh bin 
-    bin/nim compile hello-world.nim
-    mv hello-world bin/hello-world.nim
    
-
 %apprun octave
     exec octave --no-gui --silent hello-world.octave
 %appenv octave
@@ -280,19 +248,6 @@ container. Example usage:
     data/hello-world.octave bin/hello-world.octave
 %appinstall octave
     apt-get install -y octave
-
-
-%apprun ooc
-    exec hello-world.ooc    
-%appfiles ooc
-    data/hello-world.ooc
-%appinstall ooc
-    git clone https://github.com/nddrylliog/rock.git rock
-    cd rock
-    make rescue
-    mv * ../
-    bin/rock hello-world.ooc
-    mv hello-world.ooc bin/hello-world.ooc
 
 
 %apprun pascal
@@ -338,8 +293,9 @@ container. Example usage:
 
 
 %apprun rust
-    exec hello-world.rs
+    exec hello-world.rust
 %appfiles rust
+    data/hello-world.rs
 %appinstall rust
     curl -f -L https://static.rust-lang.org/rustup.sh -O
     chmod u+x rustup.sh
