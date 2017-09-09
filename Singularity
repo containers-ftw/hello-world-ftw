@@ -16,7 +16,7 @@ From: ubuntu:14.04
 
 %post
     locale-gen "en_US.UTF-8"
-    apt-get update && apt-get install -y wget vim curl unzip git build-essential
+    apt-get update && apt-get install -y wget vim curl unzip git build-essential python python-dev
     apt-get install -y cpp gcc g++
 
 %labels
@@ -84,16 +84,15 @@ container. Example usage:
     exec hello-world.chpl
 %appfiles chapel
     data/hello-world.chpl hello-world.chpl
-%appenvironment chapel
+%appenv chapel
     CHPL_HOME=/scif/apps/chapel
     CHPL_HOST_PLATFORM=linux64
     PATH=$CHPL_HOME:$CHPL_HOME/linux64:$CHPL_HOME/util:$PATH
     export CHPL_HOME CHPL_HOST_PLATFORM PATH 
-
-    MANPATH=$MANPATH:$CHPL_HOME/man
     CHPL_TASKS=fifo
     CHPL_MEM=cstdlib
-    export MANPATH CHPL_TASKS CHPL_MEM
+    export CHPL_TASKS CHPL_MEM
+
 
 %appinstall chapel
     wget https://github.com/chapel-lang/chapel/releases/download/1.15.0/chapel-1.15.0.tar.gz
@@ -151,6 +150,7 @@ container. Example usage:
 %appfiles fsharp
     data/hello-world.fs
 %appinstall fsharp
+    apt-get install -y fsharp
     fsharpc hello-world.fs -o hello-world.exe
 
 
@@ -158,16 +158,16 @@ container. Example usage:
 %apprun gfortran
     exec hello-world.gfortran
 %appfiles gfortran
-    data/hello-world.gfortran
+    data/hello-world.f90
 %appinstall gfortran
     apt-get install -y gfortran
-    gfortran -o bin/hello-world.fortran hello-world.gfortran
+    gfortran -o bin/hello-world.gfortran hello-world.f90
 
 
 
 %apprun go
     exec hello-world.go
-%appenvironment go
+%appen go
     GOROOT=/scif/apps/go
     export GOROOT
 %appfiles go
@@ -252,7 +252,7 @@ container. Example usage:
     [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" > /dev/null 2>&1   
     nvm install node
     nvm use node
-%appenvironment node
+%appenv node
     NVM_DIR=/scif/apps/nvm
 
 
@@ -272,10 +272,10 @@ container. Example usage:
    
 
 %apprun octave
-%appenvironment octave
+    exec octave --no-gui --silent hello-world.octave
+%appenv octave
     DISPLAY=localhost:0.0
     export DISPLAY
-    exec octave --no-gui --silent hello-world.octave
 %appfiles octave
     data/hello-world.octave bin/hello-world.octave
 %appinstall octave
@@ -306,9 +306,9 @@ container. Example usage:
 
 
 %apprun perl
-    exec perl6 hello-world.perl
+    exec perl6 hello-world.pl
 %appfiles perl
-    data/hello-world.perl bin/hello-world.perl
+    data/hello-world.pl bin/hello-world.pl
 %appinstall perl
     apt-get install -y perl6
     
@@ -320,7 +320,6 @@ container. Example usage:
 %appinstall python
     apt-get install -y python python-dev
     
-
 
 %apprun R
     exec Rscript hello-world.R
