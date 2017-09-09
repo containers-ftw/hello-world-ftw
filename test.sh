@@ -64,5 +64,5 @@ sed -i '/^$/d' $TIME_LOG
 # json of TIME_LOG to render into index.html
 python helpers/generate_result.py $TIME_LOG 
 
-# json of recipe sections to render into assets/data/<recipe>.json
-#python helpers/generate_sections.py Singularity assets/data
+# json of recipe to render sections folder into generate.html
+python helpers/generate_sections.py assets/data

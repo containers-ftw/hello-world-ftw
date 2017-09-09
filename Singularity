@@ -66,7 +66,7 @@ export DEBIAN_FRONTEND
 
 
 %apprun chapel
-    exec hello-world.chpl
+    exec $SINGULARITY_APPROOT/hello-world.chpl
 %appfiles chapel
     data/hello-world.chpl hello-world.chpl
 %appenv chapel

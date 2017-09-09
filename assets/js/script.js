@@ -1,9 +1,9 @@
 // Input data
-var machines = "data/machines.json";
+var sections = "data/sections.json";
 
 fetchData = function () {
     var xhr = new XMLHttpRequest()
-    xhr.open('GET', "data/machines.json")
+    xhr.open('GET', "data/sections.json")
     xhr.onload = function () {
         window.machines = JSON.parse(xhr.responseText)
         var clusters = Object.keys(window.machines)
@@ -77,9 +77,9 @@ var cluster = new Vue({
         fetchData: function () {
             var xhr = new XMLHttpRequest()
             var self = this
-            xhr.open('GET', machines)
+            xhr.open('GET', sections)
             xhr.onload = function () {
-                self.machines = JSON.parse(xhr.responseText)
+                self.sections = JSON.parse(xhr.responseText)
                 self.clusters = Object.keys(self.machines)
                 $.each(self.clusters,function(i,e){ 
                     $("#cluster-select").append('<option value="' + e + '">'+ e + '</option>')
