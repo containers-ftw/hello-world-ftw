@@ -28,20 +28,7 @@ MAINTAINER Vanessasaur
 %environment
 # Here I have global variables for each app section to access
 SCIF_METRICS=/scif/data/metrics.py
-DEBIAN_FRONTEND=headless
-
-%apprun env
-#!/bin/sh
-# This is a helper app to print an internal environment variable
-exec printenv $@
-
-%apphelp env
-This application serves to print an environment variable in the
-container. Example usage:
-
-   singularity run --app env container.img SINGULARITY_APPNAME
-   env
-
+DEBIAN_FRONTEND=noninteractive
 
 %apprun awk
     exec awk -f $SINGULARITY_APPROOT/hello-world.awk
@@ -108,54 +95,12 @@ container. Example usage:
     apt-get install -y clisp
 
 
-
-%apprun clojure
-    java -cp clojure-1.8.0.jar clojure.main hello-world.clj
-%appfiles clojure
-    data/hello-world.clj bin/hello-world.clj
-%appinstall clojure
-    apt-get install -y default-jre
-    wget https://repo1.maven.org/maven2/org/clojure/clojure/1.8.0/clojure-1.8.0.zip
-    unzip clojure-1.8.0.zip
-    mv clojure-1.8.0/clojure* bin
-
-
-
 %apprun csh
     exec csh $SINGULARITY_APPROOT/hello-world.csh
 %appfiles csh
     data/hello-world.csh
-%appinstall clisp
+%appinstall csh
     apt-get install -y csh
-
-
-
-%apprun csharp
-    exec mono $SINGULARITY_APPROOT/hello-world.exe
-%appfiles csharp
-    data/hello-world.cs
-%appinstall csharp
-    apt-get install -y mono-gmcs
-    gmcs hello-world.cs
-
-
-%apprun fsharp
-    exec $SINGULARITY_APPROOT/hello-world.exe
-%appfiles fsharp
-    data/hello-world.fs
-%appinstall fsharp
-    apt-get install -y fsharp
-    fsharpc hello-world.fs -o hello-world.exe
-
-
-
-%apprun gfortran
-    exec $SINGULARITY_APPROOT/hello-world.gfortran
-%appfiles gfortran
-    data/hello-world.f90
-%appinstall gfortran
-    apt-get install -y gfortran
-    gfortran -o hello-world.gfortran hello-world.f90
 
 
 
@@ -171,42 +116,6 @@ container. Example usage:
     tar --strip-components=1 -zxf go1.8.3.linux-amd64.tar.gz
     bin/go build hello-world.go && mv hello-world bin/hello-world.go
     
-
-
-%apprun groovy
-    exec $SINGULARITY_APPROOT/hello-world.groovy
-%appfiles groovy
-    data/hello-world.groovy
-%appinstall groovy
-    apt-get install -y groovy
-
-
-%apprun haskell
-    exec $SINGULARITY_APPROOT/hello-world.haskell
-%appfiles haskell
-    data/hello-world.hs
-%appinstall haskell
-    apt-get install -y ghc
-    ghc hello-world.hs -o hello-world.haskell
-
-
-
-%apprun jade
-    exec jade $SINGULARITY_APPROOT/hello-world.jade
-%appfiles jade
-    data/hello-world.jade
-%appinstall jade
-    apt-get install -y jade
-
-
-
-%apprun java
-    java $SINGULARITY_APPROOT/HelloWorld
-%appfiles java
-    data/HelloWorld.java
-%appinstall java
-    apt-get install -y openjdk-7-jdk
-    javac HelloWorld.java
     
 
 %apprun julia
@@ -216,19 +125,6 @@ container. Example usage:
 %appinstall julia
     apt-get install -y julia
     
-
-
-%apprun latex
-    detex $SINGULARITY_APPROOT/hello-world.tex
-%appfiles latex
-    data/hello-world.tex
-%appinstall latex
-    apt-get install -y make gcc flex
-    wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/opendetex/opendetex-2.8.1.tar.bz2
-    tar --strip-components=1 -xvjf opendetex-2.8.1.tar.bz2
-    make
-    install -c -m 775 -g staff -s detex
-
    
 %apprun octave
     exec octave --no-gui --silent $SINGULARITY_APPROOT/hello-world.octave
@@ -239,15 +135,6 @@ container. Example usage:
     data/hello-world.octave
 %appinstall octave
     apt-get install -y octave
-
-
-%apprun pascal
-    exec $SINGULARITY_APPROOT/hello-world
-%appfiles pascal
-    data/hello-world.pas
-%appinstall pascal
-    apt-get install -y fp-compiler
-    fpc hello-world.pas
 
 
 %apprun perl
@@ -293,17 +180,6 @@ container. Example usage:
     bin/rustc hello-world.rs -o bin/hello-world.rust
 
 
-%apprun scala
-    exec scala HelloWorld
-%appfiles scala
-    data/hello-world.scala
-    data/hello-world.scala bin/hello-world.scala
-%appinstall scala
-    apt-get install -y scala
-    scalac hello-world.scala
-    mv HelloWorld* bin
-
-
 %apprun tcsh
     exec tcsh $SINGULARITY_APPROOT/hello-world.tcsh
 %appfiles tcsh
@@ -317,4 +193,4 @@ container. Example usage:
 %appfiles zsh
     data/hello-world.zsh
 %appinstall zsh
-    apt-get install -y zsh
+    apt-get install -y zsh > /dev/null 2>&1
