@@ -22,12 +22,12 @@ before_install:
 install:
   - singularity create --size 8000 container.ftw
   - sudo singularity bootstrap container.ftw Singularity 
+  - mkdir -p assets/data && cp -R $TRAVIS_BUILD_DIR/data assets/data
+  - ls assets/data
   - chmod u+x $TRAVIS_BUILD_DIR/test.sh
 
 script:
   - /bin/bash $TRAVIS_BUILD_DIR/test.sh $TRAVIS_BUILD_DIR/container-ftw.results
-  - mkdir -p assets/data && cp -R $TRAVIS_BUILD_DIR/data assets/data
-  - ls assets/data 
 
 # containers-ftw.surge.sh
 

@@ -5,8 +5,8 @@ fetchData = function () {
     var xhr = new XMLHttpRequest()
     xhr.open('GET', "data/sections.json")
     xhr.onload = function () {
-        window.machines = JSON.parse(xhr.responseText)
-        var clusters = Object.keys(window.machines)
+        window.sections = JSON.parse(xhr.responseText)
+        var languages = Object.keys(window.sections)
     }
     xhr.send()
 }
@@ -48,23 +48,11 @@ var cluster = new Vue({
     },
 
     data: {
-        machines: null,
-        features: null,
-        memory:null,
-        qos: null,
-        qos_choice: null,
-        cluster_name: '',
+        sections: null,
+        languages: null,
         script_name: '',
-        job_name: '',
         email_address: '',
         output_file:null,
-        error_file:null,
-        time_minutes:0,
-        time_hours:1,
-        time_seconds:0,
-        partition_name: null,
-        number_nodes:1,
-        time:'',
         warning: null,
         output:' Your script will be displayed here. ',
         errors: 0
@@ -80,9 +68,9 @@ var cluster = new Vue({
             xhr.open('GET', sections)
             xhr.onload = function () {
                 self.sections = JSON.parse(xhr.responseText)
-                self.clusters = Object.keys(self.machines)
-                $.each(self.clusters,function(i,e){ 
-                    $("#cluster-select").append('<option value="' + e + '">'+ e + '</option>')
+                self.languages = Object.keys(self.sections)
+                $.each(self.sections,function(i,e){ 
+                    $("#language-select").append('<option value="' + e + '">'+ e + '</option>')
                 })
             }
             xhr.send()

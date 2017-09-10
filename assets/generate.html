@@ -11,11 +11,11 @@
         <meta property="og:description" content="JobMaker is a SLURM job submission script generator.">
         <meta property="og:url" content="https://oss.stanford.edu/job-maker">
 
-        <title>Stanford Job Generator</title>
+        <title>Container FTW Generator</title>
 
-        <link href="assets/css/bootstrap.css" rel="stylesheet">
-        <link href="assets/css/font-awesome.css" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/style.css" />
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" />
           
     </head>
 
@@ -26,7 +26,7 @@
             <a class="navbar-brand" 
                href="http://oss.stanford.edu" 
                style="padding:8px 8px;">
-               <img src="assets/img/logo.png" height=35>
+               <img src="img/logo.png" height=35>
             </a>
 
             <!-- Top Navigation to show user where they are -->
@@ -35,7 +35,7 @@
                             style="font-weight:800" 
                             v-on:click="makeActive('generate')">Stanford Compute Job Maker</a>
                 <a style="float:right; padding:10px 15px 0px 0px;" 
-                   href="https://www.github.com/researchapps/job-maker" 
+                   href="https://www.github.com/containers-ftw/hello-world-ftw" 
                    target="_blank"><i class="fa fa-2x fa-github"></i></a>
             </nav>
 
@@ -53,10 +53,10 @@
     <div class="row" style="padding-bottom:20px">        
         <div class="col-md-6">
             <h2 class="center"><i class="fa fa-code blue"></i></h2>
-            <small class="grey">Enter your cluster and job specs to create a job script on the right.</small>
+            <small class="grey">Select apps to generate your container on the right</small>
         </div>
         <div class="col-md-6">
-            <h4 style="padding-top:40px" v-if="job_name">{{ job_name}}.job</h4>
+            <h4 style="padding-top:40px" v-if="job_name">{{ job_name }}</h4>
         </div>
     </div>
 
@@ -66,7 +66,7 @@
         <!-- USER CONFIGURATION -->
         <div class="col-md-6" id="machine-group">
 
-            <!-- Machine Selection -->
+            <!-- Language Selection -->
             <div id="cluster-group" class="form-group">
                 <label class="control-label">Cluster: {{ cluster_name }}</label>
                 <select v-model="cluster_name"
