@@ -33,7 +33,7 @@
             <nav v-bind:class="active">
                 <a href="#" class="generate" 
                             style="font-weight:800" 
-                            v-on:click="makeActive('generate')">Stanford Compute Job Maker</a>
+                            v-on:click="makeActive('generate')">Singularity Recipe Maker</a>
                 <a style="float:right; padding:10px 15px 0px 0px;" 
                    href="https://www.github.com/containers-ftw/hello-world-ftw" 
                    target="_blank"><i class="fa fa-2x fa-github"></i></a>
@@ -66,48 +66,27 @@
         <!-- USER CONFIGURATION -->
         <div class="col-md-6" id="sections-group">
 
-            <div class="form-group" v-show="partition_name"> 
-
-                <!-- Qos --> 
-                <label class="control-label">Quality of service (qos): {{ qos_choice }}</label>
-                <select v-model="qos_choice"
-                        id='qos-select' 
-                        class="form-control">
-                        <option disabled value="">You can optionally select a qos</option>
-                        <option v-for="qos_option in qos">
-                        {{ qos_option }}
-                        </option>
-
-                </select>
-            </div>
-
             <!-- Script Name -->
             <div id="script-group" class="form-group">
-                <label class="control-label">Script: {{ script_name }}</label>
-                <span class="help-block">Specify your script including the full path.</span>
-                <input v-model.trim="script_name" 
+                <label class="control-label">Container: {{ container_name }}</label>
+                <span class="help-block">Specify the name of the container.</span>
+                <input v-model.trim="container_name" 
                        id="script-text" 
                        type="text" 
                        class="form-control" 
-                       value="start.sh">
+                       value="container.ftw">
             </div>
 
             <!-- Recipe Name -->
             <div id="recipe-group" class="form-group">
                 <label v-if="recipe" class="control-label">Recipe: {{ recipe }}</label>
-                <label v-else="recipe" class="control-label">Job Name: Singularity</label>
+                <label v-else="recipe" class="control-label">Recipe: Singularity</label>
                 <input v-model.trim="recipe"
                        id="recipe-text" 
                        type="text" 
                        class="form-control">
             </div>
 
-            </div>
-
-            <div id="output-group" class="form-group">                
-
-                <!-- Output File --> 
-                <div class="col-md-6">
 
                     <label v-if="output_file" class="control-label">Output File: {{ output_file }}.%j.out</label>
                     <label v-else="output_file" class="control-label">Output File:</label>
@@ -115,24 +94,11 @@
                            type="text" 
                            id="output_file" 
                            class="form-control">
-                </div>
 
-                <!-- Error File -->
-                <div class="col-md-6">
-
-                    <label v-if="error_file" class="control-label">Error File: {{ error_file }}.%j.err</label>
-                    <label v-else="error_file" class="control-label">Error File:</label>
-                        <input v-model.trim="error_file"
-                               type="text" 
-                               id="error_file" 
-                               class="form-control">
-                </div>
-
-            </div>
 
         </div>
 
-
+    
         <!-- SCRIPT GENERATION -->
         <div class="col-md-6">
             <div id="output-group" class="form-group">

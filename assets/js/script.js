@@ -52,10 +52,9 @@ var cluster = new Vue({
         languages: null,
         recipe: '',
         container_name: 'container.ftw',
-        email_address: '',
         output_file:null,
         warning: null,
-        output:' Your script will be displayed here. ',
+        output:' Your recipe will be displayed here. ',
         errors: 0
     },
 
