@@ -50,7 +50,8 @@ var cluster = new Vue({
     data: {
         sections: null,
         languages: null,
-        script_name: '',
+        recipe: '',
+        container_name: 'container.ftw',
         email_address: '',
         output_file:null,
         warning: null,
@@ -99,11 +100,17 @@ var cluster = new Vue({
         outputScript: function(content){
 	 
             content+='# example: run the job script command line:\n'
-            if (this.job_name == ''){
-                this.job_name = 'run';
+            if (this.container_name == ''){
+                this.container_name = 'container.ftw';
             }
 
-            content+='# sbatch  '+(this.job_name)+'.job\n';
+            if (this.recipe == ''){
+                this.recipe = 'Singularity';
+            }
+
+
+            content+='# singularity create --size 8000 '+(this.container_name)+'\n';
+            content+='# sudo singularity bootstrap '+(this.container_name) + (this.recipe) +'\n';
             this.output = content;
 
         },

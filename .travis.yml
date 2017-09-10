@@ -32,6 +32,7 @@ script:
 # containers-ftw.surge.sh
 
 deploy:
+  skip_cleanup: true
   provider: surge
   project: ./assets
   domain: containers-ftw.surge.sh
