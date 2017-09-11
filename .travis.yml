@@ -20,8 +20,10 @@ before_install:
   - cd $TRAVIS_BUILD_DIR/
 
 install:
-  - singularity create --size 8000 container.ftw
-  - sudo singularity bootstrap container.ftw Singularity 
+  - singularity create --size 8000 container-ftw.img
+  - sudo singularity bootstrap container-ftw.img Singularity 
+  - singularity create --size 8000 container-ftw.test
+  - sudo singularity bootstrap container-ftw.test Singularity.test 
   - mkdir -p assets/data && cp -R $TRAVIS_BUILD_DIR/data assets/data
   - ls assets/data
   - chmod u+x $TRAVIS_BUILD_DIR/test.sh

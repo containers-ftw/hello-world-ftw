@@ -52,7 +52,6 @@ var cluster = new Vue({
         languages: null,
         recipe: '',
         container_name: 'container.ftw',
-        output_file:null,
         warning: null,
         output:' Your recipe will be displayed here. ',
         errors: 0
@@ -192,19 +191,6 @@ var cluster = new Vue({
             window.scrollTo(0,document.body.scrollHeight);
         },
 
-        // When the user selects a cluster, we update partition choices
-        updatePartitions: function() {
- 
-           var self = this.$data
-           this.partition_name = null;
-           var cluster_name = $("#cluster-select").val();
-           var partitions = Object.keys(window.machines[cluster_name]['partitions'])
-           $("#partition-select").text(''); 
-           $.each(partitions,function(i,e){
-               $("#partition-select").append('<option value="' + e + '">'+ e + '</option>')
-           })
-
-        },
 
         // When the user selects a partition, we update feature and qos choices
         selectPartition: function() {
@@ -259,13 +245,6 @@ var cluster = new Vue({
 		header+='#SBATCH --job-name='+this.job_name+'\n'
             }
 
-            if (this.error_file!=null) {
-		header+='#SBATCH --error='+this.error_file+'%j.err\n'
-            }
-
-            if (this.output_file!=null) {
-		header+='#SBATCH --output='+this.output_file+'%j.out\n'
-            }
 
             if(this.email_address!=''){
 		header+='#SBATCH --mail-user='+this.email_address+'\n'

@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
         <meta property="twitter:card" content="summary_large_image">
         <meta property="twitter:site" content="@researchapps">
-        <meta property="og:site_name" content="JobMaker">
-        <meta property="og:title" content="JobMaker">
+        <meta property="og:site_name" content="HelloWorldFTW">
+        <meta property="og:title" content="HelloWorldFTW">
         <meta property="og:image" content="">
-        <meta property="og:description" content="JobMaker is a SLURM job submission script generator.">
-        <meta property="og:url" content="https://oss.stanford.edu/job-maker">
+        <meta property="og:description" content="Hello World FTW is an example of using containers to assses differences in metrics.">
+        <meta property="og:url" content="https://www.github.com/containers-ftw/hello-world-ftw">
 
         <title>Container FTW Generator</title>
 
@@ -63,8 +63,35 @@
     <!-- Information -->
     <div class="row">
 
+
         <!-- USER CONFIGURATION -->
         <div class="col-md-6" id="sections-group">
+
+            <!-- Languages -->  
+            <ul class="list-group" 
+                id='languages-list' 
+                v-show="languages">
+                <li class="list-group-item"
+                    v-on:click="addFeature"
+                    v-for="language in languages">
+                    {{ language }}
+               </li>
+            </ul>
+
+        </div>
+
+    
+        <!-- SCRIPT GENERATION -->
+        <div class="col-md-6">
+            <div id="output-group" class="form-group">
+                <textarea v-model='output'
+                          class="form-control" 
+                          rows="15" 
+                          id="script-output" 
+                          style="resize: vertical" 
+                          readonly="true">{{ output }}</textarea>
+            </div>
+
 
             <!-- Script Name -->
             <div id="script-group" class="form-group">
@@ -85,29 +112,6 @@
                        id="recipe-text" 
                        type="text" 
                        class="form-control">
-            </div>
-
-
-                    <label v-if="output_file" class="control-label">Output File: {{ output_file }}.%j.out</label>
-                    <label v-else="output_file" class="control-label">Output File:</label>
-                    <input v-model.trim="output_file"
-                           type="text" 
-                           id="output_file" 
-                           class="form-control">
-
-
-        </div>
-
-    
-        <!-- SCRIPT GENERATION -->
-        <div class="col-md-6">
-            <div id="output-group" class="form-group">
-                <textarea v-model='output'
-                          class="form-control" 
-                          rows="15" 
-                          id="script-output" 
-                          style="resize: vertical" 
-                          readonly="true">{{ output }}</textarea>
             </div>
 
         </div>

@@ -1,13 +1,13 @@
 #!/bin/sh
 
-if [ ! -f "container.ftw" ] 
+if [ ! -f "container-ftw.img" ] 
   then
     echo "Please generate container.ftw before running."
-    echo "singularity create --size 8000 container.ftw"
-    echo "sudo singularity bootstrap container.ftw Singularity"
+    echo "singularity create --size 8000 container-ftw.img"
+    echo "sudo singularity bootstrap container-ftw.img Singularity"
     exit 0
 else
-   container=container.ftw
+   container=container-ftw.img
 fi
 
 if [ $# -eq 0 ]
@@ -56,6 +56,28 @@ for app in $(singularity apps $container)
     /usr/bin/time -a -o $TIME_LOG singularity run --app $app $container >> $TIME_LOG
 done
 
+mkdir -p logs
+for app in $(singularity apps $container)
+    do
+    sudo strace -u $USER -C -T -o logs/strace-$app.log singularity run --app $app $container
+done
+
+if [ ! -f "container-ftw.test" ] 
+  then
+    echo "Please generate container-ftw.test before running."
+    echo "singularity create --size 8000 container-ftw.test"
+    echo "sudo singularity bootstrap container-ftw.test Singularity.test"
+    exit 0
+else
+   container=container-ftw.test
+fi
+
+for app in $(singularity apps $container)
+    do
+    singularity run --app $app $container logs/strace-$app-internal.log
+done
+
+
 # Remove empty lines
 sed -i '/^$/d' $TIME_LOG
 
@@ -66,3 +88,5 @@ python helpers/generate_result.py $TIME_LOG
 
 # json of recipe to render sections folder into generate.html
 python helpers/generate_sections.py assets/data
+
+python helpers/parse_strace.py logs 
