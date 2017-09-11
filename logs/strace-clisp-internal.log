@@ -1,0 +1,516 @@
+12:50:54 execve("/usr/bin/clisp", ["clisp", "/scif/apps/clisp/hello-world.cli"...], [/* 76 vars */]) = 0
+12:50:54 brk(0)                         = 0x25ba000
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f94e10e6000
+12:50:54 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/clisp/lib/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/scif/apps/clisp/lib/tls/x86_64", 0x7fff941d8d60) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/clisp/lib/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/scif/apps/clisp/lib/tls", 0x7fff941d8d60) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/clisp/lib/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/scif/apps/clisp/lib/x86_64", 0x7fff941d8d60) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/clisp/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/scif/apps/clisp/lib", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:54 open("tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/.singularity.d/libs/tls/x86_64", 0x7fff941d8d60) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/.singularity.d/libs/tls", 0x7fff941d8d60) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/.singularity.d/libs/x86_64", 0x7fff941d8d60) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/.singularity.d/libs", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=37006, ...}) = 0
+12:50:54 mmap(NULL, 37006, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f94e10dc000
+12:50:54 close(3)                       = 0
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P \2\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0755, st_size=1857312, ...}) = 0
+12:50:54 mmap(NULL, 3965632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f94e0afd000
+12:50:54 mprotect(0x7f94e0cbb000, 2097152, PROT_NONE) = 0
+12:50:54 mmap(0x7f94e0ebb000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1be000) = 0x7f94e0ebb000
+12:50:54 mmap(0x7f94e0ec1000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f94e0ec1000
+12:50:54 close(3)                       = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f94e10db000
+12:50:54 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f94e10d9000
+12:50:54 arch_prctl(ARCH_SET_FS, 0x7f94e10d9740) = 0
+12:50:54 mprotect(0x7f94e0ebb000, 16384, PROT_READ) = 0
+12:50:54 mprotect(0x601000, 4096, PROT_READ) = 0
+12:50:54 mprotect(0x7f94e10e8000, 4096, PROT_READ) = 0
+12:50:54 munmap(0x7f94e10dc000, 37006)  = 0
+12:50:54 brk(0)                         = 0x25ba000
+12:50:54 brk(0x25db000)                 = 0x25db000
+12:50:54 execve("/usr/lib/clisp-2.49/base/lisp.run", ["/usr/lib/clisp-2.49/base/lisp.ru"..., "-B", "/usr/lib/clisp-2.49", "-M", "/usr/lib/clisp-2.49/base/lispini"..., "-N", "/usr/share/locale", "/scif/apps/clisp/hello-world.cli"...], [/* 76 vars */]) = 0
+12:50:54 brk(0)                         = 0xf57000
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f287ef61000
+12:50:54 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/clisp/lib/tls/x86_64/libreadline.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/scif/apps/clisp/lib/tls/x86_64", 0x7ffc1fce3ab0) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/clisp/lib/tls/libreadline.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/scif/apps/clisp/lib/tls", 0x7ffc1fce3ab0) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/clisp/lib/x86_64/libreadline.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/scif/apps/clisp/lib/x86_64", 0x7ffc1fce3ab0) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/clisp/lib/libreadline.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/scif/apps/clisp/lib", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:54 open("tls/x86_64/libreadline.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libreadline.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libreadline.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libreadline.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/tls/x86_64/libreadline.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/.singularity.d/libs/tls/x86_64", 0x7ffc1fce3ab0) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/tls/libreadline.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/.singularity.d/libs/tls", 0x7ffc1fce3ab0) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/x86_64/libreadline.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/.singularity.d/libs/x86_64", 0x7ffc1fce3ab0) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libreadline.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/.singularity.d/libs", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=37006, ...}) = 0
+12:50:54 mmap(NULL, 37006, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f287ef57000
+12:50:54 close(3)                       = 0
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/libreadline.so.5", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340=\1\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=263512, ...}) = 0
+12:50:54 mmap(NULL, 2363832, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f287eaff000
+12:50:54 mprotect(0x7f287eb37000, 2097152, PROT_NONE) = 0
+12:50:54 mmap(0x7f287ed37000, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x38000) = 0x7f287ed37000
+12:50:54 mmap(0x7f287ed3f000, 4536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f287ed3f000
+12:50:54 close(3)                       = 0
+12:50:54 open("/scif/apps/clisp/lib/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20V\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=1071552, ...}) = 0
+12:50:54 mmap(NULL, 3166568, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f287e7f9000
+12:50:54 mprotect(0x7f287e8fe000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f287eafd000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x104000) = 0x7f287eafd000
+12:50:54 close(3)                       = 0
+12:50:54 open("/scif/apps/clisp/lib/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libcrypt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\f\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=43368, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f287ef56000
+12:50:54 mmap(NULL, 2327072, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f287e5c0000
+12:50:54 mprotect(0x7f287e5c9000, 2097152, PROT_NONE) = 0
+12:50:54 mmap(0x7f287e7c9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7f287e7c9000
+12:50:54 mmap(0x7f287e7cb000, 184864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f287e7cb000
+12:50:54 close(3)                       = 0
+12:50:54 open("/scif/apps/clisp/lib/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\303\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=167096, ...}) = 0
+12:50:54 mmap(NULL, 2264288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f287e397000
+12:50:54 mprotect(0x7f287e3bc000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f287e5bb000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x24000) = 0x7f287e5bb000
+12:50:54 close(3)                       = 0
+12:50:54 open("/scif/apps/clisp/lib/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\16\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=14664, ...}) = 0
+12:50:54 mmap(NULL, 2109744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f287e193000
+12:50:54 mprotect(0x7f287e196000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f287e395000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f287e395000
+12:50:54 close(3)                       = 0
+12:50:54 open("/scif/apps/clisp/lib/libavcall.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/libavcall.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libavcall.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libavcall.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libavcall.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libavcall.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/libavcall.so.0", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360\5\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=5992, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f287ef55000
+12:50:54 mmap(NULL, 2101304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f287df91000
+12:50:54 mprotect(0x7f287df92000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f287e191000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0x7f287e191000
+12:50:54 mprotect(0x7ffc1fce4000, 4096, PROT_READ|PROT_WRITE|PROT_EXEC|PROT_GROWSDOWN) = 0
+12:50:54 close(3)                       = 0
+12:50:54 open("/scif/apps/clisp/lib/libcallback.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/libcallback.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libcallback.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libcallback.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libcallback.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libcallback.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/libcallback.so.0", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\n\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=10224, ...}) = 0
+12:50:54 mmap(NULL, 2107552, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f287dd8e000
+12:50:54 mprotect(0x7f287dd90000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f287df8f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f287df8f000
+12:50:54 close(3)                       = 0
+12:50:54 open("/scif/apps/clisp/lib/libsigsegv.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/libsigsegv.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libsigsegv.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libsigsegv.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libsigsegv.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libsigsegv.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/x86_64-linux-gnu/libsigsegv.so.2", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360\f\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=14416, ...}) = 0
+12:50:54 mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f287db8a000
+12:50:54 mprotect(0x7f287db8d000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f287dd8c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f287dd8c000
+12:50:54 close(3)                       = 0
+12:50:54 open("/scif/apps/clisp/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P \2\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0755, st_size=1857312, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f287ef54000
+12:50:54 mmap(NULL, 3965632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f287d7c1000
+12:50:54 mprotect(0x7f287d97f000, 2097152, PROT_NONE) = 0
+12:50:54 mmap(0x7f287db7f000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1be000) = 0x7f287db7f000
+12:50:54 mmap(0x7f287db85000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f287db85000
+12:50:54 close(3)                       = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f287ef53000
+12:50:54 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f287ef51000
+12:50:54 arch_prctl(ARCH_SET_FS, 0x7f287ef51740) = 0
+12:50:54 mprotect(0x7f287db7f000, 16384, PROT_READ) = 0
+12:50:54 mprotect(0x7f287dd8c000, 4096, PROT_READ) = 0
+12:50:54 mprotect(0x7f287df8f000, 4096, PROT_READ) = 0
+12:50:54 mprotect(0x7f287e191000, 4096, PROT_READ) = 0
+12:50:54 mprotect(0x7f287e395000, 4096, PROT_READ) = 0
+12:50:54 mprotect(0x7f287e5bb000, 16384, PROT_READ) = 0
+12:50:54 mprotect(0x7f287e7c9000, 4096, PROT_READ) = 0
+12:50:54 mprotect(0x7f287eafd000, 4096, PROT_READ) = 0
+12:50:54 mprotect(0x7f287ed37000, 8192, PROT_READ) = 0
+12:50:54 mprotect(0x82a000, 16384, PROT_READ) = 0
+12:50:54 mprotect(0x7f287ef63000, 4096, PROT_READ) = 0
+12:50:54 munmap(0x7f287ef57000, 37006)  = 0
+12:50:54 open("/proc/self/exe", O_RDONLY) = 3
+12:50:54 access("/usr/lib/clisp-2.49/base/lisp.run", R_OK|X_OK) = 0
+12:50:54 fstat(3, {st_mode=S_IFREG|0755, st_size=2470016, ...}) = 0
+12:50:54 stat("/usr/lib/clisp-2.49/base/lisp.run", {st_mode=S_IFREG|0755, st_size=2470016, ...}) = 0
+12:50:54 brk(0)                         = 0xf57000
+12:50:54 brk(0xf79000)                  = 0xf79000
+12:50:54 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/clisp-2.49", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/clisp-2.49/base", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/clisp-2.49/base/lisp.run", {st_mode=S_IFREG|0755, st_size=2470016, ...}) = 0
+12:50:54 open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1607664, ...}) = 0
+12:50:54 mmap(NULL, 1607664, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f287edc8000
+12:50:54 close(4)                       = 0
+12:50:54 mmap(NULL, 3674112, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f287d440000
+12:50:54 open("/usr/lib/clisp-2.49/base/lispinit.mem", O_RDONLY) = 4
+12:50:54 read(4, "\322\213vp\303\177\37\0\0\0\0\0\0\0\377\377\377\377\377\377\377\377\0\0@\0,\0\4\0\3\0"..., 240) = 240
+12:50:54 read(4, "clisp\0i18n\0syscalls\0regexp\0readl"..., 40) = 40
+12:50:54 read(4, "@\20F\0\0\0\0\0\340\17F\0\0\0\0\0\2502F\0\0\0\0\0\2706F\0\0\0\0\0"..., 320) = 320
+12:50:54 read(4, "\274\361O\0\0\0\0\0\20\364O\0\0\0\0\0\204\367O\0\0\0\0\0\220&L\0\0\0\0\0"..., 1880) = 1880
+12:50:54 read(4, "\300 \201\0\0\0\7\0\200\372\203\0\0\0\4\0\377\377\377\0\0\200\3\0\200\n5nM\313 \0"..., 102312) = 102312
+12:50:54 read(4, "\300\37\203\0\0\0\0\0", 8) = 8
+12:50:54 read(4, "\350\3\0\0", 4)       = 4
+12:50:54 read(4, "\277\1\0\0", 4)       = 4
+12:50:54 read(4, "\300\37\203\0\0\0\1\0\t\0\2\30\0\0\0\0\260\3\204\0\0\0\4\0\200\372\203\0\0\0\4\0"..., 56000) = 56000
+12:50:54 read(4, "\210\310N4\3\0\16\0\0\0\0\0\0\0 \0\0\0\0\0\0\0 \0\350\220-4\3\0\f\0"..., 3576) = 3576
+12:50:54 read(4, "\200\35\203\0\0\0\0\0", 8) = 8
+12:50:54 read(4, "\t\0\0\0", 4)         = 4
+12:50:54 read(4, "I\0\0\0", 4)          = 4
+12:50:54 read(4, "\200\35\203\0\0\0\1\0\t\0\2\30\0\0\0\0\0303L4\3\0\4\0\200\372\203\0\0\0\4\0"..., 504) = 504
+12:50:54 read(4, "`6L4\3\0\4\0\2606L4\3\0\4\0\0007L4\3\0\4\0P7L4\3\0\4\0"..., 584) = 584
+12:50:54 read(4, "@\4\203\0\0\0\0\0", 8) = 8
+12:50:54 read(4, "e\0\0\0", 4)          = 4
+12:50:54 read(4, "\30\2\0\0", 4)        = 4
+12:50:54 read(4, "@\4\203\0\0\0\1\0\t\0\2\30\0\0\0\0\230KL4\3\0\4\0\200\372\203\0\0\0\4\0"..., 5656) = 5656
+12:50:54 read(4, "x2.4\3\0\4\0\340jL4\3\0\4\0000kL4\3\0\4\0\200kL4\3\0\4\0"..., 4288) = 4288
+12:50:54 read(4, "@\354\202\0\0\0\0\0", 8) = 8
+12:50:54 read(4, "\3\0\0\0", 4)         = 4
+12:50:54 read(4, "\f\0\0\0", 4)         = 4
+12:50:54 read(4, "@\354\202\0\0\0\1\0\t\0\2\30\0\0\0\0\300\36M4\3\0\4\0000\"M4\3\0\27\0"..., 168) = 168
+12:50:54 read(4, "\260\37M4\3\0\4\0\320\342\204\0\0\0\4\0\0 M4\3\0\4\0P M4\3\0\4\0"..., 96) = 96
+12:50:54 read(4, "@\320\205\0\0\0\0\0", 8) = 8
+12:50:54 read(4, "\0\0\0\0", 4)         = 4
+12:50:54 read(4, "\0\0\0\0", 4)         = 4
+12:50:54 mmap(0x334048000, 2355200, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x334048000
+12:50:54 read(4, "\0\220,4\3\0\27\0\7\0\0\0\0\0\0\0000\340\204\0\0\0\4\0h\340\204\0\0\0\4\0"..., 2352312) = 2352312
+12:50:54 mmap(0xcccefa000, 1146880, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xcccefa000
+12:50:54 read(4, "P\256\374\314\f\0@\0\30cP4\3\0\v\0\200\372\203\0\0\0\4\0\370bP4\3\0\26\0"..., 1144480) = 1144480
+12:50:54 close(4)                       = 0
+12:50:54 mprotect(0x334048000, 2355200, PROT_READ) = 0
+12:50:54 mprotect(0xcccefa000, 1146880, PROT_READ) = 0
+12:50:54 rt_sigaction(SIGSEGV, {0x7f287db8ade0, [HUP INT QUIT USR1 USR2 PIPE ALRM TERM CHLD URG XCPU XFSZ VTALRM PROF WINCH IO PWR], SA_RESTORER|SA_SIGINFO, 0x7f287d7f7cb0}, NULL, 8) = 0
+12:50:54 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x3342853b8} ---
+12:50:54 mprotect(0x334285000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:54 rt_sigreturn()                 = 1125899915491968
+12:50:54 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x334242148} ---
+12:50:54 mprotect(0x334242000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:54 rt_sigreturn()                 = 1125899915491968
+12:50:54 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x334241e88} ---
+12:50:54 mprotect(0x334241000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:54 rt_sigreturn()                 = 1125899915491968
+12:50:54 mmap(0x334287000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x334287000
+12:50:54 open("/proc/self/maps", O_RDONLY) = 4
+12:50:54 read(4, "00400000-0062b000 r-xp 00000000 "..., 1024) = 1024
+12:50:54 read(4, "87db83000 r--p 001be000 07:00 46"..., 1024) = 1024
+12:50:54 read(4, ".so.0.0.0\n7f287df90000-7f287df91"..., 1024) = 1024
+12:50:54 read(4, "  /lib/x86_64-linux-gnu/libtinfo"..., 1024) = 1024
+12:50:54 read(4, "463504                     /lib/"..., 1024) = 1024
+12:50:54 read(4, "00000000 00:00 0 \n7f287ef61000-7"..., 1024) = 702
+12:50:54 close(4)                       = 0
+12:50:54 sigaltstack({ss_sp=0x7ffc1fce02a0, ss_flags=0, ss_size=16384}, NULL) = 0
+12:50:54 rt_sigaction(SIGSEGV, {0x7f287db8ade0, [HUP INT QUIT USR1 USR2 PIPE ALRM TERM CHLD URG XCPU XFSZ VTALRM PROF WINCH IO PWR], SA_RESTORER|SA_STACK|SA_SIGINFO, 0x7f287d7f7cb0}, NULL, 8) = 0
+12:50:54 ioctl(1, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+12:50:54 ioctl(1, TIOCGWINSZ, {ws_row=49, ws_col=136, ws_xpixel=0, ws_ypixel=0}) = 0
+12:50:54 rt_sigaction(SIGWINCH, {0x43ae40, [WINCH], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:54 rt_sigaction(SIGWINCH, NULL, {0x43ae40, [WINCH], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, 8) = 0
+12:50:54 rt_sigaction(SIGWINCH, {0x43ae40, [WINCH], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, NULL, 8) = 0
+12:50:54 rt_sigaction(SIGINT, {0x43aad0, [INT], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:54 rt_sigaction(SIGINT, NULL, {0x43aad0, [INT], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, 8) = 0
+12:50:54 rt_sigaction(SIGINT, {0x43aad0, [INT], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, NULL, 8) = 0
+12:50:54 rt_sigaction(SIGALRM, {0x43e514, [ALRM], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:54 rt_sigaction(SIGALRM, NULL, {0x43e514, [ALRM], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, 8) = 0
+12:50:54 rt_sigaction(SIGALRM, {0x43e514, [ALRM], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, NULL, 8) = 0
+12:50:54 rt_sigaction(SIGCHLD, {SIG_IGN, [CHLD], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:54 rt_sigaction(SIGCHLD, NULL, {SIG_IGN, [CHLD], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, 8) = 0
+12:50:54 rt_sigaction(SIGCHLD, {SIG_IGN, [CHLD], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, NULL, 8) = 0
+12:50:54 rt_sigaction(SIGHUP, {0x4471d8, [HUP], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:54 rt_sigaction(SIGHUP, NULL, {0x4471d8, [HUP], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, 8) = 0
+12:50:54 rt_sigaction(SIGHUP, {0x4471d8, [HUP], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, NULL, 8) = 0
+12:50:54 rt_sigaction(SIGQUIT, {0x4471d8, [QUIT], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:54 rt_sigaction(SIGQUIT, NULL, {0x4471d8, [QUIT], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, 8) = 0
+12:50:54 rt_sigaction(SIGQUIT, {0x4471d8, [QUIT], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, NULL, 8) = 0
+12:50:54 rt_sigaction(SIGILL, {0x4471d8, [ILL], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:54 rt_sigaction(SIGILL, NULL, {0x4471d8, [ILL], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, 8) = 0
+12:50:54 rt_sigaction(SIGILL, {0x4471d8, [ILL], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, NULL, 8) = 0
+12:50:54 rt_sigaction(SIGABRT, {0x4471d8, [ABRT], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:54 rt_sigaction(SIGABRT, NULL, {0x4471d8, [ABRT], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, 8) = 0
+12:50:54 rt_sigaction(SIGABRT, {0x4471d8, [ABRT], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, NULL, 8) = 0
+12:50:54 rt_sigaction(SIGKILL, {0x4471d8, [KILL], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, {0x7f287d7f7cb0, [ABRT], 0x20 /* SA_??? */}, 8) = -1 EINVAL (Invalid argument)
+12:50:54 rt_sigaction(SIGKILL, NULL, {SIG_DFL, [], 0}, 8) = 0
+12:50:54 rt_sigaction(SIGKILL, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, NULL, 8) = -1 EINVAL (Invalid argument)
+12:50:54 rt_sigaction(SIGTERM, {0x4471d8, [TERM], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:54 rt_sigaction(SIGTERM, NULL, {0x4471d8, [TERM], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, 8) = 0
+12:50:54 rt_sigaction(SIGTERM, {0x4471d8, [TERM], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, NULL, 8) = 0
+12:50:54 rt_sigaction(SIGTTOU, {SIG_IGN, [TTOU], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:54 rt_sigaction(SIGTTOU, NULL, {SIG_IGN, [TTOU], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, 8) = 0
+12:50:54 rt_sigaction(SIGTTOU, {SIG_IGN, [TTOU], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, NULL, 8) = 0
+12:50:54 rt_sigaction(SIGSEGV, {0x7f287db8ade0, [HUP INT QUIT USR1 USR2 PIPE ALRM TERM CHLD URG XCPU XFSZ VTALRM PROF WINCH IO PWR], SA_RESTORER|SA_STACK|SA_SIGINFO, 0x7f287d7f7cb0}, NULL, 8) = 0
+12:50:54 rt_sigaction(SIGPIPE, {0x43aaa4, [PIPE], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:54 rt_sigaction(SIGPIPE, NULL, {0x43aaa4, [PIPE], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, 8) = 0
+12:50:54 rt_sigaction(SIGPIPE, {0x43aaa4, [PIPE], SA_RESTORER|SA_RESTART, 0x7f287d7f7cb0}, NULL, 8) = 0
+12:50:54 open("/usr/lib/charset.alias", O_RDONLY|O_NOFOLLOW) = -1 ENOENT (No such file or directory)
+12:50:54 fcntl(0, F_GETFL)              = 0x8002 (flags O_RDWR|O_LARGEFILE)
+12:50:54 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 28), ...}) = 0
+12:50:54 fcntl(1, F_GETFL)              = 0x8002 (flags O_RDWR|O_LARGEFILE)
+12:50:54 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 28), ...}) = 0
+12:50:54 ioctl(0, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+12:50:54 ioctl(1, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+12:50:54 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 28), ...}) = 0
+12:50:54 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 28), ...}) = 0
+12:50:54 mmap(0xcccef9000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xcccef9000
+12:50:54 fcntl(0, F_GETFL)              = 0x8002 (flags O_RDWR|O_LARGEFILE)
+12:50:54 dup(0)                         = 4
+12:50:54 fcntl(0, F_GETFL)              = 0x8002 (flags O_RDWR|O_LARGEFILE)
+12:50:54 fstat(4, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 28), ...}) = 0
+12:50:54 ioctl(4, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+12:50:54 fstat(2, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 28), ...}) = 0
+12:50:54 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 28), ...}) = 0
+12:50:54 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x3340605a8} ---
+12:50:54 mprotect(0x334060000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:54 rt_sigreturn()                 = 13757711792
+12:50:54 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x334250e68} ---
+12:50:54 mprotect(0x334250000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:54 rt_sigreturn()                 = 8769792
+12:50:54 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x334251308} ---
+12:50:54 mprotect(0x334251000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:54 rt_sigreturn()                 = 13759746832
+12:50:54 mmap(0x334288000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x334288000
+12:50:54 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x334252040} ---
+12:50:54 mprotect(0x334252000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:54 rt_sigreturn()                 = 13759750216
+12:50:54 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x3342530f0} ---
+12:50:54 mprotect(0x334253000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:54 rt_sigreturn()                 = 13759754488
+12:50:54 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x334254060} ---
+12:50:54 mprotect(0x334254000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:54 rt_sigreturn()                 = 13759758440
+12:50:54 mmap(0x334289000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x334289000
+12:50:54 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x334255098} ---
+12:50:54 mprotect(0x334255000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:54 rt_sigreturn()                 = 13759762592
+12:50:54 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x334256028} ---
+12:50:54 mprotect(0x334256000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:54 rt_sigreturn()                 = 13759766576
+12:50:54 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x334257008} ---
+12:50:54 mprotect(0x334257000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:54 rt_sigreturn()                 = 13759770640
+12:50:54 mmap(0x33428a000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x33428a000
+12:50:54 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x3342580c8} ---
+12:50:54 mprotect(0x334258000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:54 rt_sigreturn()                 = 13759774928
+12:50:54 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x334259fd0} ---
+12:50:54 mprotect(0x334259000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:54 rt_sigreturn()                 = 13759782872
+12:50:54 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x33425a098} ---
+12:50:54 mprotect(0x33425a000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:54 rt_sigreturn()                 = 13759783072
+12:50:54 mmap(0x33428b000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x33428b000
+12:50:54 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x33409d250} ---
+12:50:54 mprotect(0x33409d000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:54 rt_sigreturn()                 = 1125899915491968
+12:50:54 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x334148f20} ---
+12:50:54 mprotect(0x334148000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:54 rt_sigreturn()                 = 1125899915492024
+12:50:54 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x33405b06c} ---
+12:50:54 mprotect(0x33405b000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:54 rt_sigreturn()                 = 1502787501
+12:50:54 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x3341de228} ---
+12:50:54 mprotect(0x3341de000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:54 rt_sigreturn()                 = 13759275560
+12:50:54 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x334240f98} ---
+12:50:54 mprotect(0x334240000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:54 rt_sigreturn()                 = 0
+12:50:55 stat("/home/vanessa/.clisp", 0x7ffc1fcdedf0) = -1 ENOENT (No such file or directory)
+12:50:55 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x33405d000} ---
+12:50:55 mprotect(0x33405d000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:55 rt_sigreturn()                 = 281474976710655
+12:50:55 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x3340668b0} ---
+12:50:55 mprotect(0x334066000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:55 rt_sigreturn()                 = 1125899915491968
+12:50:55 stat("/scif", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:55 lstat("/scif", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:55 stat("/scif/apps", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:55 lstat("/scif", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:55 lstat("/scif/apps", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:55 mmap(0x33428c000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x33428c000
+12:50:55 stat("/scif/apps/clisp", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:55 lstat("/scif", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:55 lstat("/scif/apps", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:55 lstat("/scif/apps/clisp", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:55 stat("/scif/apps/clisp/hello-world.clisp", {st_mode=S_IFREG|0764, st_size=32, ...}) = 0
+12:50:55 lstat("/scif", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:55 lstat("/scif/apps", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:55 lstat("/scif/apps/clisp", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:55 lstat("/scif/apps/clisp/hello-world.clisp", {st_mode=S_IFREG|0764, st_size=32, ...}) = 0
+12:50:55 lstat("/scif", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:55 lstat("/scif/apps", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:55 lstat("/scif/apps/clisp", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:55 lstat("/scif/apps/clisp/hello-world.clisp", {st_mode=S_IFREG|0764, st_size=32, ...}) = 0
+12:50:55 stat("/scif/apps/clisp/hello-world.clisp", {st_mode=S_IFREG|0764, st_size=32, ...}) = 0
+12:50:55 open("/scif/apps/clisp/hello-world.clisp", O_RDONLY) = 5
+12:50:55 fstat(5, {st_mode=S_IFREG|0764, st_size=32, ...}) = 0
+12:50:55 mmap(0x33428d000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x33428d000
+12:50:55 fstat(5, {st_mode=S_IFREG|0764, st_size=32, ...}) = 0
+12:50:55 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x33406e308} ---
+12:50:55 mprotect(0x33406e000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:55 rt_sigreturn()                 = 3096238503805832
+12:50:55 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x334061040} ---
+12:50:55 mprotect(0x334061000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:55 rt_sigreturn()                 = 3377713480520888
+12:50:55 lstat("/scif", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:55 lstat("/scif/apps", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:55 lstat("/scif/apps/clisp", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:55 lstat("/scif/apps/clisp/hello-world.clisp", {st_mode=S_IFREG|0764, st_size=32, ...}) = 0
+12:50:55 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x33406a460} ---
+12:50:55 mprotect(0x33406a000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:55 rt_sigreturn()                 = 3377713480520984
+12:50:55 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x334065800} ---
+12:50:55 mprotect(0x334065000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:55 rt_sigreturn()                 = 3096238503786464
+12:50:55 open("/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 6
+12:50:55 fstat(6, {st_mode=S_IFREG|0644, st_size=2570, ...}) = 0
+12:50:55 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f287ef60000
+12:50:55 read(6, "# Locale name alias data base.\n#"..., 4096) = 2570
+12:50:55 read(6, "", 4096)              = 0
+12:50:55 close(6)                       = 0
+12:50:55 munmap(0x7f287ef60000, 4096)   = 0
+12:50:55 open("/usr/share/locale/en_US/LC_MESSAGES/clisp.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:55 open("/usr/share/locale/en/LC_MESSAGES/clisp.mo", O_RDONLY) = 6
+12:50:55 fstat(6, {st_mode=S_IFREG|0644, st_size=184650, ...}) = 0
+12:50:55 mmap(NULL, 184650, PROT_READ, MAP_PRIVATE, 6, 0) = 0x7f287ed9a000
+12:50:55 close(6)                       = 0
+12:50:55 open("/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 6
+12:50:55 fstat(6, {st_mode=S_IFREG|0644, st_size=26258, ...}) = 0
+12:50:55 mmap(NULL, 26258, PROT_READ, MAP_SHARED, 6, 0) = 0x7f287ef5a000
+12:50:55 close(6)                       = 0
+12:50:55 open("/usr/lib/x86_64-linux-gnu/gconv/ISO8859-1.so", O_RDONLY|O_CLOEXEC) = 6
+12:50:55 read(6, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\5\0\0\0\0\0\0"..., 832) = 832
+12:50:55 fstat(6, {st_mode=S_IFREG|0644, st_size=10320, ...}) = 0
+12:50:55 mmap(NULL, 2105416, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 6, 0) = 0x7f287d23d000
+12:50:55 mprotect(0x7f287d23f000, 2093056, PROT_NONE) = 0
+12:50:55 mmap(0x7f287d43e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0x1000) = 0x7f287d43e000
+12:50:55 close(6)                       = 0
+12:50:55 mprotect(0x7f287d43e000, 4096, PROT_READ) = 0
+12:50:55 brk(0xf9e000)                  = 0xf9e000
+12:50:55 read(5, "(write-line \"RaawwWWWWWRRRR!!\")\n", 4096) = 32
+12:50:55 --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_ACCERR, si_addr=0x3341d6b78} ---
+12:50:55 mprotect(0x3341d6000, 4096, PROT_READ|PROT_WRITE) = 0
+12:50:55 rt_sigreturn()                 = 18014453487342336
+12:50:55 write(1, "RaawwWWWWWRRRR!!", 16) = 16
+12:50:55 write(1, "\n", 1)              = 1
+12:50:55 read(5, "", 4096)              = 0
+12:50:55 close(5)                       = 0
+12:50:55 fsync(1)                       = -1 EINVAL (Invalid argument)
+12:50:55 ioctl(1, TCSBRK, 0x1)          = 0
+12:50:55 fsync(1)                       = -1 EINVAL (Invalid argument)
+12:50:55 ioctl(1, TCSBRK, 0x1)          = 0
+12:50:55 fsync(1)                       = -1 EINVAL (Invalid argument)
+12:50:55 ioctl(1, TCSBRK, 0x1)          = 0
+12:50:55 close(4)                       = 0
+12:50:55 exit_group(0)                  = ?
+12:50:55 +++ exited with 0 +++
+% time     seconds  usecs/call     calls    errors syscall
+------ ----------- ----------- --------- --------- ----------------
+100.00    0.000019           0        51           read
+  0.00    0.000000           0         2           write
+  0.00    0.000000           0        95        74 open
+  0.00    0.000000           0        21           close
+  0.00    0.000000           0        23        13 stat
+  0.00    0.000000           0        27           fstat
+  0.00    0.000000           0        23           lstat
+  0.00    0.000000           0        52           mmap
+  0.00    0.000000           0        56           mprotect
+  0.00    0.000000           0         3           munmap
+  0.00    0.000000           0         7           brk
+  0.00    0.000000           0        39         2 rt_sigaction
+  0.00    0.000000           0        27           rt_sigreturn
+  0.00    0.000000           0         8           ioctl
+  0.00    0.000000           0        15        14 access
+  0.00    0.000000           0         1           dup
+  0.00    0.000000           0         2           execve
+  0.00    0.000000           0         4           fcntl
+  0.00    0.000000           0         3         3 fsync
+  0.00    0.000000           0         1           sigaltstack
+  0.00    0.000000           0         2           arch_prctl
+------ ----------- ----------- --------- --------- ----------------
+100.00    0.000019                   462       106 total

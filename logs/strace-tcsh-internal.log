@@ -1,0 +1,720 @@
+12:50:59 execve("/usr/bin/tcsh", ["tcsh", "/scif/apps/tcsh/hello-world.tcsh"], [/* 76 vars */]) = 0
+12:50:59 brk(0)                         = 0x17b2000
+12:50:59 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:59 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f0d46364000
+12:50:59 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+12:50:59 open("/scif/apps/tcsh/lib/tls/x86_64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 stat("/scif/apps/tcsh/lib/tls/x86_64", 0x7fffd69cfee0) = -1 ENOENT (No such file or directory)
+12:50:59 open("/scif/apps/tcsh/lib/tls/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 stat("/scif/apps/tcsh/lib/tls", 0x7fffd69cfee0) = -1 ENOENT (No such file or directory)
+12:50:59 open("/scif/apps/tcsh/lib/x86_64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 stat("/scif/apps/tcsh/lib/x86_64", 0x7fffd69cfee0) = -1 ENOENT (No such file or directory)
+12:50:59 open("/scif/apps/tcsh/lib/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 stat("/scif/apps/tcsh/lib", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:59 open("tls/x86_64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("tls/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("x86_64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("/.singularity.d/libs/tls/x86_64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 stat("/.singularity.d/libs/tls/x86_64", 0x7fffd69cfee0) = -1 ENOENT (No such file or directory)
+12:50:59 open("/.singularity.d/libs/tls/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 stat("/.singularity.d/libs/tls", 0x7fffd69cfee0) = -1 ENOENT (No such file or directory)
+12:50:59 open("/.singularity.d/libs/x86_64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 stat("/.singularity.d/libs/x86_64", 0x7fffd69cfee0) = -1 ENOENT (No such file or directory)
+12:50:59 open("/.singularity.d/libs/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 stat("/.singularity.d/libs", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:59 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+12:50:59 fstat(3, {st_mode=S_IFREG|0644, st_size=37006, ...}) = 0
+12:50:59 mmap(NULL, 37006, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f0d4635a000
+12:50:59 close(3)                       = 0
+12:50:59 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:59 open("/lib/x86_64-linux-gnu/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = 3
+12:50:59 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\303\0\0\0\0\0\0"..., 832) = 832
+12:50:59 fstat(3, {st_mode=S_IFREG|0644, st_size=167096, ...}) = 0
+12:50:59 mmap(NULL, 2264288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f0d45f1b000
+12:50:59 mprotect(0x7f0d45f40000, 2093056, PROT_NONE) = 0
+12:50:59 mmap(0x7f0d4613f000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x24000) = 0x7f0d4613f000
+12:50:59 close(3)                       = 0
+12:50:59 open("/scif/apps/tcsh/lib/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("tls/x86_64/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("tls/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("x86_64/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("libcrypt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("/.singularity.d/libs/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:59 open("/lib/x86_64-linux-gnu/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = 3
+12:50:59 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\f\0\0\0\0\0\0"..., 832) = 832
+12:50:59 fstat(3, {st_mode=S_IFREG|0644, st_size=43368, ...}) = 0
+12:50:59 mmap(NULL, 2327072, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f0d45ce2000
+12:50:59 mprotect(0x7f0d45ceb000, 2097152, PROT_NONE) = 0
+12:50:59 mmap(0x7f0d45eeb000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7f0d45eeb000
+12:50:59 mmap(0x7f0d45eed000, 184864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f0d45eed000
+12:50:59 close(3)                       = 0
+12:50:59 open("/scif/apps/tcsh/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("/.singularity.d/libs/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:59 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+12:50:59 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P \2\0\0\0\0\0"..., 832) = 832
+12:50:59 fstat(3, {st_mode=S_IFREG|0755, st_size=1857312, ...}) = 0
+12:50:59 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f0d46359000
+12:50:59 mmap(NULL, 3965632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f0d45919000
+12:50:59 mprotect(0x7f0d45ad7000, 2097152, PROT_NONE) = 0
+12:50:59 mmap(0x7f0d45cd7000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1be000) = 0x7f0d45cd7000
+12:50:59 mmap(0x7f0d45cdd000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f0d45cdd000
+12:50:59 close(3)                       = 0
+12:50:59 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f0d46357000
+12:50:59 arch_prctl(ARCH_SET_FS, 0x7f0d46357740) = 0
+12:50:59 mprotect(0x7f0d45cd7000, 16384, PROT_READ) = 0
+12:50:59 mprotect(0x7f0d45eeb000, 4096, PROT_READ) = 0
+12:50:59 mprotect(0x7f0d4613f000, 16384, PROT_READ) = 0
+12:50:59 mprotect(0x65a000, 4096, PROT_READ) = 0
+12:50:59 mprotect(0x7f0d46366000, 4096, PROT_READ) = 0
+12:50:59 munmap(0x7f0d4635a000, 37006)  = 0
+12:50:59 brk(0)                         = 0x17b2000
+12:50:59 brk(0x17b2800)                 = 0x17b2800
+12:50:59 open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+12:50:59 fstat(3, {st_mode=S_IFREG|0644, st_size=1607664, ...}) = 0
+12:50:59 mmap(NULL, 1607664, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f0d461ce000
+12:50:59 close(3)                       = 0
+12:50:59 brk(0x17b3000)                 = 0x17b3000
+12:50:59 brk(0x17b3800)                 = 0x17b3800
+12:50:59 brk(0x17b4000)                 = 0x17b4000
+12:50:59 brk(0x17b4800)                 = 0x17b4800
+12:50:59 brk(0x17b5000)                 = 0x17b5000
+12:50:59 brk(0x17b5800)                 = 0x17b5800
+12:50:59 open("/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+12:50:59 fstat(3, {st_mode=S_IFREG|0644, st_size=26258, ...}) = 0
+12:50:59 mmap(NULL, 26258, PROT_READ, MAP_SHARED, 3, 0) = 0x7f0d4635d000
+12:50:59 close(3)                       = 0
+12:50:59 brk(0x17b6000)                 = 0x17b6000
+12:50:59 brk(0x17b6800)                 = 0x17b6800
+12:50:59 brk(0x17b7000)                 = 0x17b7000
+12:50:59 brk(0x17b7800)                 = 0x17b7800
+12:50:59 brk(0x17b8000)                 = 0x17b8000
+12:50:59 brk(0x17b9000)                 = 0x17b9000
+12:50:59 brk(0x17bb000)                 = 0x17bb000
+12:50:59 brk(0x17bf000)                 = 0x17bf000
+12:50:59 brk(0x17bf800)                 = 0x17bf800
+12:50:59 brk(0x17c0000)                 = 0x17c0000
+12:50:59 brk(0x17c0800)                 = 0x17c0800
+12:50:59 brk(0x17c1000)                 = 0x17c1000
+12:50:59 brk(0x17c1800)                 = 0x17c1800
+12:50:59 brk(0x17c2000)                 = 0x17c2000
+12:50:59 brk(0x17c2800)                 = 0x17c2800
+12:50:59 brk(0x17c3000)                 = 0x17c3000
+12:50:59 stat("/usr/share/locale/en/LC_MESSAGES/tcsh.cat", 0x7fffd69cf4c0) = -1 ENOENT (No such file or directory)
+12:50:59 open("/usr/share/locale/en_US.UTF-8/tcsh", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:59 open("/usr/share/locale/en_US.UTF-8/LC_MESSAGES/tcsh", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:59 open("/usr/share/locale/en/tcsh", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:59 open("/usr/share/locale/en/LC_MESSAGES/tcsh", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:59 brk(0x17c3800)                 = 0x17c3800
+12:50:59 brk(0x17cb800)                 = 0x17cb800
+12:50:59 brk(0x17cc000)                 = 0x17cc000
+12:50:59 brk(0x17cc800)                 = 0x17cc800
+12:50:59 brk(0x17cd000)                 = 0x17cd000
+12:50:59 brk(0x17cd800)                 = 0x17cd800
+12:50:59 brk(0x17ce000)                 = 0x17ce000
+12:50:59 brk(0x17ce800)                 = 0x17ce800
+12:50:59 brk(0x17cf000)                 = 0x17cf000
+12:50:59 brk(0x17cf800)                 = 0x17cf800
+12:50:59 brk(0x17d0000)                 = 0x17d0000
+12:50:59 brk(0x17d0800)                 = 0x17d0800
+12:50:59 getrusage(RUSAGE_SELF, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:59 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:59 open("/dev/null", O_RDONLY)    = 3
+12:50:59 close(3)                       = 0
+12:50:59 brk(0x17d1000)                 = 0x17d1000
+12:50:59 brk(0x17d1800)                 = 0x17d1800
+12:50:59 getuid()                       = 1000
+12:50:59 getgid()                       = 1000
+12:50:59 geteuid()                      = 1000
+12:50:59 getegid()                      = 1000
+12:50:59 dup2(0, 16)                    = 16
+12:50:59 fcntl(16, F_SETFD, FD_CLOEXEC) = 0
+12:50:59 dup2(1, 17)                    = 17
+12:50:59 fcntl(17, F_SETFD, FD_CLOEXEC) = 0
+12:50:59 dup2(2, 18)                    = 18
+12:50:59 fcntl(18, F_SETFD, FD_CLOEXEC) = 0
+12:50:59 dup2(16, 19)                   = 19
+12:50:59 fcntl(19, F_SETFD, FD_CLOEXEC) = 0
+12:50:59 ioctl(18, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+12:50:59 ioctl(17, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+12:50:59 ioctl(16, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+12:50:59 fstat(16, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 28), ...}) = 0
+12:50:59 brk(0x17d3800)                 = 0x17d3800
+12:50:59 readlink("/proc/self/fd/16", "/dev/pts/28", 4095) = 11
+12:50:59 stat("/dev/pts/28", {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 28), ...}) = 0
+12:50:59 rt_sigaction(SIGALRM, {0x444400, [], SA_RESTORER, 0x7f0d4594fcb0}, NULL, 8) = 0
+12:50:59 rt_sigprocmask(SIG_UNBLOCK, [ALRM], NULL, 8) = 0
+12:50:59 uname({sys="Linux", node="vanessa-ThinkPad-T460s", ...}) = 0
+12:50:59 brk(0x17d5800)                 = 0x17d5800
+12:50:59 getcwd("/home/vanessa/Documents/Dropbox/Code/ftw/hello-world-ftw", 4096) = 57
+12:50:59 stat("/home/vanessa/Documents/Dropbox/Code/ftw/hello-world-ftw", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:59 stat("/home/vanessa", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:59 stat("/home/vanessa/Documents/Dropbox/Code/ftw/hello-world-ftw", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:59 brk(0x17d6000)                 = 0x17d6000
+12:50:59 brk(0x17d6800)                 = 0x17d6800
+12:50:59 brk(0x17d7000)                 = 0x17d7000
+12:50:59 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+12:50:59 connect(3, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+12:50:59 close(3)                       = 0
+12:50:59 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+12:50:59 connect(3, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+12:50:59 close(3)                       = 0
+12:50:59 open("/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3
+12:50:59 fstat(3, {st_mode=S_IFREG|0644, st_size=475, ...}) = 0
+12:50:59 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f0d4635c000
+12:50:59 read(3, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 475
+12:50:59 brk(0x17d7800)                 = 0x17d7800
+12:50:59 read(3, "", 4096)              = 0
+12:50:59 close(3)                       = 0
+12:50:59 munmap(0x7f0d4635c000, 4096)   = 0
+12:50:59 open("/scif/apps/tcsh/lib/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("tls/x86_64/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("tls/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("x86_64/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("/.singularity.d/libs/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+12:50:59 fstat(3, {st_mode=S_IFREG|0644, st_size=37006, ...}) = 0
+12:50:59 mmap(NULL, 37006, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f0d461c4000
+12:50:59 close(3)                       = 0
+12:50:59 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:59 open("/lib/x86_64-linux-gnu/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = 3
+12:50:59 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260\23\0\0\0\0\0\0"..., 832) = 832
+12:50:59 fstat(3, {st_mode=S_IFREG|0644, st_size=39824, ...}) = 0
+12:50:59 brk(0x17d8000)                 = 0x17d8000
+12:50:59 mmap(NULL, 2135368, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f0d4570f000
+12:50:59 mprotect(0x7f0d45718000, 2093056, PROT_NONE) = 0
+12:50:59 mmap(0x7f0d45917000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x7f0d45917000
+12:50:59 close(3)                       = 0
+12:50:59 open("/scif/apps/tcsh/lib/libnsl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("tls/x86_64/libnsl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("tls/libnsl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("x86_64/libnsl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("libnsl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("/.singularity.d/libs/libnsl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:59 open("/lib/x86_64-linux-gnu/libnsl.so.1", O_RDONLY|O_CLOEXEC) = 3
+12:50:59 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`A\0\0\0\0\0\0"..., 832) = 832
+12:50:59 fstat(3, {st_mode=S_IFREG|0644, st_size=97296, ...}) = 0
+12:50:59 brk(0x17d8800)                 = 0x17d8800
+12:50:59 mmap(NULL, 2202328, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f0d454f5000
+12:50:59 mprotect(0x7f0d4550c000, 2093056, PROT_NONE) = 0
+12:50:59 mmap(0x7f0d4570b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7f0d4570b000
+12:50:59 mmap(0x7f0d4570d000, 6872, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f0d4570d000
+12:50:59 close(3)                       = 0
+12:50:59 mprotect(0x7f0d4570b000, 4096, PROT_READ) = 0
+12:50:59 mprotect(0x7f0d45917000, 4096, PROT_READ) = 0
+12:50:59 munmap(0x7f0d461c4000, 37006)  = 0
+12:50:59 open("/scif/apps/tcsh/lib/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("tls/x86_64/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("tls/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("x86_64/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("/.singularity.d/libs/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+12:50:59 fstat(3, {st_mode=S_IFREG|0644, st_size=37006, ...}) = 0
+12:50:59 mmap(NULL, 37006, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f0d461c4000
+12:50:59 close(3)                       = 0
+12:50:59 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:59 open("/lib/x86_64-linux-gnu/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = 3
+12:50:59 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240!\0\0\0\0\0\0"..., 832) = 832
+12:50:59 fstat(3, {st_mode=S_IFREG|0644, st_size=47760, ...}) = 0
+12:50:59 brk(0x17d9000)                 = 0x17d9000
+12:50:59 mmap(NULL, 2143784, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f0d452e9000
+12:50:59 mprotect(0x7f0d452f4000, 2093056, PROT_NONE) = 0
+12:50:59 mmap(0x7f0d454f3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x7f0d454f3000
+12:50:59 close(3)                       = 0
+12:50:59 open("/scif/apps/tcsh/lib/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("tls/x86_64/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("tls/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("x86_64/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 open("/.singularity.d/libs/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:59 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:59 open("/lib/x86_64-linux-gnu/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = 3
+12:50:59 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\"\0\0\0\0\0\0"..., 832) = 832
+12:50:59 brk(0x17d9800)                 = 0x17d9800
+12:50:59 fstat(3, {st_mode=S_IFREG|0644, st_size=43616, ...}) = 0
+12:50:59 brk(0x17da000)                 = 0x17da000
+12:50:59 mmap(NULL, 2139944, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f0d450de000
+12:50:59 mprotect(0x7f0d450e8000, 2093056, PROT_NONE) = 0
+12:50:59 mmap(0x7f0d452e7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7f0d452e7000
+12:50:59 close(3)                       = 0
+12:50:59 mprotect(0x7f0d452e7000, 4096, PROT_READ) = 0
+12:50:59 mprotect(0x7f0d454f3000, 4096, PROT_READ) = 0
+12:50:59 munmap(0x7f0d461c4000, 37006)  = 0
+12:50:59 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 3
+12:50:59 lseek(3, 0, SEEK_CUR)          = 0
+12:50:59 fstat(3, {st_mode=S_IFREG|0644, st_size=1018, ...}) = 0
+12:50:59 mmap(NULL, 1018, PROT_READ, MAP_SHARED, 3, 0) = 0x7f0d4635c000
+12:50:59 lseek(3, 1018, SEEK_SET)       = 1018
+12:50:59 munmap(0x7f0d4635c000, 1018)   = 0
+12:50:59 close(3)                       = 0
+12:50:59 brk(0x17da800)                 = 0x17da800
+12:50:59 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+12:50:59 connect(3, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+12:50:59 close(3)                       = 0
+12:50:59 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+12:50:59 connect(3, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+12:50:59 close(3)                       = 0
+12:50:59 open("/etc/group", O_RDONLY|O_CLOEXEC) = 3
+12:50:59 lseek(3, 0, SEEK_CUR)          = 0
+12:50:59 fstat(3, {st_mode=S_IFREG|0644, st_size=720, ...}) = 0
+12:50:59 mmap(NULL, 720, PROT_READ, MAP_SHARED, 3, 0) = 0x7f0d4635c000
+12:50:59 lseek(3, 720, SEEK_SET)        = 720
+12:50:59 munmap(0x7f0d4635c000, 720)    = 0
+12:50:59 close(3)                       = 0
+12:50:59 uname({sys="Linux", node="vanessa-ThinkPad-T460s", ...}) = 0
+12:50:59 rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER, 0x7f0d4594fcb0}, NULL, 8) = 0
+12:50:59 pipe([3, 4])                   = 0
+12:50:59 dup(3)                         = 5
+12:50:59 dup(5)                         = 6
+12:50:59 close(5)                       = 0
+12:50:59 close(3)                       = 0
+12:50:59 fcntl(6, F_SETFD, FD_CLOEXEC)  = 0
+12:50:59 dup(4)                         = 3
+12:50:59 dup(3)                         = 5
+12:50:59 dup(5)                         = 7
+12:50:59 close(5)                       = 0
+12:50:59 close(3)                       = 0
+12:50:59 close(4)                       = 0
+12:50:59 fcntl(7, F_SETFD, FD_CLOEXEC)  = 0
+12:50:59 clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f0d46357a10) = 16532
+12:50:59 close(7)                       = 0
+12:50:59 read(6, "", 4096)              = 0
+12:50:59 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16532, si_status=0, si_utime=0, si_stime=0} ---
+12:50:59 close(6)                       = 0
+12:50:59 wait4(16532, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16532
+12:50:59 brk(0x17db000)                 = 0x17db000
+12:50:59 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+12:50:59 getpid()                       = 16531
+12:50:59 rt_sigaction(SIGINT, NULL, {SIG_DFL, [], 0}, 8) = 0
+12:50:59 rt_sigaction(SIGTERM, NULL, {SIG_DFL, [], 0}, 8) = 0
+12:50:59 brk(0x17db800)                 = 0x17db800
+12:50:59 open("/scif/apps/tcsh/hello-world.tcsh", O_RDONLY) = 3
+12:50:59 brk(0x17dc000)                 = 0x17dc000
+12:50:59 dup2(3, 16)                    = 16
+12:50:59 close(3)                       = 0
+12:50:59 fcntl(16, F_SETFD, FD_CLOEXEC) = 0
+12:50:59 close(0)                       = 0
+12:50:59 open("/dev/null", O_RDONLY)    = 0
+12:50:59 close(1)                       = 0
+12:50:59 open("/dev/null", O_RDONLY)    = 1
+12:50:59 close(2)                       = 0
+12:50:59 open("/dev/null", O_RDONLY)    = 2
+12:50:59 close(3)                       = -1 EBADF (Bad file descriptor)
+12:50:59 close(4)                       = -1 EBADF (Bad file descriptor)
+12:50:59 close(5)                       = -1 EBADF (Bad file descriptor)
+12:50:59 close(6)                       = -1 EBADF (Bad file descriptor)
+12:50:59 close(7)                       = -1 EBADF (Bad file descriptor)
+12:50:59 close(8)                       = -1 EBADF (Bad file descriptor)
+12:50:59 close(9)                       = -1 EBADF (Bad file descriptor)
+12:50:59 close(10)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(11)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(12)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(13)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(14)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(20)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(21)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(22)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(23)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(24)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(25)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(26)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(27)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(28)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(29)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(30)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(31)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(32)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(33)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(34)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(35)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(36)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(37)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(38)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(39)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(40)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(41)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(42)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(43)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(44)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(45)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(46)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(47)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(48)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(49)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(50)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(51)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(52)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(53)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(54)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(55)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(56)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(57)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(58)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(59)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(60)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(61)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(62)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(63)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(64)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(65)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(66)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(67)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(68)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(69)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(70)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(71)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(72)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(73)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(74)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(75)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(76)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(77)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(78)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(79)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(80)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(81)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(82)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(83)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(84)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(85)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(86)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(87)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(88)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(89)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(90)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(91)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(92)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(93)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(94)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(95)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(96)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(97)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(98)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(99)                      = -1 EBADF (Bad file descriptor)
+12:50:59 close(100)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(101)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(102)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(103)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(104)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(105)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(106)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(107)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(108)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(109)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(110)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(111)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(112)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(113)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(114)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(115)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(116)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(117)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(118)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(119)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(120)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(121)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(122)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(123)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(124)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(125)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(126)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(127)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(128)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(129)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(130)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(131)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(132)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(133)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(134)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(135)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(136)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(137)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(138)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(139)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(140)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(141)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(142)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(143)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(144)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(145)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(146)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(147)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(148)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(149)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(150)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(151)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(152)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(153)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(154)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(155)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(156)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(157)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(158)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(159)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(160)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(161)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(162)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(163)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(164)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(165)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(166)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(167)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(168)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(169)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(170)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(171)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(172)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(173)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(174)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(175)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(176)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(177)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(178)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(179)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(180)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(181)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(182)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(183)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(184)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(185)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(186)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(187)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(188)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(189)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(190)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(191)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(192)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(193)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(194)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(195)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(196)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(197)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(198)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(199)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(200)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(201)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(202)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(203)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(204)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(205)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(206)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(207)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(208)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(209)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(210)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(211)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(212)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(213)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(214)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(215)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(216)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(217)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(218)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(219)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(220)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(221)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(222)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(223)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(224)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(225)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(226)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(227)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(228)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(229)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(230)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(231)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(232)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(233)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(234)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(235)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(236)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(237)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(238)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(239)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(240)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(241)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(242)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(243)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(244)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(245)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(246)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(247)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(248)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(249)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(250)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(251)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(252)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(253)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(254)                     = -1 EBADF (Bad file descriptor)
+12:50:59 close(255)                     = -1 EBADF (Bad file descriptor)
+12:50:59 ioctl(16, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7fffd69d0510) = -1 ENOTTY (Inappropriate ioctl for device)
+12:50:59 ioctl(17, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+12:50:59 ioctl(18, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+12:50:59 lseek(16, 0, SEEK_CUR)         = 0
+12:50:59 brk(0x17e4000)                 = 0x17e4000
+12:50:59 getpgrp()                      = 16522
+12:50:59 rt_sigaction(SIGCHLD, {0x444410, [], SA_RESTORER, 0x7f0d4594fcb0}, NULL, 8) = 0
+12:50:59 rt_sigprocmask(SIG_UNBLOCK, [CHLD], NULL, 8) = 0
+12:50:59 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+12:50:59 open("/etc/csh.cshrc", O_RDONLY) = 3
+12:50:59 dup(3)                         = 4
+12:50:59 dup(4)                         = 5
+12:50:59 dup(5)                         = 6
+12:50:59 close(5)                       = 0
+12:50:59 close(4)                       = 0
+12:50:59 close(3)                       = 0
+12:50:59 fcntl(6, F_SETFD, FD_CLOEXEC)  = 0
+12:50:59 lseek(6, 0, SEEK_CUR)          = 0
+12:50:59 brk(0x17ec000)                 = 0x17ec000
+12:50:59 ioctl(6, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7fffd69cf2f0) = -1 ENOTTY (Inappropriate ioctl for device)
+12:50:59 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+12:50:59 read(6, "# /etc/csh.cshrc: system-wide .c"..., 4096) = 427
+12:50:59 lseek(6, 0, SEEK_CUR)          = 427
+12:50:59 alarm(0)                       = 0
+12:50:59 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+12:50:59 alarm(0)                       = 0
+12:50:59 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+12:50:59 alarm(0)                       = 0
+12:50:59 close(0)                       = 0
+12:50:59 dup(19)                        = 0
+12:50:59 fcntl(0, F_SETFD, 0)           = 0
+12:50:59 close(1)                       = 0
+12:50:59 dup(17)                        = 1
+12:50:59 fcntl(1, F_SETFD, 0)           = 0
+12:50:59 close(2)                       = 0
+12:50:59 dup(18)                        = 2
+12:50:59 fcntl(2, F_SETFD, 0)           = 0
+12:50:59 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+12:50:59 brk(0x17ec800)                 = 0x17ec800
+12:50:59 close(0)                       = 0
+12:50:59 close(1)                       = 0
+12:50:59 close(2)                       = 0
+12:50:59 open("/dev/null", O_RDONLY)    = 0
+12:50:59 dup2(0, 1)                     = 1
+12:50:59 dup2(0, 2)                     = 2
+12:50:59 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+12:50:59 read(6, "", 4096)              = 0
+12:50:59 lseek(6, 0, SEEK_CUR)          = 427
+12:50:59 ioctl(6, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7fffd69cefb0) = -1 ENOTTY (Inappropriate ioctl for device)
+12:50:59 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+12:50:59 close(6)                       = 0
+12:50:59 openat(AT_FDCWD, "/scif/apps/tcsh/bin", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+12:50:59 brk(0x17fc800)                 = 0x17fc800
+12:50:59 getdents(3, /* 2 entries */, 32768) = 48
+12:50:59 getdents(3, /* 0 entries */, 32768) = 0
+12:50:59 close(3)                       = 0
+12:50:59 openat(AT_FDCWD, "/scif/apps/tcsh", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+12:50:59 getdents(3, /* 6 entries */, 32768) = 160
+12:50:59 getdents(3, /* 0 entries */, 32768) = 0
+12:50:59 close(3)                       = 0
+12:50:59 openat(AT_FDCWD, "/usr/local/sbin", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+12:50:59 getdents(3, /* 2 entries */, 32768) = 48
+12:50:59 getdents(3, /* 0 entries */, 32768) = 0
+12:50:59 close(3)                       = 0
+12:50:59 openat(AT_FDCWD, "/usr/local/bin", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+12:50:59 getdents(3, /* 2 entries */, 32768) = 48
+12:50:59 getdents(3, /* 0 entries */, 32768) = 0
+12:50:59 close(3)                       = 0
+12:50:59 openat(AT_FDCWD, "/usr/sbin", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+12:50:59 getdents(3, /* 85 entries */, 32768) = 2752
+12:50:59 getdents(3, /* 0 entries */, 32768) = 0
+12:50:59 close(3)                       = 0
+12:50:59 openat(AT_FDCWD, "/usr/bin", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+12:50:59 getdents(3, /* 846 entries */, 32768) = 27240
+12:50:59 getdents(3, /* 0 entries */, 32768) = 0
+12:50:59 close(3)                       = 0
+12:50:59 openat(AT_FDCWD, "/sbin", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+12:50:59 getdents(3, /* 128 entries */, 32768) = 4120
+12:50:59 getdents(3, /* 0 entries */, 32768) = 0
+12:50:59 close(3)                       = 0
+12:50:59 openat(AT_FDCWD, "/bin", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+12:50:59 getdents(3, /* 126 entries */, 32768) = 3704
+12:50:59 getdents(3, /* 0 entries */, 32768) = 0
+12:50:59 close(3)                       = 0
+12:50:59 open("/home/vanessa/.tcshrc", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:59 open("/home/vanessa/.cshrc", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:59 brk(0x17fd000)                 = 0x17fd000
+12:50:59 open("/home/vanessa/.history", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:59 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+12:50:59 read(16, "#!/bin/tcsh\necho \"RaawwWWWWWRRRR"..., 4096) = 38
+12:50:59 lseek(16, 0, SEEK_CUR)         = 38
+12:50:59 alarm(0)                       = 0
+12:50:59 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+12:50:59 alarm(0)                       = 0
+12:50:59 brk(0x17fd800)                 = 0x17fd800
+12:50:59 close(0)                       = 0
+12:50:59 dup(19)                        = 0
+12:50:59 fcntl(0, F_SETFD, 0)           = 0
+12:50:59 close(1)                       = 0
+12:50:59 dup(17)                        = 1
+12:50:59 fcntl(1, F_SETFD, 0)           = 0
+12:50:59 close(2)                       = 0
+12:50:59 dup(18)                        = 2
+12:50:59 fcntl(2, F_SETFD, 0)           = 0
+12:50:59 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+12:50:59 ioctl(16, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7fffd69cfd00) = -1 ENOTTY (Inappropriate ioctl for device)
+12:50:59 write(1, "RaawwWWWWWRRRR!!\n", 17) = 17
+12:50:59 close(0)                       = 0
+12:50:59 close(1)                       = 0
+12:50:59 close(2)                       = 0
+12:50:59 open("/dev/null", O_RDONLY)    = 0
+12:50:59 dup2(0, 1)                     = 1
+12:50:59 dup2(0, 2)                     = 2
+12:50:59 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+12:50:59 read(16, "", 4096)             = 0
+12:50:59 lseek(16, 0, SEEK_CUR)         = 38
+12:50:59 ioctl(16, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7fffd69d01d0) = -1 ENOTTY (Inappropriate ioctl for device)
+12:50:59 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+12:50:59 exit_group(0)                  = ?
+12:50:59 +++ exited with 0 +++
+% time     seconds  usecs/call     calls    errors syscall
+------ ----------- ----------- --------- --------- ----------------
+  0.00    0.000000           0        14           read
+  0.00    0.000000           0         1           write
+  0.00    0.000000           0        78        55 open
+  0.00    0.000000           0       303       248 close
+  0.00    0.000000           0        13         7 stat
+  0.00    0.000000           0        16           fstat
+  0.00    0.000000           0        10           lseek
+  0.00    0.000000           0        28           mmap
+  0.00    0.000000           0        16           mprotect
+  0.00    0.000000           0         6           munmap
+  0.00    0.000000           0        60           brk
+  0.00    0.000000           0         5           rt_sigaction
+  0.00    0.000000           0        15           rt_sigprocmask
+  0.00    0.000000           0        10         5 ioctl
+  0.00    0.000000           0         9         9 access
+  0.00    0.000000           0         1           pipe
+  0.00    0.000000           0        14           dup
+  0.00    0.000000           0         9           dup2
+  0.00    0.000000           0         5           alarm
+  0.00    0.000000           0         1           getpid
+  0.00    0.000000           0         4           socket
+  0.00    0.000000           0         4         4 connect
+  0.00    0.000000           0         1           clone
+  0.00    0.000000           0         1           execve
+  0.00    0.000000           0         1           wait4
+  0.00    0.000000           0         2           uname
+  0.00    0.000000           0        14           fcntl
+  0.00    0.000000           0        16           getdents
+  0.00    0.000000           0         1           getcwd
+  0.00    0.000000           0         1           readlink
+  0.00    0.000000           0         2           getrusage
+  0.00    0.000000           0         1           getuid
+  0.00    0.000000           0         1           getgid
+  0.00    0.000000           0         1           geteuid
+  0.00    0.000000           0         1           getegid
+  0.00    0.000000           0         1           getpgrp
+  0.00    0.000000           0         1           arch_prctl
+  0.00    0.000000           0         8           openat
+------ ----------- ----------- --------- --------- ----------------
+100.00    0.000000                   675       328 total

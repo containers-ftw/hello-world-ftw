@@ -1,0 +1,2000 @@
+12:50:54 execve("/usr/bin/Rscript", ["Rscript", "/scif/apps/R/hello-world.R"], [/* 76 vars */]) = 0
+12:50:54 brk(0)                         = 0x607000
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff2a154a000
+12:50:54 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/tls/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/scif/apps/R/lib/tls/x86_64", 0x7ffd24c52a40) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/tls/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/scif/apps/R/lib/tls", 0x7ffd24c52a40) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/scif/apps/R/lib/x86_64", 0x7ffd24c52a40) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/scif/apps/R/lib", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:54 open("tls/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/tls/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/.singularity.d/libs/tls/x86_64", 0x7ffd24c52a40) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/tls/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/.singularity.d/libs/tls", 0x7ffd24c52a40) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/.singularity.d/libs/x86_64", 0x7ffd24c52a40) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/.singularity.d/libs", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=37006, ...}) = 0
+12:50:54 mmap(NULL, 37006, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ff2a1540000
+12:50:54 close(3)                       = 0
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0po\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0755, st_size=141574, ...}) = 0
+12:50:54 mmap(NULL, 2217264, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ff2a110c000
+12:50:54 mprotect(0x7ff2a1125000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7ff2a1324000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18000) = 0x7ff2a1324000
+12:50:54 mmap(0x7ff2a1326000, 13616, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ff2a1326000
+12:50:54 close(3)                       = 0
+12:50:54 open("/scif/apps/R/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P \2\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0755, st_size=1857312, ...}) = 0
+12:50:54 mmap(NULL, 3965632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ff2a0d43000
+12:50:54 mprotect(0x7ff2a0f01000, 2097152, PROT_NONE) = 0
+12:50:54 mmap(0x7ff2a1101000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1be000) = 0x7ff2a1101000
+12:50:54 mmap(0x7ff2a1107000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ff2a1107000
+12:50:54 close(3)                       = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff2a153f000
+12:50:54 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ff2a153d000
+12:50:54 arch_prctl(ARCH_SET_FS, 0x7ff2a153d740) = 0
+12:50:54 mprotect(0x7ff2a1101000, 16384, PROT_READ) = 0
+12:50:54 mprotect(0x7ff2a1324000, 4096, PROT_READ) = 0
+12:50:54 mprotect(0x601000, 4096, PROT_READ) = 0
+12:50:54 mprotect(0x7ff2a154c000, 4096, PROT_READ) = 0
+12:50:54 munmap(0x7ff2a1540000, 37006)  = 0
+12:50:54 set_tid_address(0x7ff2a153da10) = 16366
+12:50:54 set_robust_list(0x7ff2a153da20, 24) = 0
+12:50:54 futex(0x7ffd24c53280, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 1, NULL, 7ff2a153d740) = -1 EAGAIN (Resource temporarily unavailable)
+12:50:54 rt_sigaction(SIGRTMIN, {0x7ff2a11129f0, [], SA_RESTORER|SA_SIGINFO, 0x7ff2a111c330}, NULL, 8) = 0
+12:50:54 rt_sigaction(SIGRT_1, {0x7ff2a1112a80, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7ff2a111c330}, NULL, 8) = 0
+12:50:54 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+12:50:54 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+12:50:54 brk(0)                         = 0x607000
+12:50:54 brk(0x628000)                  = 0x628000
+12:50:54 execve("/usr/lib/R/bin/R", ["/usr/lib/R/bin/R", "--slave", "--no-restore", "--file=/scif/apps/R/hello-world."..., "--args"], [/* 77 vars */]) = 0
+12:50:54 brk(0)                         = 0x1f29000
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f316d73a000
+12:50:54 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/tls/x86_64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/scif/apps/R/lib/tls/x86_64", 0x7ffeaddd4650) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/tls/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/scif/apps/R/lib/tls", 0x7ffeaddd4650) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/x86_64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/scif/apps/R/lib/x86_64", 0x7ffeaddd4650) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/scif/apps/R/lib", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:54 open("tls/x86_64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/tls/x86_64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/.singularity.d/libs/tls/x86_64", 0x7ffeaddd4650) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/tls/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/.singularity.d/libs/tls", 0x7ffeaddd4650) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/x86_64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/.singularity.d/libs/x86_64", 0x7ffeaddd4650) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/.singularity.d/libs", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=37006, ...}) = 0
+12:50:54 mmap(NULL, 37006, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f316d730000
+12:50:54 close(3)                       = 0
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\303\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=167096, ...}) = 0
+12:50:54 mmap(NULL, 2264288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f316d2f1000
+12:50:54 mprotect(0x7f316d316000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f316d515000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x24000) = 0x7f316d515000
+12:50:54 close(3)                       = 0
+12:50:54 open("/scif/apps/R/lib/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\16\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=14664, ...}) = 0
+12:50:54 mmap(NULL, 2109744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f316d0ed000
+12:50:54 mprotect(0x7f316d0f0000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f316d2ef000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f316d2ef000
+12:50:54 close(3)                       = 0
+12:50:54 open("/scif/apps/R/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P \2\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0755, st_size=1857312, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f316d72f000
+12:50:54 mmap(NULL, 3965632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f316cd24000
+12:50:54 mprotect(0x7f316cee2000, 2097152, PROT_NONE) = 0
+12:50:54 mmap(0x7f316d0e2000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1be000) = 0x7f316d0e2000
+12:50:54 mmap(0x7f316d0e8000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f316d0e8000
+12:50:54 close(3)                       = 0
+12:50:54 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f316d72d000
+12:50:54 arch_prctl(ARCH_SET_FS, 0x7f316d72d740) = 0
+12:50:54 mprotect(0x7f316d0e2000, 16384, PROT_READ) = 0
+12:50:54 mprotect(0x7f316d2ef000, 4096, PROT_READ) = 0
+12:50:54 mprotect(0x7f316d515000, 16384, PROT_READ) = 0
+12:50:54 mprotect(0x6ef000, 4096, PROT_READ) = 0
+12:50:54 mprotect(0x7f316d73c000, 4096, PROT_READ) = 0
+12:50:54 munmap(0x7f316d730000, 37006)  = 0
+12:50:54 open("/dev/tty", O_RDWR|O_NONBLOCK) = 3
+12:50:54 close(3)                       = 0
+12:50:54 brk(0)                         = 0x1f29000
+12:50:54 brk(0x1f2a000)                 = 0x1f2a000
+12:50:54 open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=1607664, ...}) = 0
+12:50:54 mmap(NULL, 1607664, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f316d5a4000
+12:50:54 close(3)                       = 0
+12:50:54 brk(0x1f2b000)                 = 0x1f2b000
+12:50:54 brk(0x1f2c000)                 = 0x1f2c000
+12:50:54 getuid()                       = 1000
+12:50:54 getgid()                       = 1000
+12:50:54 geteuid()                      = 1000
+12:50:54 getegid()                      = 1000
+12:50:54 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+12:50:54 brk(0x1f2d000)                 = 0x1f2d000
+12:50:54 open("/proc/meminfo", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f316d739000
+12:50:54 read(3, "MemTotal:       20425204 kB\nMemF"..., 1024) = 1024
+12:50:54 close(3)                       = 0
+12:50:54 munmap(0x7f316d739000, 4096)   = 0
+12:50:54 brk(0x1f2e000)                 = 0x1f2e000
+12:50:54 rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f316cd5acb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:54 rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f316cd5acb0}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f316cd5acb0}, 8) = 0
+12:50:54 rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f316cd5acb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:54 rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f316cd5acb0}, {SIG_DFL, [], SA_RESTORER, 0x7f316cd5acb0}, 8) = 0
+12:50:54 rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f316cd5acb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:54 rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f316cd5acb0}, {SIG_DFL, [], SA_RESTORER, 0x7f316cd5acb0}, 8) = 0
+12:50:54 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+12:50:54 rt_sigaction(SIGQUIT, {SIG_IGN, [], SA_RESTORER, 0x7f316cd5acb0}, {SIG_DFL, [], SA_RESTORER, 0x7f316cd5acb0}, 8) = 0
+12:50:54 uname({sys="Linux", node="vanessa-ThinkPad-T460s", ...}) = 0
+12:50:54 brk(0x1f2f000)                 = 0x1f2f000
+12:50:54 brk(0x1f30000)                 = 0x1f30000
+12:50:54 brk(0x1f31000)                 = 0x1f31000
+12:50:54 brk(0x1f32000)                 = 0x1f32000
+12:50:54 brk(0x1f33000)                 = 0x1f33000
+12:50:54 brk(0x1f34000)                 = 0x1f34000
+12:50:54 brk(0x1f35000)                 = 0x1f35000
+12:50:54 stat("/home/vanessa/Documents/Dropbox/Code/ftw/hello-world-ftw", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:54 stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:54 getpid()                       = 16366
+12:50:54 open("/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=26258, ...}) = 0
+12:50:54 mmap(NULL, 26258, PROT_READ, MAP_SHARED, 3, 0) = 0x7f316d733000
+12:50:54 close(3)                       = 0
+12:50:54 getppid()                      = 16360
+12:50:54 brk(0x1f36000)                 = 0x1f36000
+12:50:54 brk(0x1f37000)                 = 0x1f37000
+12:50:54 getpgrp()                      = 16360
+12:50:54 rt_sigaction(SIGCHLD, {0x4464f0, [], SA_RESTORER|SA_RESTART, 0x7f316cd5acb0}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f316cd5acb0}, 8) = 0
+12:50:54 getrlimit(RLIMIT_NPROC, {rlim_cur=79303, rlim_max=79303}) = 0
+12:50:54 brk(0x1f38000)                 = 0x1f38000
+12:50:54 brk(0x1f39000)                 = 0x1f39000
+12:50:54 brk(0x1f3a000)                 = 0x1f3a000
+12:50:54 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+12:50:54 open("/usr/lib/R/bin/R", O_RDONLY) = 3
+12:50:54 ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffeaddd4d10) = -1 ENOTTY (Inappropriate ioctl for device)
+12:50:54 lseek(3, 0, SEEK_CUR)          = 0
+12:50:54 read(3, "#!/bin/bash\n# Shell wrapper for "..., 80) = 80
+12:50:54 lseek(3, 0, SEEK_SET)          = 0
+12:50:54 getrlimit(RLIMIT_NOFILE, {rlim_cur=1024, rlim_max=64*1024}) = 0
+12:50:54 fcntl(255, F_GETFD)            = -1 EBADF (Bad file descriptor)
+12:50:54 dup2(3, 255)                   = 255
+12:50:54 close(3)                       = 0
+12:50:54 fcntl(255, F_SETFD, FD_CLOEXEC) = 0
+12:50:54 fcntl(255, F_GETFL)            = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+12:50:54 fstat(255, {st_mode=S_IFREG|0755, st_size=8589, ...}) = 0
+12:50:54 lseek(255, 0, SEEK_CUR)        = 0
+12:50:54 brk(0x1f3c000)                 = 0x1f3c000
+12:50:54 brk(0x1f3d000)                 = 0x1f3d000
+12:50:54 read(255, "#!/bin/bash\n# Shell wrapper for "..., 8176) = 8176
+12:50:54 brk(0x1f3e000)                 = 0x1f3e000
+12:50:54 brk(0x1f3f000)                 = 0x1f3f000
+12:50:54 pipe([3, 4])                   = 0
+12:50:54 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+12:50:54 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+12:50:54 rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+12:50:54 lseek(255, -7509, SEEK_CUR)    = 667
+12:50:54 clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f316d72da10) = 16367
+12:50:54 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+12:50:54 rt_sigaction(SIGCHLD, {0x4464f0, [], SA_RESTORER|SA_RESTART, 0x7f316cd5acb0}, {0x4464f0, [], SA_RESTORER|SA_RESTART, 0x7f316cd5acb0}, 8) = 0
+12:50:54 close(4)                       = 0
+12:50:54 read(3, "x86_64\n", 128)       = 7
+12:50:54 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16367, si_status=0, si_utime=0, si_stime=0} ---
+12:50:54 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WNOHANG, NULL) = 16367
+12:50:54 wait4(-1, 0x7ffeaddd3cd8, WNOHANG, NULL) = -1 ECHILD (No child processes)
+12:50:54 rt_sigreturn()                 = 7
+12:50:54 read(3, "", 128)               = 0
+12:50:54 close(3)                       = 0
+12:50:54 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+12:50:54 rt_sigaction(SIGINT, {0x4438d0, [], SA_RESTORER, 0x7f316cd5acb0}, {SIG_DFL, [], SA_RESTORER, 0x7f316cd5acb0}, 8) = 0
+12:50:54 rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f316cd5acb0}, {0x4438d0, [], SA_RESTORER, 0x7f316cd5acb0}, 8) = 0
+12:50:54 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+12:50:54 faccessat(AT_FDCWD, "/usr/lib64/R/bin/exec/R", X_OK) = -1 ENOENT (No such file or directory)
+12:50:54 faccessat(AT_FDCWD, "/usr/lib/R/bin/exec/R", X_OK) = 0
+12:50:54 read(255, "\nif test -n \"${R_HOME}\" && \\\n   "..., 8176) = 7922
+12:50:54 brk(0x1f40000)                 = 0x1f40000
+12:50:54 brk(0x1f41000)                 = 0x1f41000
+12:50:54 brk(0x1f42000)                 = 0x1f42000
+12:50:54 brk(0x1f43000)                 = 0x1f43000
+12:50:54 brk(0x1f44000)                 = 0x1f44000
+12:50:54 brk(0x1f45000)                 = 0x1f45000
+12:50:54 brk(0x1f46000)                 = 0x1f46000
+12:50:54 brk(0x1f47000)                 = 0x1f47000
+12:50:54 brk(0x1f48000)                 = 0x1f48000
+12:50:54 brk(0x1f49000)                 = 0x1f49000
+12:50:54 brk(0x1f4b000)                 = 0x1f4b000
+12:50:54 brk(0x1f4d000)                 = 0x1f4d000
+12:50:54 brk(0x1f4b000)                 = 0x1f4b000
+12:50:54 pipe([3, 4])                   = 0
+12:50:54 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+12:50:54 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+12:50:54 rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+12:50:54 lseek(255, -1431, SEEK_CUR)    = 7158
+12:50:54 clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f316d72da10) = 16369
+12:50:54 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+12:50:54 rt_sigaction(SIGCHLD, {0x4464f0, [], SA_RESTORER|SA_RESTART, 0x7f316cd5acb0}, {0x4464f0, [], SA_RESTORER|SA_RESTART, 0x7f316cd5acb0}, 8) = 0
+12:50:54 close(4)                       = 0
+12:50:54 read(3, "/scif/apps/R/hello-world.R\n", 128) = 27
+12:50:54 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=16369, si_status=0, si_utime=0, si_stime=0} ---
+12:50:54 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WNOHANG, NULL) = 16369
+12:50:54 wait4(-1, 0x7ffeaddd3c98, WNOHANG, NULL) = -1 ECHILD (No child processes)
+12:50:54 rt_sigreturn()                 = 27
+12:50:54 read(3, "", 128)               = 0
+12:50:54 close(3)                       = 0
+12:50:54 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+12:50:54 rt_sigaction(SIGINT, {0x4438d0, [], SA_RESTORER, 0x7f316cd5acb0}, {SIG_DFL, [], SA_RESTORER, 0x7f316cd5acb0}, 8) = 0
+12:50:54 rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f316cd5acb0}, {0x4438d0, [], SA_RESTORER, 0x7f316cd5acb0}, 8) = 0
+12:50:54 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+12:50:54 read(255, "\n. \"${R_HOME}/etc${R_ARCH}/ldpat"..., 8176) = 1431
+12:50:54 open("/usr/lib/R/etc/ldpaths", O_RDONLY) = 3
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=636, ...}) = 0
+12:50:54 read(3, ": ${JAVA_HOME=/usr/lib/jvm/java-"..., 636) = 636
+12:50:54 close(3)                       = 0
+12:50:54 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+12:50:54 faccessat(AT_FDCWD, "/usr/lib/R", X_OK) = 0
+12:50:54 rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f316cd5acb0}, {SIG_DFL, [], SA_RESTORER, 0x7f316cd5acb0}, 8) = 0
+12:50:54 rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f316cd5acb0}, {SIG_IGN, [], SA_RESTORER, 0x7f316cd5acb0}, 8) = 0
+12:50:54 rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f316cd5acb0}, {0x4464f0, [], SA_RESTORER|SA_RESTART, 0x7f316cd5acb0}, 8) = 0
+12:50:54 execve("/usr/lib/R/bin/exec/R", ["/usr/lib/R/bin/exec/R", "--slave", "--no-restore", "--file=/scif/apps/R/hello-world."..., "--args"], [/* 82 vars */]) = 0
+12:50:54 brk(0)                         = 0xad9000
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f63000
+12:50:54 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/R/lib/tls/x86_64/libR.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/usr/lib/R/lib/tls/x86_64", 0x7ffe1f507530) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/R/lib/tls/libR.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/usr/lib/R/lib/tls", 0x7ffe1f507530) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/R/lib/x86_64/libR.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/usr/lib/R/lib/x86_64", 0x7ffe1f507530) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/R/lib/libR.so", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0z\2\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=2507720, ...}) = 0
+12:50:54 mmap(NULL, 5569280, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8aa67f3000
+12:50:54 mprotect(0x7f8aa6a48000, 2097152, PROT_NONE) = 0
+12:50:54 mmap(0x7f8aa6c48000, 61440, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x255000) = 0x7f8aa6c48000
+12:50:54 mmap(0x7f8aa6c57000, 965376, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6c57000
+12:50:54 close(3)                       = 0
+12:50:54 open("/usr/lib/R/lib/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/x86_64-linux-gnu/tls/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/usr/lib/x86_64-linux-gnu/tls/x86_64", 0x7ffe1f507500) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/x86_64-linux-gnu/tls/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/usr/lib/x86_64-linux-gnu/tls", 0x7ffe1f507500) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/x86_64-linux-gnu/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/usr/lib/x86_64-linux-gnu/x86_64", 0x7ffe1f507500) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/usr/lib/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=28672, ...}) = 0
+12:50:54 open("/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/tls/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/tls/x86_64", 0x7ffe1f507500) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/tls/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/tls", 0x7ffe1f507500) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/x86_64", 0x7ffe1f507500) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 open("/scif/apps/R/lib/tls/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/scif/apps/R/lib/tls/x86_64", 0x7ffe1f507500) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/tls/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/scif/apps/R/lib/tls", 0x7ffe1f507500) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/scif/apps/R/lib/x86_64", 0x7ffe1f507500) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/scif/apps/R/lib", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:54 open("tls/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/tls/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/.singularity.d/libs/tls/x86_64", 0x7ffe1f507500) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/tls/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/.singularity.d/libs/tls", 0x7ffe1f507500) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/.singularity.d/libs/x86_64", 0x7ffe1f507500) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/.singularity.d/libs", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=37006, ...}) = 0
+12:50:54 mmap(NULL, 37006, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f8aa6f59000
+12:50:54 close(3)                       = 0
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0po\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0755, st_size=141574, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f58000
+12:50:54 mmap(NULL, 2217264, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8aa65d5000
+12:50:54 mprotect(0x7f8aa65ee000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f8aa67ed000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18000) = 0x7f8aa67ed000
+12:50:54 mmap(0x7f8aa67ef000, 13616, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f8aa67ef000
+12:50:54 close(3)                       = 0
+12:50:54 open("/usr/lib/R/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P \2\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0755, st_size=1857312, ...}) = 0
+12:50:54 mmap(NULL, 3965632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8aa620c000
+12:50:54 mprotect(0x7f8aa63ca000, 2097152, PROT_NONE) = 0
+12:50:54 mmap(0x7f8aa65ca000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1be000) = 0x7f8aa65ca000
+12:50:54 mmap(0x7f8aa65d0000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f8aa65d0000
+12:50:54 close(3)                       = 0
+12:50:54 open("/usr/lib/R/lib/libblas.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/x86_64-linux-gnu/libblas.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/libblas.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/libblas.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/libblas.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libblas.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libblas.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libblas.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libblas.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/libblas.so.3", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\f\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=23058832, ...}) = 0
+12:50:54 mmap(NULL, 25200544, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8aa4a03000
+12:50:54 mprotect(0x7f8aa5fea000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f8aa61e9000, 98304, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15e6000) = 0x7f8aa61e9000
+12:50:54 mmap(0x7f8aa6201000, 42912, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6201000
+12:50:54 close(3)                       = 0
+12:50:54 open("/usr/lib/R/lib/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20V\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=1071552, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f57000
+12:50:54 mmap(NULL, 3166568, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8aa46fd000
+12:50:54 mprotect(0x7f8aa4802000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f8aa4a01000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x104000) = 0x7f8aa4a01000
+12:50:54 close(3)                       = 0
+12:50:54 open("/usr/lib/R/lib/libreadline.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/x86_64-linux-gnu/libreadline.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/libreadline.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/libreadline.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/libreadline.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libreadline.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libreadline.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libreadline.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libreadline.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/libreadline.so.6", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\3200\1\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=282352, ...}) = 0
+12:50:54 mmap(NULL, 2382936, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8aa44b7000
+12:50:54 mprotect(0x7f8aa44f4000, 2097152, PROT_NONE) = 0
+12:50:54 mmap(0x7f8aa46f4000, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3d000) = 0x7f8aa46f4000
+12:50:54 mmap(0x7f8aa46fc000, 3160, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f8aa46fc000
+12:50:54 close(3)                       = 0
+12:50:54 open("/usr/lib/R/lib/libpcre.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/x86_64-linux-gnu/libpcre.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/libpcre.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/libpcre.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/libpcre.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libpcre.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libpcre.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libpcre.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libpcre.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/libpcre.so.3", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260\27\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=252032, ...}) = 0
+12:50:54 mmap(NULL, 2347200, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8aa4279000
+12:50:54 mprotect(0x7f8aa42b6000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f8aa44b5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3c000) = 0x7f8aa44b5000
+12:50:54 close(3)                       = 0
+12:50:54 open("/usr/lib/R/lib/liblzma.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/x86_64-linux-gnu/liblzma.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/liblzma.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/liblzma.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/liblzma.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/liblzma.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/liblzma.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("liblzma.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/liblzma.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/liblzma.so.5", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320 \0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=137400, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f56000
+12:50:54 mmap(NULL, 2232456, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8aa4057000
+12:50:54 mprotect(0x7f8aa4078000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f8aa4277000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x7f8aa4277000
+12:50:54 close(3)                       = 0
+12:50:54 open("/usr/lib/R/lib/libbz2.so.1.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/x86_64-linux-gnu/libbz2.so.1.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/libbz2.so.1.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/libbz2.so.1.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/libbz2.so.1.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libbz2.so.1.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libbz2.so.1.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libbz2.so.1.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libbz2.so.1.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/libbz2.so.1.0", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\23\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=66632, ...}) = 0
+12:50:54 mmap(NULL, 2161896, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8aa3e47000
+12:50:54 mprotect(0x7f8aa3e56000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f8aa4055000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7f8aa4055000
+12:50:54 close(3)                       = 0
+12:50:54 open("/usr/lib/R/lib/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\36\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=100728, ...}) = 0
+12:50:54 mmap(NULL, 2195784, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8aa3c2e000
+12:50:54 mprotect(0x7f8aa3c46000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f8aa3e45000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f8aa3e45000
+12:50:54 close(3)                       = 0
+12:50:54 open("/usr/lib/R/lib/librt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/x86_64-linux-gnu/librt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/librt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/librt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/librt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/librt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/librt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("librt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/librt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/librt.so.1", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P#\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=31792, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f55000
+12:50:54 mmap(NULL, 2129016, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8aa3a26000
+12:50:54 mprotect(0x7f8aa3a2d000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f8aa3c2c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f8aa3c2c000
+12:50:54 close(3)                       = 0
+12:50:54 open("/usr/lib/R/lib/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\16\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=14664, ...}) = 0
+12:50:54 mmap(NULL, 2109744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8aa3822000
+12:50:54 mprotect(0x7f8aa3825000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f8aa3a24000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f8aa3a24000
+12:50:54 close(3)                       = 0
+12:50:54 open("/usr/lib/R/lib/libgomp.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/x86_64-linux-gnu/libgomp.so.1", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p7\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=59872, ...}) = 0
+12:50:54 mmap(NULL, 2155136, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8aa3613000
+12:50:54 mprotect(0x7f8aa3620000, 2097152, PROT_NONE) = 0
+12:50:54 mmap(0x7f8aa3820000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd000) = 0x7f8aa3820000
+12:50:54 close(3)                       = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f54000
+12:50:54 open("/usr/lib/R/lib/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/x86_64-linux-gnu/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\303\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=167096, ...}) = 0
+12:50:54 mmap(NULL, 2264288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f8aa33ea000
+12:50:54 mprotect(0x7f8aa340f000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f8aa360e000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x24000) = 0x7f8aa360e000
+12:50:54 close(3)                       = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f53000
+12:50:54 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f51000
+12:50:54 arch_prctl(ARCH_SET_FS, 0x7f8aa6f517c0) = 0
+12:50:54 mprotect(0x7f8aa65ca000, 16384, PROT_READ) = 0
+12:50:54 mprotect(0x7f8aa360e000, 16384, PROT_READ) = 0
+12:50:54 mprotect(0x7f8aa67ed000, 4096, PROT_READ) = 0
+12:50:54 mprotect(0x7f8aa3820000, 4096, PROT_READ) = 0
+12:50:54 mprotect(0x7f8aa3a24000, 4096, PROT_READ) = 0
+12:50:54 mprotect(0x7f8aa3c2c000, 4096, PROT_READ) = 0
+12:50:54 mprotect(0x7f8aa3e45000, 4096, PROT_READ) = 0
+12:50:54 mprotect(0x7f8aa4055000, 4096, PROT_READ) = 0
+12:50:54 mprotect(0x7f8aa4277000, 4096, PROT_READ) = 0
+12:50:54 mprotect(0x7f8aa44b5000, 4096, PROT_READ) = 0
+12:50:54 mprotect(0x7f8aa46f4000, 8192, PROT_READ) = 0
+12:50:54 mprotect(0x7f8aa4a01000, 4096, PROT_READ) = 0
+12:50:54 mprotect(0x7f8aa61e9000, 28672, PROT_READ) = 0
+12:50:54 mprotect(0x7f8aa6c48000, 20480, PROT_READ) = 0
+12:50:54 mprotect(0x600000, 4096, PROT_READ) = 0
+12:50:54 mprotect(0x7f8aa6f65000, 4096, PROT_READ) = 0
+12:50:54 munmap(0x7f8aa6f59000, 37006)  = 0
+12:50:54 set_tid_address(0x7f8aa6f51a90) = 16366
+12:50:54 set_robust_list(0x7f8aa6f51aa0, 24) = 0
+12:50:54 futex(0x7ffe1f507d70, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 1, NULL, 7f8aa6f517c0) = -1 EAGAIN (Resource temporarily unavailable)
+12:50:54 rt_sigaction(SIGRTMIN, {0x7f8aa65db9f0, [], SA_RESTORER|SA_SIGINFO, 0x7f8aa65e5330}, NULL, 8) = 0
+12:50:54 rt_sigaction(SIGRT_1, {0x7f8aa65dba80, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f8aa65e5330}, NULL, 8) = 0
+12:50:54 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+12:50:54 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+12:50:54 sched_getaffinity(16366, 128, {f, 0, 0, 0, 0, 0, 0, 0}) = 64
+12:50:54 open("/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 read(3, "0-3\n", 8192)         = 4
+12:50:54 close(3)                       = 0
+12:50:54 mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f8aa2be9000
+12:50:54 brk(0)                         = 0xad9000
+12:50:54 brk(0xafa000)                  = 0xafa000
+12:50:54 mprotect(0x7f8aa2be9000, 4096, PROT_NONE) = 0
+12:50:54 clone(child_stack=0x7f8aa33e8f30, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f8aa33e99d0, tls=0x7f8aa33e9700, child_tidptr=0x7f8aa33e99d0) = 16373
+12:50:54 mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f8aa03e8000
+12:50:54 mprotect(0x7f8aa03e8000, 4096, PROT_NONE) = 0
+12:50:54 clone(child_stack=0x7f8aa0be7f30, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f8aa0be89d0, tls=0x7f8aa0be8700, child_tidptr=0x7f8aa0be89d0) = 16374
+12:50:54 mmap(NULL, 8392704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f8a9fbe7000
+12:50:54 mprotect(0x7f8a9fbe7000, 4096, PROT_NONE) = 0
+12:50:54 clone(child_stack=0x7f8aa03e6f30, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f8aa03e79d0, tls=0x7f8aa03e7700, child_tidptr=0x7f8aa03e79d0) = 16375
+12:50:54 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+12:50:54 open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=1607664, ...}) = 0
+12:50:54 mmap(NULL, 1607664, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f8aa6dc8000
+12:50:54 close(3)                       = 0
+12:50:54 open("/usr/lib/R/etc//Renviron", O_RDONLY) = 3
+12:50:54 fstat(3, {st_mode=S_IFREG|0644, st_size=1862, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(3, "### etc/Renviron.  Generated fro"..., 4096) = 1862
+12:50:54 read(3, "", 4096)              = 0
+12:50:54 close(3)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/scif/apps/R/hello-world.R", O_RDONLY) = 3
+12:50:54 access("/usr/lib/R/etc//Renviron.site", R_OK) = 0
+12:50:54 open("/usr/lib/R/etc//Renviron.site", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=608, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "##\t\t\t\t\t\tEmacs please make this -"..., 4096) = 608
+12:50:54 read(4, "", 4096)              = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open(".Renviron.", O_RDONLY)   = -1 ENOENT (No such file or directory)
+12:50:54 open(".Renviron", O_RDONLY)    = -1 ENOENT (No such file or directory)
+12:50:54 open("/home/vanessa/.Renviron.", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:54 open("/home/vanessa/.Renviron", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:54 mkdir("/tmp/RtmpgM9laL", 0700) = 0
+12:50:54 mmap(NULL, 409600, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8a9fb83000
+12:50:54 mmap(NULL, 802816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8a9fabf000
+12:50:54 mmap(NULL, 528384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8a9fa3e000
+12:50:54 brk(0xb1b000)                  = 0xb1b000
+12:50:54 stat("/tmp/RtmpgM9laL/3fee288e8542.R", 0x7ffe1f5050d0) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/R/library/base/R/base", O_RDONLY) = 4
+12:50:54 brk(0xb4d000)                  = 0xb4d000
+12:50:54 sigaltstack({ss_sp=0xb122b0, ss_flags=0, ss_size=108192}, NULL) = 0
+12:50:54 rt_sigaction(SIGSEGV, {0x7f8aa68fece0, [], SA_RESTORER|SA_STACK|SA_SIGINFO, 0x7f8aa65e5330}, NULL, 8) = 0
+12:50:54 rt_sigaction(SIGILL, {0x7f8aa68fece0, [], SA_RESTORER|SA_STACK|SA_SIGINFO, 0x7f8aa65e5330}, NULL, 8) = 0
+12:50:54 rt_sigaction(SIGBUS, {0x7f8aa68fece0, [], SA_RESTORER|SA_STACK|SA_SIGINFO, 0x7f8aa65e5330}, NULL, 8) = 0
+12:50:54 rt_sigaction(SIGINT, {0x7f8aa68fec80, [INT], SA_RESTORER|SA_RESTART, 0x7f8aa6242cb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:54 rt_sigaction(SIGUSR1, {0x7f8aa68c1cd0, [USR1], SA_RESTORER|SA_RESTART, 0x7f8aa6242cb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:54 rt_sigaction(SIGUSR2, {0x7f8aa68c1bb0, [USR2], SA_RESTORER|SA_RESTART, 0x7f8aa6242cb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:54 rt_sigaction(SIGPIPE, {0x7f8aa68feca0, [PIPE], SA_RESTORER|SA_RESTART, 0x7f8aa6242cb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:54 mmap(NULL, 323584, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6d79000
+12:50:54 mmap(NULL, 241664, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8a9fa03000
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=4434, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "#  File src/library/base/baseloa"..., 4096) = 4096
+12:50:54 mmap(NULL, 323584, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8a9b9b4000
+12:50:54 brk(0xb74000)                  = 0xb74000
+12:50:54 mmap(NULL, 241664, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8a9b979000
+12:50:54 mmap(NULL, 323584, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8a9b92a000
+12:50:54 mmap(NULL, 241664, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8a9b8ef000
+12:50:54 mmap(NULL, 323584, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8a9b8a0000
+12:50:54 brk(0xb9b000)                  = 0xb9b000
+12:50:54 mmap(NULL, 241664, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8a9b865000
+12:50:54 mmap(NULL, 323584, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8a9b816000
+12:50:54 mmap(NULL, 241664, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8a9b7db000
+12:50:54 mmap(NULL, 323584, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8a9b78c000
+12:50:54 brk(0xbc2000)                  = 0xbc2000
+12:50:54 mmap(NULL, 241664, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8a9b751000
+12:50:54 mmap(NULL, 323584, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8a9b702000
+12:50:54 mmap(NULL, 241664, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8a9b6c7000
+12:50:54 mmap(NULL, 323584, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8a9b678000
+12:50:54 brk(0xbe9000)                  = 0xbe9000
+12:50:54 mmap(NULL, 241664, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8a9b63d000
+12:50:54 mmap(NULL, 323584, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8a9b5ee000
+12:50:54 munmap(0x7f8aa6d79000, 323584) = 0
+12:50:54 munmap(0x7f8a9fa03000, 241664) = 0
+12:50:54 munmap(0x7f8a9b9b4000, 323584) = 0
+12:50:54 munmap(0x7f8a9b979000, 241664) = 0
+12:50:54 munmap(0x7f8a9b92a000, 323584) = 0
+12:50:54 munmap(0x7f8a9b8ef000, 241664) = 0
+12:50:54 munmap(0x7f8a9b8a0000, 323584) = 0
+12:50:54 munmap(0x7f8a9b865000, 241664) = 0
+12:50:54 munmap(0x7f8a9b816000, 323584) = 0
+12:50:54 munmap(0x7f8a9b7db000, 241664) = 0
+12:50:54 munmap(0x7f8a9b78c000, 323584) = 0
+12:50:54 munmap(0x7f8a9b751000, 241664) = 0
+12:50:54 munmap(0x7f8a9b702000, 323584) = 0
+12:50:54 munmap(0x7f8a9b6c7000, 241664) = 0
+12:50:54 munmap(0x7f8a9b678000, 323584) = 0
+12:50:54 munmap(0x7f8a9b63d000, 241664) = 0
+12:50:54 brk(0xc38000)                  = 0xc38000
+12:50:54 brk(0xc86000)                  = 0xc86000
+12:50:54 brk(0xcd4000)                  = 0xcd4000
+12:50:54 brk(0xd22000)                  = 0xd22000
+12:50:54 brk(0xd70000)                  = 0xd70000
+12:50:54 brk(0xdbe000)                  = 0xdbe000
+12:50:54 brk(0xe0c000)                  = 0xe0c000
+12:50:54 brk(0xe5b000)                  = 0xe5b000
+12:50:54 brk(0xea9000)                  = 0xea9000
+12:50:54 brk(0xef7000)                  = 0xef7000
+12:50:54 brk(0xf45000)                  = 0xf45000
+12:50:54 brk(0xf93000)                  = 0xf93000
+12:50:54 brk(0xfe1000)                  = 0xfe1000
+12:50:54 brk(0x102f000)                 = 0x102f000
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 4000}, ru_stime={0, 24000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 open("/usr/lib/R/library/base/R/base.rdx", O_RDONLY) = 5
+12:50:54 fstat(5, {st_mode=S_IFREG|0644, st_size=12333, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f61000
+12:50:54 read(5, "\37\213\10\0\0\0\0\0\0\3}|\t\234\34U\361\377\36453\335{f\223\20\f\207\200\4Pd"..., 4096) = 4096
+12:50:54 close(5)                       = 0
+12:50:54 munmap(0x7f8aa6f61000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/base/R/base.rdx", O_RDONLY) = 5
+12:50:54 fstat(5, {st_mode=S_IFREG|0644, st_size=12333, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f61000
+12:50:54 read(5, "\37\213\10\0\0\0\0\0\0\3}|\t\234\34U\361\377\36453\335{f\223\20\f\207\200\4Pd"..., 16384) = 12333
+12:50:54 read(5, "", 4096)              = 0
+12:50:54 lseek(5, 0, SEEK_CUR)          = 12333
+12:50:54 read(5, "", 16384)             = 0
+12:50:54 close(5)                       = 0
+12:50:54 munmap(0x7f8aa6f61000, 4096)   = 0
+12:50:54 brk(0x107e000)                 = 0x107e000
+12:50:54 brk(0x10cc000)                 = 0x10cc000
+12:50:54 brk(0x1106000)                 = 0x1106000
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 8000}, ru_stime={0, 28000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 brk(0x1043000)                 = 0x1043000
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 8000}, ru_stime={0, 28000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 read(4, "            \"dqrcf\", \"dqrdc2\", \""..., 4096) = 338
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 8000}, ru_stime={0, 28000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 open("/usr/lib/R/library/base/R/base.rdb", O_RDONLY) = 5
+12:50:54 fstat(5, {st_mode=S_IFREG|0644, st_size=719458, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f61000
+12:50:54 fstat(5, {st_mode=S_IFREG|0644, st_size=719458, ...}) = 0
+12:50:54 lseek(5, 716800, SEEK_SET)     = 716800
+12:50:54 read(5, "\5*|\206\n\36\262\6\361;\0005\271\315\374\32k\\\0\347|f\23\250\3{\300\35\367Fg\332"..., 2658) = 2658
+12:50:54 lseek(5, 0, SEEK_SET)          = 0
+12:50:54 read(5, "\0\0\1\254x\234\213\340b```b`\6b&f \223\5D\374\2\322L@\232\221\201\205\201"..., 716800) = 716800
+12:50:54 read(5, "\5*|\206\n\36\262\6\361;\0005\271\315\374\32k\\\0\347|f\23\250\3{\300\35\367Fg\332"..., 4096) = 2658
+12:50:54 close(5)                       = 0
+12:50:54 munmap(0x7f8aa6f61000, 4096)   = 0
+12:50:54 brk(0x10b2000)                 = 0x10b2000
+12:50:54 brk(0x1100000)                 = 0x1100000
+12:50:54 read(4, "", 4096)              = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/base/R/Rprofile", O_RDONLY) = 4
+12:50:54 brk(0x114f000)                 = 0x114f000
+12:50:54 brk(0x119d000)                 = 0x119d000
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=5086, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "### This is the system Rprofile "..., 4096) = 4096
+12:50:54 brk(0x11eb000)                 = 0x11eb000
+12:50:54 brk(0x1239000)                 = 0x1239000
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 12000}, ru_stime={0, 40000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 12000}, ru_stime={0, 40000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 16000}, ru_stime={0, 48000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 16000}, ru_stime={0, 48000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 16000}, ru_stime={0, 52000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 16000}, ru_stime={0, 52000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 16000}, ru_stime={0, 52000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 16000}, ru_stime={0, 52000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 16000}, ru_stime={0, 52000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 16000}, ru_stime={0, 56000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 16000}, ru_stime={0, 56000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 20000}, ru_stime={0, 56000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 20000}, ru_stime={0, 56000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 20000}, ru_stime={0, 56000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 20000}, ru_stime={0, 60000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 20000}, ru_stime={0, 60000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 20000}, ru_stime={0, 60000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 20000}, ru_stime={0, 60000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 20000}, ru_stime={0, 60000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 20000}, ru_stime={0, 60000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 open("/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 5
+12:50:54 fstat(5, {st_mode=S_IFREG|0644, st_size=26258, ...}) = 0
+12:50:54 mmap(NULL, 26258, PROT_READ, MAP_SHARED, 5, 0) = 0x7f8aa6f5b000
+12:50:54 close(5)                       = 0
+12:50:54 futex(0x7f8aa65cfa70, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 24000}, ru_stime={0, 60000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 28000}, ru_stime={0, 60000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 28000}, ru_stime={0, 64000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 28000}, ru_stime={0, 68000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 28000}, ru_stime={0, 68000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 28000}, ru_stime={0, 68000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 28000}, ru_stime={0, 68000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 32000}, ru_stime={0, 68000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 32000}, ru_stime={0, 68000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 stat("/usr/local/lib/R/site-library", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+12:50:54 stat("/usr/lib/R/site-library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 stat("/usr/lib/R/library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 32000}, ru_stime={0, 76000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 stat("/home/vanessa/R/x86_64-pc-linux-gnu-library/3.0", 0x7ffe1f5041e0) = -1 ENOENT (No such file or directory)
+12:50:54 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/local", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/local/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/local/lib/R", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/local/lib/R/site-library", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/site-library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 stat("/usr/local/lib/R/site-library", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+12:50:54 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 5
+12:50:54 connect(5, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+12:50:54 close(5)                       = 0
+12:50:54 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 5
+12:50:54 connect(5, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+12:50:54 close(5)                       = 0
+12:50:54 open("/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 5
+12:50:54 fstat(5, {st_mode=S_IFREG|0644, st_size=475, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f5a000
+12:50:54 read(5, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 475
+12:50:54 read(5, "", 4096)              = 0
+12:50:54 close(5)                       = 0
+12:50:54 munmap(0x7f8aa6f5a000, 4096)   = 0
+12:50:54 open("/usr/lib/R/lib/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/x86_64-linux-gnu/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 5
+12:50:54 fstat(5, {st_mode=S_IFREG|0644, st_size=37006, ...}) = 0
+12:50:54 mmap(NULL, 37006, PROT_READ, MAP_PRIVATE, 5, 0) = 0x7f8aa6dbe000
+12:50:54 close(5)                       = 0
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = 5
+12:50:54 read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260\23\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(5, {st_mode=S_IFREG|0644, st_size=39824, ...}) = 0
+12:50:54 mmap(NULL, 2135368, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f8a9b7f9000
+12:50:54 mprotect(0x7f8a9b802000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f8a9ba01000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x8000) = 0x7f8a9ba01000
+12:50:54 close(5)                       = 0
+12:50:54 open("/usr/lib/R/lib/libnsl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/x86_64-linux-gnu/libnsl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/libnsl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/libnsl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/libnsl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libnsl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libnsl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libnsl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libnsl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/libnsl.so.1", O_RDONLY|O_CLOEXEC) = 5
+12:50:54 read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`A\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(5, {st_mode=S_IFREG|0644, st_size=97296, ...}) = 0
+12:50:54 mmap(NULL, 2202328, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f8a9b3d4000
+12:50:54 mprotect(0x7f8a9b3eb000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f8a9b5ea000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x16000) = 0x7f8a9b5ea000
+12:50:54 mmap(0x7f8a9b5ec000, 6872, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f8a9b5ec000
+12:50:54 close(5)                       = 0
+12:50:54 mprotect(0x7f8a9b5ea000, 4096, PROT_READ) = 0
+12:50:54 mprotect(0x7f8a9ba01000, 4096, PROT_READ) = 0
+12:50:54 munmap(0x7f8aa6dbe000, 37006)  = 0
+12:50:54 open("/usr/lib/R/lib/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/x86_64-linux-gnu/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 5
+12:50:54 fstat(5, {st_mode=S_IFREG|0644, st_size=37006, ...}) = 0
+12:50:54 mmap(NULL, 37006, PROT_READ, MAP_PRIVATE, 5, 0) = 0x7f8aa6dbe000
+12:50:54 close(5)                       = 0
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = 5
+12:50:54 read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240!\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(5, {st_mode=S_IFREG|0644, st_size=47760, ...}) = 0
+12:50:54 mmap(NULL, 2143784, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f8a9b1c8000
+12:50:54 mprotect(0x7f8a9b1d3000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f8a9b3d2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0xa000) = 0x7f8a9b3d2000
+12:50:54 close(5)                       = 0
+12:50:54 open("/usr/lib/R/lib/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/x86_64-linux-gnu/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = 5
+12:50:54 read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\"\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(5, {st_mode=S_IFREG|0644, st_size=43616, ...}) = 0
+12:50:54 mmap(NULL, 2139944, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f8a9afbd000
+12:50:54 mprotect(0x7f8a9afc7000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f8a9b1c6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x9000) = 0x7f8a9b1c6000
+12:50:54 close(5)                       = 0
+12:50:54 mprotect(0x7f8a9b1c6000, 4096, PROT_READ) = 0
+12:50:54 mprotect(0x7f8a9b3d2000, 4096, PROT_READ) = 0
+12:50:54 munmap(0x7f8aa6dbe000, 37006)  = 0
+12:50:54 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 5
+12:50:54 lseek(5, 0, SEEK_CUR)          = 0
+12:50:54 fstat(5, {st_mode=S_IFREG|0644, st_size=1018, ...}) = 0
+12:50:54 mmap(NULL, 1018, PROT_READ, MAP_SHARED, 5, 0) = 0x7f8aa6f5a000
+12:50:54 lseek(5, 1018, SEEK_SET)       = 1018
+12:50:54 munmap(0x7f8aa6f5a000, 1018)   = 0
+12:50:54 close(5)                       = 0
+12:50:54 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 5
+12:50:54 connect(5, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+12:50:54 close(5)                       = 0
+12:50:54 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 5
+12:50:54 connect(5, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+12:50:54 close(5)                       = 0
+12:50:54 open("/etc/group", O_RDONLY|O_CLOEXEC) = 5
+12:50:54 lseek(5, 0, SEEK_CUR)          = 0
+12:50:54 fstat(5, {st_mode=S_IFREG|0644, st_size=720, ...}) = 0
+12:50:54 mmap(NULL, 720, PROT_READ, MAP_SHARED, 5, 0) = 0x7f8aa6f5a000
+12:50:54 lseek(5, 720, SEEK_SET)        = 720
+12:50:54 munmap(0x7f8aa6f5a000, 720)    = 0
+12:50:54 close(5)                       = 0
+12:50:54 stat("/usr/lib/R/site-library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 5
+12:50:54 lseek(5, 0, SEEK_CUR)          = 0
+12:50:54 fstat(5, {st_mode=S_IFREG|0644, st_size=1018, ...}) = 0
+12:50:54 mmap(NULL, 1018, PROT_READ, MAP_SHARED, 5, 0) = 0x7f8aa6f5a000
+12:50:54 lseek(5, 1018, SEEK_SET)       = 1018
+12:50:54 munmap(0x7f8aa6f5a000, 1018)   = 0
+12:50:54 close(5)                       = 0
+12:50:54 open("/etc/group", O_RDONLY|O_CLOEXEC) = 5
+12:50:54 lseek(5, 0, SEEK_CUR)          = 0
+12:50:54 fstat(5, {st_mode=S_IFREG|0644, st_size=720, ...}) = 0
+12:50:54 mmap(NULL, 720, PROT_READ, MAP_SHARED, 5, 0) = 0x7f8aa6f5a000
+12:50:54 lseek(5, 720, SEEK_SET)        = 720
+12:50:54 munmap(0x7f8aa6f5a000, 720)    = 0
+12:50:54 close(5)                       = 0
+12:50:54 stat("/usr/lib/R/library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 5
+12:50:54 lseek(5, 0, SEEK_CUR)          = 0
+12:50:54 fstat(5, {st_mode=S_IFREG|0644, st_size=1018, ...}) = 0
+12:50:54 mmap(NULL, 1018, PROT_READ, MAP_SHARED, 5, 0) = 0x7f8aa6f5a000
+12:50:54 lseek(5, 1018, SEEK_SET)       = 1018
+12:50:54 munmap(0x7f8aa6f5a000, 1018)   = 0
+12:50:54 close(5)                       = 0
+12:50:54 open("/etc/group", O_RDONLY|O_CLOEXEC) = 5
+12:50:54 lseek(5, 0, SEEK_CUR)          = 0
+12:50:54 fstat(5, {st_mode=S_IFREG|0644, st_size=720, ...}) = 0
+12:50:54 mmap(NULL, 720, PROT_READ, MAP_SHARED, 5, 0) = 0x7f8aa6f5a000
+12:50:54 lseek(5, 720, SEEK_SET)        = 720
+12:50:54 munmap(0x7f8aa6f5a000, 720)    = 0
+12:50:54 close(5)                       = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 32000}, ru_stime={0, 96000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 stat("/usr/local/lib/R/site-library/translations/DESCRIPTION", 0x7ffe1f500500) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/usr/lib/R/site-library/translations/DESCRIPTION", 0x7ffe1f500500) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/usr/lib/R/library/translations/DESCRIPTION", {st_mode=S_IFREG|0644, st_size=237, ...}) = 0
+12:50:54 munmap(0x7f8a9b5ee000, 323584) = 0
+12:50:54 brk(0x119d000)                 = 0x119d000
+12:50:54 brk(0x1101000)                 = 0x1101000
+12:50:54 read(4, "ull: OK as nchar is 0\n    papers"..., 4096) = 990
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 36000}, ru_stime={0, 96000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 36000}, ru_stime={0, 96000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 brk(0x113b000)                 = 0x113b000
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 36000}, ru_stime={0, 96000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 brk(0x1189000)                 = 0x1189000
+12:50:54 brk(0x11c4000)                 = 0x11c4000
+12:50:54 read(4, "", 4096)              = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/etc//Rprofile.site", O_RDONLY) = 4
+12:50:54 brk(0x1212000)                 = 0x1212000
+12:50:54 brk(0x124d000)                 = 0x124d000
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=792, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "##\t\t\t\t\t\tEmacs please make this -"..., 4096) = 792
+12:50:54 brk(0x129b000)                 = 0x129b000
+12:50:54 brk(0x12e9000)                 = 0x12e9000
+12:50:54 read(4, "", 4096)              = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open(".Rprofile", O_RDONLY)    = -1 ENOENT (No such file or directory)
+12:50:54 open("/home/vanessa/.Rprofile", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/usr/local/lib/R/site-library", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+12:50:54 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1018, ...}) = 0
+12:50:54 mmap(NULL, 1018, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 1018, SEEK_SET)       = 1018
+12:50:54 munmap(0x7f8aa6f62000, 1018)   = 0
+12:50:54 close(4)                       = 0
+12:50:54 open("/etc/group", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=720, ...}) = 0
+12:50:54 mmap(NULL, 720, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 720, SEEK_SET)        = 720
+12:50:54 munmap(0x7f8aa6f62000, 720)    = 0
+12:50:54 close(4)                       = 0
+12:50:54 stat("/usr/lib/R/site-library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1018, ...}) = 0
+12:50:54 mmap(NULL, 1018, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 1018, SEEK_SET)       = 1018
+12:50:54 munmap(0x7f8aa6f62000, 1018)   = 0
+12:50:54 close(4)                       = 0
+12:50:54 open("/etc/group", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=720, ...}) = 0
+12:50:54 mmap(NULL, 720, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 720, SEEK_SET)        = 720
+12:50:54 munmap(0x7f8aa6f62000, 720)    = 0
+12:50:54 close(4)                       = 0
+12:50:54 stat("/usr/lib/R/library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1018, ...}) = 0
+12:50:54 mmap(NULL, 1018, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 1018, SEEK_SET)       = 1018
+12:50:54 munmap(0x7f8aa6f62000, 1018)   = 0
+12:50:54 close(4)                       = 0
+12:50:54 open("/etc/group", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=720, ...}) = 0
+12:50:54 mmap(NULL, 720, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 720, SEEK_SET)        = 720
+12:50:54 munmap(0x7f8aa6f62000, 720)    = 0
+12:50:54 close(4)                       = 0
+12:50:54 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 stat("/usr/lib/R/library/datasets/Meta/package.rds", {st_mode=S_IFREG|0644, st_size=465, ...}) = 0
+12:50:54 open("/usr/lib/R/library/datasets/Meta/package.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=465, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3uR\337O\3020\20\0360\35h\f&$\372\332\370`|\201\300\324"..., 4096) = 465
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/datasets/Meta/package.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=465, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3uR\337O\3020\20\0360\35h\f&$\372\332\370`|\201\300\324"..., 16384) = 465
+12:50:54 read(4, "", 12288)             = 0
+12:50:54 lseek(4, 0, SEEK_CUR)          = 465
+12:50:54 read(4, "", 16384)             = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 stat("/usr/lib/R/library/datasets/NAMESPACE", {st_mode=S_IFREG|0644, st_size=73, ...}) = 0
+12:50:54 stat("/usr/lib/R/library/datasets/po", 0x7ffe1f4f7150) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/usr/lib/R/library/datasets/NAMESPACE", {st_mode=S_IFREG|0644, st_size=73, ...}) = 0
+12:50:54 stat("/usr/lib/R/library/datasets/Meta/nsInfo.rds", {st_mode=S_IFREG|0644, st_size=179, ...}) = 0
+12:50:54 open("/usr/lib/R/library/datasets/Meta/nsInfo.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=179, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3uO\321\n\3020\f\214\355d\3141\21\372)~\202\317\202\350\213\257"..., 4096) = 179
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/datasets/Meta/nsInfo.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=179, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3uO\321\n\3020\f\214\355d\3141\21\372)~\202\317\202\350\213\257"..., 16384) = 179
+12:50:54 read(4, "", 12288)             = 0
+12:50:54 lseek(4, 0, SEEK_CUR)          = 179
+12:50:54 read(4, "", 16384)             = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 stat("/usr/lib/R/library/datasets/Meta/package.rds", {st_mode=S_IFREG|0644, st_size=465, ...}) = 0
+12:50:54 open("/usr/lib/R/library/datasets/Meta/package.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=465, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3uR\337O\3020\20\0360\35h\f&$\372\332\370`|\201\300\324"..., 4096) = 465
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/datasets/Meta/package.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=465, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3uR\337O\3020\20\0360\35h\f&$\372\332\370`|\201\300\324"..., 16384) = 465
+12:50:54 read(4, "", 12288)             = 0
+12:50:54 lseek(4, 0, SEEK_CUR)          = 465
+12:50:54 read(4, "", 16384)             = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library/datasets", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 stat("/usr/lib/R/library/datasets/R/datasets", 0x7ffe1f4f7bb0) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/usr/lib/R/library/datasets/R/sysdata.rdb", 0x7ffe1f4f7bb0) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/usr/lib/R/library/datasets/data/Rdata.rdb", {st_mode=S_IFREG|0644, st_size=112228, ...}) = 0
+12:50:54 open("/usr/lib/R/library/datasets/data/Rdata.rdx", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1520, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3]\227k\214\24E\20\200gn\367v\367\270\343\202<\376(\306G\224"..., 4096) = 1520
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/datasets/data/Rdata.rdx", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1520, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3]\227k\214\24E\20\200gn\367v\367\270\343\202<\376(\306G\224"..., 16384) = 1520
+12:50:54 read(4, "", 12288)             = 0
+12:50:54 lseek(4, 0, SEEK_CUR)          = 1520
+12:50:54 read(4, "", 16384)             = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 stat("/usr/local/lib/R/site-library", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+12:50:54 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1018, ...}) = 0
+12:50:54 mmap(NULL, 1018, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 1018, SEEK_SET)       = 1018
+12:50:54 munmap(0x7f8aa6f62000, 1018)   = 0
+12:50:54 close(4)                       = 0
+12:50:54 open("/etc/group", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=720, ...}) = 0
+12:50:54 mmap(NULL, 720, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 720, SEEK_SET)        = 720
+12:50:54 munmap(0x7f8aa6f62000, 720)    = 0
+12:50:54 close(4)                       = 0
+12:50:54 stat("/usr/lib/R/site-library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1018, ...}) = 0
+12:50:54 mmap(NULL, 1018, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 1018, SEEK_SET)       = 1018
+12:50:54 munmap(0x7f8aa6f62000, 1018)   = 0
+12:50:54 close(4)                       = 0
+12:50:54 open("/etc/group", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=720, ...}) = 0
+12:50:54 mmap(NULL, 720, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 720, SEEK_SET)        = 720
+12:50:54 munmap(0x7f8aa6f62000, 720)    = 0
+12:50:54 close(4)                       = 0
+12:50:54 stat("/usr/lib/R/library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1018, ...}) = 0
+12:50:54 mmap(NULL, 1018, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 1018, SEEK_SET)       = 1018
+12:50:54 munmap(0x7f8aa6f62000, 1018)   = 0
+12:50:54 close(4)                       = 0
+12:50:54 open("/etc/group", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=720, ...}) = 0
+12:50:54 mmap(NULL, 720, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 720, SEEK_SET)        = 720
+12:50:54 munmap(0x7f8aa6f62000, 720)    = 0
+12:50:54 close(4)                       = 0
+12:50:54 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 stat("/usr/lib/R/library/utils/Meta/package.rds", {st_mode=S_IFREG|0644, st_size=492, ...}) = 0
+12:50:54 open("/usr/lib/R/library/utils/Meta/package.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=492, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3uRMo\3330\fu\22wN:\f-\220C\257\302\16\2739p"..., 4096) = 492
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/utils/Meta/package.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=492, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3uRMo\3330\fu\22wN:\f-\220C\257\302\16\2739p"..., 16384) = 492
+12:50:54 read(4, "", 12288)             = 0
+12:50:54 lseek(4, 0, SEEK_CUR)          = 492
+12:50:54 read(4, "", 16384)             = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 stat("/usr/lib/R/library/utils/NAMESPACE", {st_mode=S_IFREG|0644, st_size=6165, ...}) = 0
+12:50:54 stat("/usr/lib/R/library/translations", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 stat("/usr/lib/R/library/utils/NAMESPACE", {st_mode=S_IFREG|0644, st_size=6165, ...}) = 0
+12:50:54 stat("/usr/lib/R/library/utils/Meta/nsInfo.rds", {st_mode=S_IFREG|0644, st_size=2054, ...}) = 0
+12:50:54 open("/usr/lib/R/library/utils/Meta/nsInfo.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=2054, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3\355Y\335s\3434\20O\2334I\343\344\232\266|\276\303#~8^"..., 4096) = 2054
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/utils/Meta/nsInfo.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=2054, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3\355Y\335s\3434\20O\2334I\343\344\232\266|\276\303#~8^"..., 16384) = 2054
+12:50:54 read(4, "", 12288)             = 0
+12:50:54 lseek(4, 0, SEEK_CUR)          = 2054
+12:50:54 read(4, "", 16384)             = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 stat("/usr/lib/R/library/utils/Meta/package.rds", {st_mode=S_IFREG|0644, st_size=492, ...}) = 0
+12:50:54 open("/usr/lib/R/library/utils/Meta/package.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=492, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3uRMo\3330\fu\22wN:\f-\220C\257\302\16\2739p"..., 4096) = 492
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/utils/Meta/package.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=492, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3uRMo\3330\fu\22wN:\f-\220C\257\302\16\2739p"..., 16384) = 492
+12:50:54 read(4, "", 12288)             = 0
+12:50:54 lseek(4, 0, SEEK_CUR)          = 492
+12:50:54 read(4, "", 16384)             = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library/utils", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 stat("/usr/lib/R/library/utils/R/utils", {st_mode=S_IFREG|0644, st_size=1056, ...}) = 0
+12:50:54 stat("/usr/lib/R/library/utils/R/utils", {st_mode=S_IFREG|0644, st_size=1056, ...}) = 0
+12:50:54 open("/usr/lib/R/library/utils/R/utils", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1056, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "#  File share/R/nspackloader.R\n#"..., 4096) = 1056
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/utils/R/utils", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1056, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "#  File share/R/nspackloader.R\n#"..., 4096) = 1056
+12:50:54 read(4, "", 4096)              = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/utils/R/utils.rdx", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=6135, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3\205[\t\234$Uy\357\352\252\356\252\356\236\236sgOV\256%\202"..., 4096) = 4096
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/utils/R/utils.rdx", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=6135, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3\205[\t\234$Uy\357\352\252\356\252\356\236\236sgOV\256%\202"..., 16384) = 6135
+12:50:54 read(4, "", 8192)              = 0
+12:50:54 lseek(4, 0, SEEK_CUR)          = 6135
+12:50:54 read(4, "", 16384)             = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 stat("/usr/lib/R/library/utils/R/sysdata.rdb", 0x7ffe1f4f7bb0) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/usr/lib/R/library/utils/data/Rdata.rdb", 0x7ffe1f4f7bb0) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/R/library/utils/R/utils.rdb", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=663139, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=663139, ...}) = 0
+12:50:54 lseek(4, 659456, SEEK_SET)     = 659456
+12:50:54 read(4, "\237\246b\326v\364)\205\363\242\231\315\271\340\364\te\2743\223.>/\234w\222B\271^\236\177\205"..., 3683) = 3683
+12:50:54 lseek(4, 0, SEEK_SET)          = 0
+12:50:54 read(4, "\0\0\10\260x\234\245U\301n\323@\20]\257\3558v\354$-I) \16Ej9\321\242\366\204"..., 659456) = 659456
+12:50:54 read(4, "\237\246b\326v\364)\205\363\242\231\315\271\340\364\te\2743\223.>/\234w\222B\271^\236\177\205"..., 4096) = 3683
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 brk(0x130a000)                 = 0x130a000
+12:50:54 brk(0x132b000)                 = 0x132b000
+12:50:54 brk(0x134c000)                 = 0x134c000
+12:50:54 stat("/usr/lib/R/library/utils/libs/utils.so", {st_mode=S_IFREG|0644, st_size=51904, ...}) = 0
+12:50:54 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library/utils", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library/utils/libs", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 brk(0x136d000)                 = 0x136d000
+12:50:54 futex(0x7f8aa3a250d0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+12:50:54 open("/usr/lib/R/library/utils/libs/utils.so", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p+\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=51904, ...}) = 0
+12:50:54 mmap(NULL, 2151536, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f8a9adaf000
+12:50:54 mprotect(0x7f8a9adbb000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f8a9afba000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0xb000) = 0x7f8a9afba000
+12:50:54 mmap(0x7f8a9afbc000, 1136, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f8a9afbc000
+12:50:54 close(4)                       = 0
+12:50:54 mprotect(0x7f8a9afba000, 4096, PROT_READ) = 0
+12:50:54 brk(0x138e000)                 = 0x138e000
+12:50:54 brk(0x13af000)                 = 0x13af000
+12:50:54 brk(0x13d0000)                 = 0x13d0000
+12:50:54 brk(0x13f1000)                 = 0x13f1000
+12:50:54 brk(0x1412000)                 = 0x1412000
+12:50:54 brk(0x1433000)                 = 0x1433000
+12:50:54 brk(0x1454000)                 = 0x1454000
+12:50:54 brk(0x1475000)                 = 0x1475000
+12:50:54 brk(0x1496000)                 = 0x1496000
+12:50:54 stat("/usr/local/lib/R/site-library", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+12:50:54 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1018, ...}) = 0
+12:50:54 mmap(NULL, 1018, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 1018, SEEK_SET)       = 1018
+12:50:54 munmap(0x7f8aa6f62000, 1018)   = 0
+12:50:54 close(4)                       = 0
+12:50:54 open("/etc/group", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=720, ...}) = 0
+12:50:54 mmap(NULL, 720, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 720, SEEK_SET)        = 720
+12:50:54 munmap(0x7f8aa6f62000, 720)    = 0
+12:50:54 close(4)                       = 0
+12:50:54 stat("/usr/lib/R/site-library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1018, ...}) = 0
+12:50:54 mmap(NULL, 1018, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 1018, SEEK_SET)       = 1018
+12:50:54 munmap(0x7f8aa6f62000, 1018)   = 0
+12:50:54 close(4)                       = 0
+12:50:54 open("/etc/group", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=720, ...}) = 0
+12:50:54 mmap(NULL, 720, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 720, SEEK_SET)        = 720
+12:50:54 munmap(0x7f8aa6f62000, 720)    = 0
+12:50:54 close(4)                       = 0
+12:50:54 stat("/usr/lib/R/library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1018, ...}) = 0
+12:50:54 mmap(NULL, 1018, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 1018, SEEK_SET)       = 1018
+12:50:54 munmap(0x7f8aa6f62000, 1018)   = 0
+12:50:54 close(4)                       = 0
+12:50:54 open("/etc/group", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=720, ...}) = 0
+12:50:54 mmap(NULL, 720, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 720, SEEK_SET)        = 720
+12:50:54 munmap(0x7f8aa6f62000, 720)    = 0
+12:50:54 close(4)                       = 0
+12:50:54 brk(0x14b7000)                 = 0x14b7000
+12:50:54 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 stat("/usr/lib/R/library/grDevices/Meta/package.rds", {st_mode=S_IFREG|0644, st_size=526, ...}) = 0
+12:50:54 open("/usr/lib/R/library/grDevices/Meta/package.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=526, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3uSKo\323@\20v\22\27\247E\250\225r\350u\305\201\233\2438"..., 4096) = 526
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/grDevices/Meta/package.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=526, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3uSKo\323@\20v\22\27\247E\250\225r\350u\305\201\233\2438"..., 16384) = 526
+12:50:54 read(4, "", 12288)             = 0
+12:50:54 lseek(4, 0, SEEK_CUR)          = 526
+12:50:54 read(4, "", 16384)             = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 brk(0x14d8000)                 = 0x14d8000
+12:50:54 stat("/usr/lib/R/library/grDevices/NAMESPACE", {st_mode=S_IFREG|0644, st_size=2382, ...}) = 0
+12:50:54 brk(0x14f9000)                 = 0x14f9000
+12:50:54 stat("/usr/lib/R/library/translations", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 stat("/usr/lib/R/library/grDevices/NAMESPACE", {st_mode=S_IFREG|0644, st_size=2382, ...}) = 0
+12:50:54 stat("/usr/lib/R/library/grDevices/Meta/nsInfo.rds", {st_mode=S_IFREG|0644, st_size=1099, ...}) = 0
+12:50:54 open("/usr/lib/R/library/grDevices/Meta/nsInfo.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1099, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3\325VKo\3338\20vl\307\3178M\21`\261\177b\r\304=-"..., 4096) = 1099
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/grDevices/Meta/nsInfo.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1099, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3\325VKo\3338\20vl\307\3178M\21`\261\177b\r\304=-"..., 16384) = 1099
+12:50:54 read(4, "", 12288)             = 0
+12:50:54 lseek(4, 0, SEEK_CUR)          = 1099
+12:50:54 read(4, "", 16384)             = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 stat("/usr/lib/R/library/grDevices/Meta/package.rds", {st_mode=S_IFREG|0644, st_size=526, ...}) = 0
+12:50:54 open("/usr/lib/R/library/grDevices/Meta/package.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=526, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3uSKo\323@\20v\22\27\247E\250\225r\350u\305\201\233\2438"..., 4096) = 526
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/grDevices/Meta/package.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=526, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3uSKo\323@\20v\22\27\247E\250\225r\350u\305\201\233\2438"..., 16384) = 526
+12:50:54 read(4, "", 12288)             = 0
+12:50:54 lseek(4, 0, SEEK_CUR)          = 526
+12:50:54 read(4, "", 16384)             = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 brk(0x151a000)                 = 0x151a000
+12:50:54 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library/grDevices", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 stat("/usr/lib/R/library/grDevices/R/grDevices", {st_mode=S_IFREG|0644, st_size=1056, ...}) = 0
+12:50:54 stat("/usr/lib/R/library/grDevices/R/grDevices", {st_mode=S_IFREG|0644, st_size=1056, ...}) = 0
+12:50:54 open("/usr/lib/R/library/grDevices/R/grDevices", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1056, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "#  File share/R/nspackloader.R\n#"..., 4096) = 1056
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/grDevices/R/grDevices", O_RDONLY) = 4
+12:50:54 brk(0x1575000)                 = 0x1575000
+12:50:54 brk(0x15c4000)                 = 0x15c4000
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1056, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "#  File share/R/nspackloader.R\n#"..., 4096) = 1056
+12:50:54 read(4, "", 4096)              = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/grDevices/R/grDevices.rdx", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=2444, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3u\230\t\220\34e\25\307\273{vwfgg7\33\262I\4c\250"..., 4096) = 2444
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/grDevices/R/grDevices.rdx", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=2444, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3u\230\t\220\34e\25\307\273{vwfgg7\33\262I\4c\250"..., 16384) = 2444
+12:50:54 read(4, "", 12288)             = 0
+12:50:54 lseek(4, 0, SEEK_CUR)          = 2444
+12:50:54 read(4, "", 16384)             = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 brk(0x15e5000)                 = 0x15e5000
+12:50:54 stat("/usr/lib/R/library/grDevices/R/sysdata.rdb", 0x7ffe1f4f7bb0) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/usr/lib/R/library/grDevices/data/Rdata.rdb", 0x7ffe1f4f7bb0) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/R/library/grDevices/R/grDevices.rdb", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=152760, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=152760, ...}) = 0
+12:50:54 lseek(4, 151552, SEEK_SET)     = 151552
+12:50:54 read(4, "\371l2\235C\355\344\377os\221\312G\220\365L*\257\366\242|\227nn\233\372U\245<P\367\223"..., 1208) = 1208
+12:50:54 brk(0x1621000)                 = 0x1621000
+12:50:54 lseek(4, 0, SEEK_SET)          = 0
+12:50:54 read(4, "\0\0\3\210x\234uR\301j\0021\20\235$\273\253[\324zX\21\n=x\261 T\26\205\236\364"..., 151552) = 151552
+12:50:54 read(4, "\371l2\235C\355\344\377os\221\312G\220\365L*\257\366\242|\227nn\233\372U\245<P\367\223"..., 4096) = 1208
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 brk(0x1642000)                 = 0x1642000
+12:50:54 stat("/usr/lib/R/library/grDevices/libs/grDevices.so", {st_mode=S_IFREG|0644, st_size=265504, ...}) = 0
+12:50:54 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library/grDevices", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library/grDevices/libs", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 open("/usr/lib/R/library/grDevices/libs/grDevices.so", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`\306\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=265504, ...}) = 0
+12:50:54 mmap(NULL, 2364968, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f8a9ab6d000
+12:50:54 mprotect(0x7f8a9aba7000, 2097152, PROT_NONE) = 0
+12:50:54 mmap(0x7f8a9ada7000, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x3a000) = 0x7f8a9ada7000
+12:50:54 mmap(0x7f8a9adae000, 1576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f8a9adae000
+12:50:54 close(4)                       = 0
+12:50:54 mprotect(0x7f8a9ada7000, 20480, PROT_READ) = 0
+12:50:54 brk(0x1663000)                 = 0x1663000
+12:50:54 brk(0x1684000)                 = 0x1684000
+12:50:54 brk(0x16a5000)                 = 0x16a5000
+12:50:54 brk(0x16c6000)                 = 0x16c6000
+12:50:54 brk(0x16e7000)                 = 0x16e7000
+12:50:54 brk(0x1708000)                 = 0x1708000
+12:50:54 brk(0x1729000)                 = 0x1729000
+12:50:54 brk(0x174a000)                 = 0x174a000
+12:50:54 brk(0x176b000)                 = 0x176b000
+12:50:54 stat("/usr/local/lib/R/site-library", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+12:50:54 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1018, ...}) = 0
+12:50:54 mmap(NULL, 1018, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 1018, SEEK_SET)       = 1018
+12:50:54 munmap(0x7f8aa6f62000, 1018)   = 0
+12:50:54 close(4)                       = 0
+12:50:54 open("/etc/group", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=720, ...}) = 0
+12:50:54 mmap(NULL, 720, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 720, SEEK_SET)        = 720
+12:50:54 munmap(0x7f8aa6f62000, 720)    = 0
+12:50:54 close(4)                       = 0
+12:50:54 stat("/usr/lib/R/site-library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1018, ...}) = 0
+12:50:54 mmap(NULL, 1018, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 1018, SEEK_SET)       = 1018
+12:50:54 munmap(0x7f8aa6f62000, 1018)   = 0
+12:50:54 close(4)                       = 0
+12:50:54 open("/etc/group", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=720, ...}) = 0
+12:50:54 mmap(NULL, 720, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 720, SEEK_SET)        = 720
+12:50:54 munmap(0x7f8aa6f62000, 720)    = 0
+12:50:54 close(4)                       = 0
+12:50:54 stat("/usr/lib/R/library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1018, ...}) = 0
+12:50:54 mmap(NULL, 1018, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 1018, SEEK_SET)       = 1018
+12:50:54 munmap(0x7f8aa6f62000, 1018)   = 0
+12:50:54 close(4)                       = 0
+12:50:54 open("/etc/group", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=720, ...}) = 0
+12:50:54 mmap(NULL, 720, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 720, SEEK_SET)        = 720
+12:50:54 munmap(0x7f8aa6f62000, 720)    = 0
+12:50:54 close(4)                       = 0
+12:50:54 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 stat("/usr/lib/R/library/graphics/Meta/package.rds", {st_mode=S_IFREG|0644, st_size=534, ...}) = 0
+12:50:54 open("/usr/lib/R/library/graphics/Meta/package.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=534, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3uS]o\3320\24\r!]\200ij%\244\356i\222\265\207\276\5"..., 4096) = 534
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 brk(0x178f000)                 = 0x178f000
+12:50:54 open("/usr/lib/R/library/graphics/Meta/package.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=534, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3uS]o\3320\24\r!]\200ij%\244\356i\222\265\207\276\5"..., 16384) = 534
+12:50:54 read(4, "", 12288)             = 0
+12:50:54 lseek(4, 0, SEEK_CUR)          = 534
+12:50:54 read(4, "", 16384)             = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 brk(0x17b0000)                 = 0x17b0000
+12:50:54 stat("/usr/lib/R/library/graphics/NAMESPACE", {st_mode=S_IFREG|0644, st_size=2680, ...}) = 0
+12:50:54 stat("/usr/lib/R/library/translations", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 stat("/usr/lib/R/library/graphics/NAMESPACE", {st_mode=S_IFREG|0644, st_size=2680, ...}) = 0
+12:50:54 stat("/usr/lib/R/library/graphics/Meta/nsInfo.rds", {st_mode=S_IFREG|0644, st_size=1142, ...}) = 0
+12:50:54 open("/usr/lib/R/library/graphics/Meta/nsInfo.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1142, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3\355W\315n\3436\20\366\306\377\177I\200}\206^z\360\245O\320u"..., 4096) = 1142
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/graphics/Meta/nsInfo.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1142, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3\355W\315n\3436\20\366\306\377\177I\200}\206^z\360\245O\320u"..., 16384) = 1142
+12:50:54 read(4, "", 12288)             = 0
+12:50:54 lseek(4, 0, SEEK_CUR)          = 1142
+12:50:54 brk(0x17d7000)                 = 0x17d7000
+12:50:54 read(4, "", 16384)             = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 stat("/usr/lib/R/library/graphics/Meta/package.rds", {st_mode=S_IFREG|0644, st_size=534, ...}) = 0
+12:50:54 open("/usr/lib/R/library/graphics/Meta/package.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=534, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3uS]o\3320\24\r!]\200ij%\244\356i\222\265\207\276\5"..., 4096) = 534
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/graphics/Meta/package.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=534, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3uS]o\3320\24\r!]\200ij%\244\356i\222\265\207\276\5"..., 16384) = 534
+12:50:54 read(4, "", 12288)             = 0
+12:50:54 lseek(4, 0, SEEK_CUR)          = 534
+12:50:54 read(4, "", 16384)             = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library/graphics", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 brk(0x17f9000)                 = 0x17f9000
+12:50:54 brk(0x181a000)                 = 0x181a000
+12:50:54 open("/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=2570, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "# Locale name alias data base.\n#"..., 4096) = 2570
+12:50:54 read(4, "", 4096)              = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/translations/en_US/LC_MESSAGES/R-base.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/R/library/translations/en/LC_MESSAGES/R-base.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/share/locale-langpack/en_US/LC_MESSAGES/R-base.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/share/locale-langpack/en/LC_MESSAGES/R-base.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:54 brk(0x183b000)                 = 0x183b000
+12:50:54 brk(0x185c000)                 = 0x185c000
+12:50:54 brk(0x187d000)                 = 0x187d000
+12:50:54 stat("/usr/lib/R/library/graphics/R/graphics", {st_mode=S_IFREG|0644, st_size=1056, ...}) = 0
+12:50:54 stat("/usr/lib/R/library/graphics/R/graphics", {st_mode=S_IFREG|0644, st_size=1056, ...}) = 0
+12:50:54 open("/usr/lib/R/library/graphics/R/graphics", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1056, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "#  File share/R/nspackloader.R\n#"..., 4096) = 1056
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/graphics/R/graphics", O_RDONLY) = 4
+12:50:54 brk(0x18d0000)                 = 0x18d0000
+12:50:54 brk(0x191e000)                 = 0x191e000
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1056, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "#  File share/R/nspackloader.R\n#"..., 4096) = 1056
+12:50:54 read(4, "", 4096)              = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/graphics/R/graphics.rdx", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1786, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3m\230i\214\333D\24\307'v\234\315f\223\335m\241\300\266\242\37@"..., 4096) = 1786
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/graphics/R/graphics.rdx", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1786, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3m\230i\214\333D\24\307'v\234\315f\223\335m\241\300\266\242\37@"..., 16384) = 1786
+12:50:54 read(4, "", 12288)             = 0
+12:50:54 lseek(4, 0, SEEK_CUR)          = 1786
+12:50:54 read(4, "", 16384)             = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 brk(0x193f000)                 = 0x193f000
+12:50:54 stat("/usr/lib/R/library/graphics/R/sysdata.rdb", 0x7ffe1f4f7bb0) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/usr/lib/R/library/graphics/data/Rdata.rdb", 0x7ffe1f4f7bb0) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/R/library/graphics/R/graphics.rdb", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=249194, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=249194, ...}) = 0
+12:50:54 lseek(4, 245760, SEEK_SET)     = 245760
+12:50:54 read(4, ":\371\205\343\205\374n\255V/\225]\333\vK\270\216\16\207\307bUe\230\213\301\225\313*_\210\374"..., 3434) = 3434
+12:50:54 brk(0x198c000)                 = 0x198c000
+12:50:54 lseek(4, 0, SEEK_SET)          = 0
+12:50:54 read(4, "\0\0\3\203x\234U\221[r\303 \fE\31C\322\244_]I\327\321%\364\27\333\330&\3465\306"..., 245760) = 245760
+12:50:54 read(4, ":\371\205\343\205\374n\255V/\225]\333\vK\270\216\16\207\307bUe\230\213\301\225\313*_\210\374"..., 4096) = 3434
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 stat("/usr/lib/R/library/graphics/libs/graphics.so", {st_mode=S_IFREG|0644, st_size=293840, ...}) = 0
+12:50:54 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library/graphics", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library/graphics/libs", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 open("/usr/lib/R/library/graphics/libs/graphics.so", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300=\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=293840, ...}) = 0
+12:50:54 mmap(NULL, 2389920, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f8a9a925000
+12:50:54 mprotect(0x7f8a9a96c000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f8a9ab6b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x46000) = 0x7f8a9ab6b000
+12:50:54 close(4)                       = 0
+12:50:54 mprotect(0x7f8a9ab6b000, 4096, PROT_READ) = 0
+12:50:54 brk(0x19ad000)                 = 0x19ad000
+12:50:54 brk(0x19ce000)                 = 0x19ce000
+12:50:54 brk(0x19ef000)                 = 0x19ef000
+12:50:54 brk(0x1a10000)                 = 0x1a10000
+12:50:54 brk(0x1a31000)                 = 0x1a31000
+12:50:54 brk(0x1a52000)                 = 0x1a52000
+12:50:54 brk(0x1a73000)                 = 0x1a73000
+12:50:54 brk(0x1a94000)                 = 0x1a94000
+12:50:54 stat("/usr/local/lib/R/site-library", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+12:50:54 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1018, ...}) = 0
+12:50:54 mmap(NULL, 1018, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 1018, SEEK_SET)       = 1018
+12:50:54 munmap(0x7f8aa6f62000, 1018)   = 0
+12:50:54 close(4)                       = 0
+12:50:54 open("/etc/group", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=720, ...}) = 0
+12:50:54 mmap(NULL, 720, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 720, SEEK_SET)        = 720
+12:50:54 munmap(0x7f8aa6f62000, 720)    = 0
+12:50:54 close(4)                       = 0
+12:50:54 stat("/usr/lib/R/site-library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1018, ...}) = 0
+12:50:54 mmap(NULL, 1018, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 1018, SEEK_SET)       = 1018
+12:50:54 munmap(0x7f8aa6f62000, 1018)   = 0
+12:50:54 close(4)                       = 0
+12:50:54 open("/etc/group", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=720, ...}) = 0
+12:50:54 mmap(NULL, 720, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 720, SEEK_SET)        = 720
+12:50:54 munmap(0x7f8aa6f62000, 720)    = 0
+12:50:54 close(4)                       = 0
+12:50:54 stat("/usr/lib/R/library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1018, ...}) = 0
+12:50:54 mmap(NULL, 1018, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 1018, SEEK_SET)       = 1018
+12:50:54 munmap(0x7f8aa6f62000, 1018)   = 0
+12:50:54 close(4)                       = 0
+12:50:54 open("/etc/group", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 lseek(4, 0, SEEK_CUR)          = 0
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=720, ...}) = 0
+12:50:54 mmap(NULL, 720, PROT_READ, MAP_SHARED, 4, 0) = 0x7f8aa6f62000
+12:50:54 lseek(4, 720, SEEK_SET)        = 720
+12:50:54 munmap(0x7f8aa6f62000, 720)    = 0
+12:50:54 close(4)                       = 0
+12:50:54 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 brk(0x1ab5000)                 = 0x1ab5000
+12:50:54 stat("/usr/lib/R/library/stats/Meta/package.rds", {st_mode=S_IFREG|0644, st_size=496, ...}) = 0
+12:50:54 open("/usr/lib/R/library/stats/Meta/package.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=496, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3uS\337o\3320\20\16\220.\320ij%\36\372j\355aoA\220"..., 4096) = 496
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/stats/Meta/package.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=496, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3uS\337o\3320\20\16\220.\320ij%\36\372j\355aoA\220"..., 16384) = 496
+12:50:54 read(4, "", 12288)             = 0
+12:50:54 lseek(4, 0, SEEK_CUR)          = 496
+12:50:54 read(4, "", 16384)             = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 brk(0x1ad6000)                 = 0x1ad6000
+12:50:54 stat("/usr/lib/R/library/stats/NAMESPACE", {st_mode=S_IFREG|0644, st_size=17930, ...}) = 0
+12:50:54 stat("/usr/lib/R/library/translations", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 stat("/usr/lib/R/library/stats/NAMESPACE", {st_mode=S_IFREG|0644, st_size=17930, ...}) = 0
+12:50:54 stat("/usr/lib/R/library/stats/Meta/nsInfo.rds", {st_mode=S_IFREG|0644, st_size=4285, ...}) = 0
+12:50:54 open("/usr/lib/R/library/stats/Meta/nsInfo.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=4285, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3\355\\\353r\334\306\261&\271\367\33%\333y\204\374\r*q\376\346\17"..., 4096) = 4096
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 brk(0x1af9000)                 = 0x1af9000
+12:50:54 open("/usr/lib/R/library/stats/Meta/nsInfo.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=4285, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3\355\\\353r\334\306\261&\271\367\33%\333y\204\374\r*q\376\346\17"..., 16384) = 4285
+12:50:54 read(4, "", 8192)              = 0
+12:50:54 lseek(4, 0, SEEK_CUR)          = 4285
+12:50:54 read(4, "", 16384)             = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 stat("/usr/lib/R/library/stats/Meta/package.rds", {st_mode=S_IFREG|0644, st_size=496, ...}) = 0
+12:50:54 open("/usr/lib/R/library/stats/Meta/package.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=496, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3uS\337o\3320\20\16\220.\320ij%\36\372j\355aoA\220"..., 4096) = 496
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/stats/Meta/package.rds", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=496, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3uS\337o\3320\20\16\220.\320ij%\36\372j\355aoA\220"..., 16384) = 496
+12:50:54 read(4, "", 12288)             = 0
+12:50:54 lseek(4, 0, SEEK_CUR)          = 496
+12:50:54 read(4, "", 16384)             = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 brk(0x1b1a000)                 = 0x1b1a000
+12:50:54 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library/stats", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 brk(0x1b3b000)                 = 0x1b3b000
+12:50:54 brk(0x1b5c000)                 = 0x1b5c000
+12:50:54 brk(0x1b7d000)                 = 0x1b7d000
+12:50:54 brk(0x1b9e000)                 = 0x1b9e000
+12:50:54 stat("/usr/lib/R/library/stats/R/stats", {st_mode=S_IFREG|0644, st_size=1056, ...}) = 0
+12:50:54 stat("/usr/lib/R/library/stats/R/stats", {st_mode=S_IFREG|0644, st_size=1056, ...}) = 0
+12:50:54 open("/usr/lib/R/library/stats/R/stats", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1056, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "#  File share/R/nspackloader.R\n#"..., 4096) = 1056
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/stats/R/stats", O_RDONLY) = 4
+12:50:54 brk(0x1bf2000)                 = 0x1bf2000
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1056, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "#  File share/R/nspackloader.R\n#"..., 4096) = 1056
+12:50:54 read(4, "", 4096)              = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/stats/R/stats.rdx", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=10586, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3u}\t\234\34U\265~\357{uu\367$\354\310&\262H\232\260\270"..., 4096) = 4096
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 open("/usr/lib/R/library/stats/R/stats.rdx", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=10586, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(4, "\37\213\10\0\0\0\0\0\0\3u}\t\234\34U\265~\357{uu\367$\354\310&\262H\232\260\270"..., 16384) = 10586
+12:50:54 read(4, "", 4096)              = 0
+12:50:54 lseek(4, 0, SEEK_CUR)          = 10586
+12:50:54 read(4, "", 16384)             = 0
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 stat("/usr/lib/R/library/stats/R/sysdata.rdb", 0x7ffe1f4f7bb0) = -1 ENOENT (No such file or directory)
+12:50:54 stat("/usr/lib/R/library/stats/data/Rdata.rdb", 0x7ffe1f4f7bb0) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/R/library/stats/R/stats.rdb", O_RDONLY) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1246166, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1246166, ...}) = 0
+12:50:54 lseek(4, 1245184, SEEK_SET)    = 1245184
+12:50:54 read(4, "D\327\315\224\n/\310\247\351\327:\334A\367\273\330\302\273\362\27\2500\222\321\0049#\232\363\333!\207"..., 982) = 982
+12:50:54 mmap(NULL, 1249280, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8a9b6c8000
+12:50:54 lseek(4, 0, SEEK_SET)          = 0
+12:50:54 read(4, "\0\0\0169x\234\245V\315o\22A\24\237\375\340k\201\2\26J[\213\322j\2415B\214^5\36"..., 1245184) = 1245184
+12:50:54 read(4, "D\327\315\224\n/\310\247\351\327:\334A\367\273\330\302\273\362\27\2500\222\321\0049#\232\363\333!\207"..., 4096) = 982
+12:50:54 close(4)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 stat("/usr/lib/R/library/stats/libs/stats.so", {st_mode=S_IFREG|0644, st_size=792944, ...}) = 0
+12:50:54 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library/stats", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 lstat("/usr/lib/R/library/stats/libs", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:54 open("/usr/lib/R/library/stats/libs/stats.so", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\263\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=792944, ...}) = 0
+12:50:54 mmap(NULL, 2889960, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f8a9a663000
+12:50:54 mprotect(0x7f8a9a721000, 2097152, PROT_NONE) = 0
+12:50:54 mmap(0x7f8a9a921000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0xbe000) = 0x7f8a9a921000
+12:50:54 close(4)                       = 0
+12:50:54 open("/usr/lib/R/lib/liblapack.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/x86_64-linux-gnu/liblapack.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/liblapack.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/liblapack.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/liblapack.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/liblapack.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/liblapack.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("liblapack.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/liblapack.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=37006, ...}) = 0
+12:50:54 mmap(NULL, 37006, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f8aa6dbe000
+12:50:54 close(4)                       = 0
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/liblapack.so.3", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\366\1\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=5882272, ...}) = 0
+12:50:54 mmap(NULL, 7977664, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f8a99ec7000
+12:50:54 mprotect(0x7f8a9a45f000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f8a9a65e000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x597000) = 0x7f8a9a65e000
+12:50:54 close(4)                       = 0
+12:50:54 open("/usr/lib/R/lib/libgfortran.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/x86_64-linux-gnu/libgfortran.so.3", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20\217\1\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=1153392, ...}) = 0
+12:50:54 mmap(NULL, 3249040, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f8a99bad000
+12:50:54 mprotect(0x7f8a99cc4000, 2097152, PROT_NONE) = 0
+12:50:54 mmap(0x7f8a99ec4000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x117000) = 0x7f8a99ec4000
+12:50:54 close(4)                       = 0
+12:50:54 open("/usr/lib/R/lib/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64/server/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/scif/apps/R/lib/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/x86_64/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("tls/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("x86_64/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/.singularity.d/libs/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:54 open("/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260*\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=90160, ...}) = 0
+12:50:54 mmap(NULL, 2186016, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f8a99997000
+12:50:54 mprotect(0x7f8a999ad000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f8a99bac000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x15000) = 0x7f8a99bac000
+12:50:54 close(4)                       = 0
+12:50:54 open("/usr/lib/R/lib/libquadmath.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:54 open("/usr/lib/x86_64-linux-gnu/libquadmath.so.0", O_RDONLY|O_CLOEXEC) = 4
+12:50:54 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`$\0\0\0\0\0\0"..., 832) = 832
+12:50:54 fstat(4, {st_mode=S_IFREG|0644, st_size=244856, ...}) = 0
+12:50:54 mmap(NULL, 2340016, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f8a9975b000
+12:50:54 mprotect(0x7f8a99796000, 2093056, PROT_NONE) = 0
+12:50:54 mmap(0x7f8a99995000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x3a000) = 0x7f8a99995000
+12:50:54 close(4)                       = 0
+12:50:54 mprotect(0x7f8a99995000, 4096, PROT_READ) = 0
+12:50:54 mprotect(0x7f8a99ec4000, 4096, PROT_READ) = 0
+12:50:54 mprotect(0x7f8a9a65e000, 4096, PROT_READ) = 0
+12:50:54 mprotect(0x7f8a9a921000, 8192, PROT_READ) = 0
+12:50:54 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 28), ...}) = 0
+12:50:54 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 28), ...}) = 0
+12:50:54 fstat(2, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 28), ...}) = 0
+12:50:54 munmap(0x7f8aa6dbe000, 37006)  = 0
+12:50:54 fstat(3, {st_mode=S_IFREG|0764, st_size=26, ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f62000
+12:50:54 read(3, "cat(\"RaawwWWWWWRRRR!!\\n\")\n", 4096) = 26
+12:50:54 getrusage(RUSAGE_SELF, {ru_utime={0, 112000}, ru_stime={0, 160000}, ...}) = 0
+12:50:54 getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:54 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 28), ...}) = 0
+12:50:54 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f8aa6f5a000
+12:50:54 write(1, "RaawwWWWWWRRRR!!\n", 17) = 17
+12:50:54 read(3, "", 4096)              = 0
+12:50:54 rt_sigaction(SIGINT, {SIG_IGN, [], SA_RESTORER, 0x7f8aa6242cb0}, {0x7f8aa68fec80, [INT], SA_RESTORER|SA_RESTART, 0x7f8aa6242cb0}, 8) = 0
+12:50:54 rt_sigaction(SIGQUIT, {SIG_IGN, [], SA_RESTORER, 0x7f8aa6242cb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:54 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+12:50:54 clone(child_stack=0, flags=CLONE_PARENT_SETTID|SIGCHLD, parent_tidptr=0x7ffe1f5073a0) = 16377
+12:50:54 wait4(16377, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 16377
+12:50:54 rt_sigaction(SIGINT, {0x7f8aa68fec80, [INT], SA_RESTORER|SA_RESTART, 0x7f8aa6242cb0}, NULL, 8) = 0
+12:50:54 rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f8aa6242cb0}, NULL, 8) = 0
+12:50:54 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+12:50:54 close(3)                       = 0
+12:50:54 munmap(0x7f8aa6f62000, 4096)   = 0
+12:50:54 futex(0x7f8aa6202fbc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f8aa6202fb8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+12:50:54 futex(0x7f8aa6202f90, FUTEX_WAKE_PRIVATE, 1) = 1
+12:50:54 futex(0x7f8aa620303c, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f8aa6203038, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+12:50:54 futex(0x7f8aa62030bc, FUTEX_WAKE_OP_PRIVATE, 1, 1, 0x7f8aa62030b8, {FUTEX_OP_SET, 0, FUTEX_OP_CMP_GT, 1}) = 1
+12:50:54 futex(0x7f8aa0be89d0, FUTEX_WAIT, 16374, NULL) = 0
+12:50:54 munmap(0x7f8aa0be9000, 33554432) = 0
+12:50:54 munmap(0x7f8a9da03000, 33554432) = 0
+12:50:54 munmap(0x7f8a9ba03000, 33554432) = 0
+12:50:54 exit_group(0)                  = ?
+12:50:54 +++ exited with 0 +++
+% time     seconds  usecs/call     calls    errors syscall
+------ ----------- ----------- --------- --------- ----------------
+ 44.01    0.010404          61       171           read
+ 36.66    0.008667          75       116        42 stat
+ 11.55    0.002730          35        78           getrusage
+  7.58    0.001793          21        86           lstat
+  0.06    0.000014           0       377       232 open
+  0.05    0.000012           0       126           munmap
+  0.04    0.000009           0       222           mmap
+  0.03    0.000007           0       141           brk
+  0.03    0.000006           0       108           lseek
+  0.00    0.000000           0         1           write
+  0.00    0.000000           0       153           close
+  0.00    0.000000           0       152           fstat
+  0.00    0.000000           0        70           mprotect
+  0.00    0.000000           0        32           rt_sigaction
+  0.00    0.000000           0        20           rt_sigprocmask
+  0.00    0.000000           0         2           rt_sigreturn
+  0.00    0.000000           0         1         1 ioctl
+  0.00    0.000000           0        30        29 access
+  0.00    0.000000           0         2           pipe
+  0.00    0.000000           0         1           dup2
+  0.00    0.000000           0         1           getpid
+  0.00    0.000000           0         4           socket
+  0.00    0.000000           0         4         4 connect
+  0.00    0.000000           0         6           clone
+  0.00    0.000000           0         3           execve
+  0.00    0.000000           0         5         2 wait4
+  0.00    0.000000           0         1           uname
+  0.00    0.000000           0         3         1 fcntl
+  0.00    0.000000           0         1           mkdir
+  0.00    0.000000           0         5           getrlimit
+  0.00    0.000000           0         1           getuid
+  0.00    0.000000           0         1           getgid
+  0.00    0.000000           0         1           geteuid
+  0.00    0.000000           0         1           getegid
+  0.00    0.000000           0         1           getppid
+  0.00    0.000000           0         1           getpgrp
+  0.00    0.000000           0         1           sigaltstack
+  0.00    0.000000           0         3           arch_prctl
+  0.00    0.000000           0         9         2 futex
+  0.00    0.000000           0         1           sched_getaffinity
+  0.00    0.000000           0         2           set_tid_address
+  0.00    0.000000           0         3         1 faccessat
+  0.00    0.000000           0         2           set_robust_list
+------ ----------- ----------- --------- --------- ----------------
+100.00    0.023642                  1949       314 total

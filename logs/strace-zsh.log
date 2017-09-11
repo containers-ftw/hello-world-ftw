@@ -1,0 +1,1562 @@
+execve("/usr/local/bin/singularity", ["singularity", "run", "--app", "zsh", "container.ftw"], [/* 17 vars */]) = 0 <0.000186>
+brk(NULL)                               = 0xb54000 <0.000007>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000010>
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f51a6ece000 <0.000009>
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory) <0.000010>
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000010>
+fstat(3, {st_mode=S_IFREG|0644, st_size=170578, ...}) = 0 <0.000007>
+mmap(NULL, 170578, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f51a6ea4000 <0.000009>
+close(3)                                = 0 <0.000006>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000008>
+open("/lib/x86_64-linux-gnu/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = 3 <0.000011>
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p\310\0\0\0\0\0\0"..., 832) = 832 <0.000008>
+fstat(3, {st_mode=S_IFREG|0644, st_size=167240, ...}) = 0 <0.000007>
+mmap(NULL, 2264256, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f51a6a82000 <0.000009>
+mprotect(0x7f51a6aa7000, 2093056, PROT_NONE) = 0 <0.000012>
+mmap(0x7f51a6ca6000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x24000) = 0x7f51a6ca6000 <0.000516>
+close(3)                                = 0 <0.000007>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000008>
+open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3 <0.000010>
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\r\0\0\0\0\0\0"..., 832) = 832 <0.000007>
+fstat(3, {st_mode=S_IFREG|0644, st_size=14608, ...}) = 0 <0.000007>
+mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f51a687e000 <0.000009>
+mprotect(0x7f51a6881000, 2093056, PROT_NONE) = 0 <0.000010>
+mmap(0x7f51a6a80000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f51a6a80000 <0.000009>
+close(3)                                = 0 <0.000007>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000007>
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000014>
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832 <0.000008>
+fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0 <0.000015>
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f51a6ea3000 <0.000009>
+mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f51a64b4000 <0.000011>
+mprotect(0x7f51a6674000, 2097152, PROT_NONE) = 0 <0.000012>
+mmap(0x7f51a6874000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f51a6874000 <0.000013>
+mmap(0x7f51a687a000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f51a687a000 <0.000011>
+close(3)                                = 0 <0.000006>
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f51a6ea2000 <0.000008>
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f51a6ea1000 <0.000007>
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f51a6ea0000 <0.000006>
+arch_prctl(ARCH_SET_FS, 0x7f51a6ea1700) = 0 <0.000007>
+mprotect(0x7f51a6874000, 16384, PROT_READ) = 0 <0.000010>
+mprotect(0x7f51a6a80000, 4096, PROT_READ) = 0 <0.000010>
+mprotect(0x7f51a6ca6000, 16384, PROT_READ) = 0 <0.000011>
+mprotect(0x6f3000, 4096, PROT_READ)     = 0 <0.000008>
+mprotect(0x7f51a6ed0000, 4096, PROT_READ) = 0 <0.000010>
+munmap(0x7f51a6ea4000, 170578)          = 0 <0.000016>
+open("/dev/tty", O_RDWR|O_NONBLOCK)     = 3 <0.000016>
+close(3)                                = 0 <0.000007>
+brk(NULL)                               = 0xb54000 <0.000006>
+brk(0xb55000)                           = 0xb55000 <0.000007>
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3 <0.000009>
+fstat(3, {st_mode=S_IFREG|0644, st_size=2981280, ...}) = 0 <0.000006>
+mmap(NULL, 2981280, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f51a61dc000 <0.000010>
+close(3)                                = 0 <0.000006>
+brk(0xb56000)                           = 0xb56000 <0.000008>
+brk(0xb57000)                           = 0xb57000 <0.000006>
+getuid()                                = 1000 <0.000006>
+getgid()                                = 1000 <0.000006>
+geteuid()                               = 1000 <0.000006>
+getegid()                               = 1000 <0.000006>
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0 <0.000006>
+brk(0xb58000)                           = 0xb58000 <0.000007>
+sysinfo({uptime=554648, loads=[75328, 66976, 62816], totalram=20915408896, freeram=482942976, sharedram=557264896, bufferram=2100592640, totalswap=21335371776, freeswap=17653821440, procs=1604, totalhigh=0, freehigh=0, mem_unit=1}) = 0 <0.000008>
+brk(0xb59000)                           = 0xb59000 <0.000006>
+rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f51a64e94b0}, {SIG_DFL, [], 0}, 8) = 0 <0.000007>
+rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f51a64e94b0}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f51a64e94b0}, 8) = 0 <0.000006>
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f51a64e94b0}, {SIG_DFL, [], 0}, 8) = 0 <0.000006>
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f51a64e94b0}, {SIG_DFL, [], SA_RESTORER, 0x7f51a64e94b0}, 8) = 0 <0.000006>
+rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f51a64e94b0}, {SIG_DFL, [], 0}, 8) = 0 <0.000006>
+rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f51a64e94b0}, {SIG_DFL, [], SA_RESTORER, 0x7f51a64e94b0}, 8) = 0 <0.000006>
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0 <0.000006>
+rt_sigaction(SIGQUIT, {SIG_IGN, [], SA_RESTORER, 0x7f51a64e94b0}, {SIG_DFL, [], SA_RESTORER, 0x7f51a64e94b0}, 8) = 0 <0.000007>
+uname({sysname="Linux", nodename="vanessa-ThinkPad-T460s", ...}) = 0 <0.000006>
+brk(0xb5a000)                           = 0xb5a000 <0.000007>
+brk(0xb5b000)                           = 0xb5b000 <0.000006>
+brk(0xb5d000)                           = 0xb5d000 <0.000006>
+getcwd("/home/vanessa/Documents/Dropbox/Code/ftw/hello-world-ftw", 4096) = 57 <0.000013>
+getpid()                                = 4031 <0.000006>
+open("/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3 <0.000013>
+fstat(3, {st_mode=S_IFREG|0644, st_size=26258, ...}) = 0 <0.000007>
+mmap(NULL, 26258, PROT_READ, MAP_SHARED, 3, 0) = 0x7f51a6ec7000 <0.000012>
+close(3)                                = 0 <0.000007>
+getppid()                               = 4029 <0.000006>
+brk(0xb5e000)                           = 0xb5e000 <0.000007>
+getpgrp()                               = 4028 <0.000006>
+rt_sigaction(SIGCHLD, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f51a64e94b0}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f51a64e94b0}, 8) = 0 <0.000006>
+getrlimit(RLIMIT_NPROC, {rlim_cur=79303, rlim_max=79303}) = 0 <0.000007>
+brk(0xb5f000)                           = 0xb5f000 <0.000007>
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0 <0.000006>
+open("/usr/local/bin/singularity", O_RDONLY) = 3 <0.000011>
+ioctl(3, TCGETS, 0x7fffb3344820)        = -1 ENOTTY (Inappropriate ioctl for device) <0.000007>
+lseek(3, 0, SEEK_CUR)                   = 0 <0.000007>
+read(3, "#!/bin/bash\n# \n# Copyright (c) 2"..., 80) = 80 <0.000007>
+lseek(3, 0, SEEK_SET)                   = 0 <0.000006>
+getrlimit(RLIMIT_NOFILE, {rlim_cur=1024, rlim_max=64*1024}) = 0 <0.000006>
+fcntl(255, F_GETFD)                     = -1 EBADF (Bad file descriptor) <0.000006>
+dup2(3, 255)                            = 255 <0.000007>
+close(3)                                = 0 <0.000006>
+fcntl(255, F_SETFD, FD_CLOEXEC)         = 0 <0.000006>
+fcntl(255, F_GETFL)                     = 0x8000 (flags O_RDONLY|O_LARGEFILE) <0.000006>
+fstat(255, {st_mode=S_IFREG|0755, st_size=4988, ...}) = 0 <0.000007>
+lseek(255, 0, SEEK_CUR)                 = 0 <0.000006>
+brk(0xb61000)                           = 0xb61000 <0.000007>
+brk(0xb62000)                           = 0xb62000 <0.000007>
+read(255, "#!/bin/bash\n# \n# Copyright (c) 2"..., 4988) = 4988 <0.000008>
+brk(0xb63000)                           = 0xb63000 <0.000009>
+brk(0xb64000)                           = 0xb64000 <0.000007>
+stat("/usr/local/libexec/singularity/functions", {st_mode=S_IFREG|0755, st_size=11097, ...}) = 0 <0.000010>
+open("/usr/local/libexec/singularity/functions", O_RDONLY) = 3 <0.000010>
+fstat(3, {st_mode=S_IFREG|0755, st_size=11097, ...}) = 0 <0.000006>
+brk(0xb68000)                           = 0xb68000 <0.000007>
+read(3, "#!/bin/bash\n#\n# Copyright (c) 20"..., 11097) = 11097 <0.000009>
+close(3)                                = 0 <0.000007>
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0 <0.000006>
+brk(0xb69000)                           = 0xb69000 <0.000009>
+brk(0xb6a000)                           = 0xb6a000 <0.000011>
+brk(0xb6b000)                           = 0xb6b000 <0.000008>
+brk(0xb6c000)                           = 0xb6c000 <0.000007>
+brk(0xb6d000)                           = 0xb6d000 <0.000006>
+brk(0xb6e000)                           = 0xb6e000 <0.000006>
+brk(0xb6f000)                           = 0xb6f000 <0.000006>
+brk(0xb70000)                           = 0xb70000 <0.000006>
+brk(0xb71000)                           = 0xb71000 <0.000006>
+brk(0xb72000)                           = 0xb72000 <0.000006>
+brk(0xb73000)                           = 0xb73000 <0.000005>
+brk(0xb74000)                           = 0xb74000 <0.000006>
+brk(0xb75000)                           = 0xb75000 <0.000006>
+brk(0xb76000)                           = 0xb76000 <0.000006>
+brk(0xb77000)                           = 0xb77000 <0.000007>
+brk(0xb78000)                           = 0xb78000 <0.000006>
+brk(0xb79000)                           = 0xb79000 <0.000007>
+brk(0xb7a000)                           = 0xb7a000 <0.000006>
+brk(0xb7b000)                           = 0xb7b000 <0.000007>
+brk(0xb7c000)                           = 0xb7c000 <0.000006>
+brk(0xb7d000)                           = 0xb7d000 <0.000006>
+brk(0xb7e000)                           = 0xb7e000 <0.000007>
+brk(0xb7f000)                           = 0xb7f000 <0.000006>
+brk(0xb80000)                           = 0xb80000 <0.000007>
+brk(0xb81000)                           = 0xb81000 <0.000005>
+brk(0xb82000)                           = 0xb82000 <0.000006>
+brk(0xb83000)                           = 0xb83000 <0.000008>
+brk(0xb84000)                           = 0xb84000 <0.000006>
+brk(0xb85000)                           = 0xb85000 <0.000006>
+brk(0xb86000)                           = 0xb86000 <0.000008>
+brk(0xb87000)                           = 0xb87000 <0.000007>
+brk(0xb88000)                           = 0xb88000 <0.000006>
+brk(0xb89000)                           = 0xb89000 <0.000007>
+brk(0xb8a000)                           = 0xb8a000 <0.000007>
+brk(0xb8b000)                           = 0xb8b000 <0.000006>
+brk(0xb8c000)                           = 0xb8c000 <0.000005>
+brk(0xb8d000)                           = 0xb8d000 <0.000006>
+brk(0xb8e000)                           = 0xb8e000 <0.000006>
+brk(0xb8f000)                           = 0xb8f000 <0.000006>
+brk(0xb90000)                           = 0xb90000 <0.000005>
+brk(0xb91000)                           = 0xb91000 <0.000007>
+brk(0xb92000)                           = 0xb92000 <0.000008>
+brk(0xb93000)                           = 0xb93000 <0.000006>
+brk(0xb94000)                           = 0xb94000 <0.000005>
+brk(0xb95000)                           = 0xb95000 <0.000007>
+brk(0xb96000)                           = 0xb96000 <0.000008>
+brk(0xb97000)                           = 0xb97000 <0.000007>
+brk(0xb98000)                           = 0xb98000 <0.000005>
+brk(0xb99000)                           = 0xb99000 <0.000005>
+brk(0xb9a000)                           = 0xb9a000 <0.000005>
+brk(0xb9b000)                           = 0xb9b000 <0.000006>
+brk(0xb9c000)                           = 0xb9c000 <0.000006>
+brk(0xb9d000)                           = 0xb9d000 <0.000008>
+brk(0xb9e000)                           = 0xb9e000 <0.000005>
+brk(0xb9f000)                           = 0xb9f000 <0.000006>
+brk(0xba0000)                           = 0xba0000 <0.000007>
+brk(0xba1000)                           = 0xba1000 <0.000012>
+brk(0xba2000)                           = 0xba2000 <0.000005>
+brk(0xba3000)                           = 0xba3000 <0.000005>
+faccessat(AT_FDCWD, "/usr/local/libexec/singularity/cli/run.exec", X_OK) = 0 <0.000015>
+brk(0xba4000)                           = 0xba4000 <0.000008>
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f51a64e94b0}, {SIG_DFL, [], SA_RESTORER, 0x7f51a64e94b0}, 8) = 0 <0.000005>
+rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f51a64e94b0}, {SIG_IGN, [], SA_RESTORER, 0x7f51a64e94b0}, 8) = 0 <0.000005>
+rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f51a64e94b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f51a64e94b0}, 8) = 0 <0.000005>
+execve("/usr/local/libexec/singularity/cli/run.exec", ["/usr/local/libexec/singularity/c"..., "--app", "zsh", "container.ftw"], [/* 26 vars */]) = 0 <0.000233>
+brk(NULL)                               = 0x10a2000 <0.000006>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000008>
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7e4a0fb000 <0.000009>
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory) <0.000008>
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000009>
+fstat(3, {st_mode=S_IFREG|0644, st_size=170578, ...}) = 0 <0.000008>
+mmap(NULL, 170578, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f7e4a0d1000 <0.000007>
+close(3)                                = 0 <0.000006>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000007>
+open("/lib/x86_64-linux-gnu/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = 3 <0.000009>
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p\310\0\0\0\0\0\0"..., 832) = 832 <0.000007>
+fstat(3, {st_mode=S_IFREG|0644, st_size=167240, ...}) = 0 <0.000006>
+mmap(NULL, 2264256, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7e49caf000 <0.000007>
+mprotect(0x7f7e49cd4000, 2093056, PROT_NONE) = 0 <0.000012>
+mmap(0x7f7e49ed3000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x24000) = 0x7f7e49ed3000 <0.000009>
+close(3)                                = 0 <0.000006>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000007>
+open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3 <0.000008>
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\r\0\0\0\0\0\0"..., 832) = 832 <0.000006>
+fstat(3, {st_mode=S_IFREG|0644, st_size=14608, ...}) = 0 <0.000007>
+mmap(NULL, 2109680, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7e49aab000 <0.000009>
+mprotect(0x7f7e49aae000, 2093056, PROT_NONE) = 0 <0.000009>
+mmap(0x7f7e49cad000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f7e49cad000 <0.000010>
+close(3)                                = 0 <0.000011>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000008>
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000011>
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832 <0.000007>
+fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0 <0.000006>
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7e4a0d0000 <0.000007>
+mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7e496e1000 <0.000009>
+mprotect(0x7f7e498a1000, 2097152, PROT_NONE) = 0 <0.000143>
+mmap(0x7f7e49aa1000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f7e49aa1000 <0.000028>
+mmap(0x7f7e49aa7000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7e49aa7000 <0.000009>
+close(3)                                = 0 <0.000005>
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7e4a0cf000 <0.000009>
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7e4a0ce000 <0.000006>
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7e4a0cd000 <0.000006>
+arch_prctl(ARCH_SET_FS, 0x7f7e4a0ce700) = 0 <0.000006>
+mprotect(0x7f7e49aa1000, 16384, PROT_READ) = 0 <0.000010>
+mprotect(0x7f7e49cad000, 4096, PROT_READ) = 0 <0.000010>
+mprotect(0x7f7e49ed3000, 16384, PROT_READ) = 0 <0.000010>
+mprotect(0x6f3000, 4096, PROT_READ)     = 0 <0.000008>
+mprotect(0x7f7e4a0fd000, 4096, PROT_READ) = 0 <0.000011>
+munmap(0x7f7e4a0d1000, 170578)          = 0 <0.000018>
+open("/dev/tty", O_RDWR|O_NONBLOCK)     = 3 <0.000014>
+close(3)                                = 0 <0.000007>
+brk(NULL)                               = 0x10a2000 <0.000006>
+brk(0x10a3000)                          = 0x10a3000 <0.000007>
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3 <0.000010>
+fstat(3, {st_mode=S_IFREG|0644, st_size=2981280, ...}) = 0 <0.000006>
+mmap(NULL, 2981280, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f7e49409000 <0.000009>
+close(3)                                = 0 <0.000006>
+brk(0x10a4000)                          = 0x10a4000 <0.000007>
+brk(0x10a5000)                          = 0x10a5000 <0.000006>
+getuid()                                = 1000 <0.000005>
+getgid()                                = 1000 <0.000005>
+geteuid()                               = 1000 <0.000005>
+getegid()                               = 1000 <0.000005>
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0 <0.000005>
+brk(0x10a6000)                          = 0x10a6000 <0.000007>
+sysinfo({uptime=554648, loads=[75328, 66976, 62816], totalram=20915408896, freeram=482897920, sharedram=557264896, bufferram=2100592640, totalswap=21335371776, freeswap=17653821440, procs=1603, totalhigh=0, freehigh=0, mem_unit=1}) = 0 <0.000007>
+brk(0x10a7000)                          = 0x10a7000 <0.000006>
+rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f7e497164b0}, {SIG_DFL, [], 0}, 8) = 0 <0.000022>
+rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f7e497164b0}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f7e497164b0}, 8) = 0 <0.000005>
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f7e497164b0}, {SIG_DFL, [], 0}, 8) = 0 <0.000005>
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f7e497164b0}, {SIG_DFL, [], SA_RESTORER, 0x7f7e497164b0}, 8) = 0 <0.000006>
+rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f7e497164b0}, {SIG_DFL, [], 0}, 8) = 0 <0.000005>
+rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f7e497164b0}, {SIG_DFL, [], SA_RESTORER, 0x7f7e497164b0}, 8) = 0 <0.000006>
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0 <0.000006>
+rt_sigaction(SIGQUIT, {SIG_IGN, [], SA_RESTORER, 0x7f7e497164b0}, {SIG_DFL, [], SA_RESTORER, 0x7f7e497164b0}, 8) = 0 <0.000006>
+uname({sysname="Linux", nodename="vanessa-ThinkPad-T460s", ...}) = 0 <0.000005>
+brk(0x10a8000)                          = 0x10a8000 <0.000007>
+brk(0x10a9000)                          = 0x10a9000 <0.000006>
+stat("/home/vanessa/Documents/Dropbox/Code/ftw/hello-world-ftw", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0 <0.000062>
+stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0 <0.000007>
+getpid()                                = 4031 <0.000005>
+open("/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3 <0.000011>
+fstat(3, {st_mode=S_IFREG|0644, st_size=26258, ...}) = 0 <0.000006>
+mmap(NULL, 26258, PROT_READ, MAP_SHARED, 3, 0) = 0x7f7e4a0f4000 <0.000010>
+close(3)                                = 0 <0.000005>
+brk(0x10aa000)                          = 0x10aa000 <0.000006>
+getppid()                               = 4029 <0.000005>
+brk(0x10ab000)                          = 0x10ab000 <0.000007>
+brk(0x10ac000)                          = 0x10ac000 <0.000006>
+getpgrp()                               = 4028 <0.000006>
+rt_sigaction(SIGCHLD, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f7e497164b0}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f7e497164b0}, 8) = 0 <0.000006>
+getrlimit(RLIMIT_NPROC, {rlim_cur=79303, rlim_max=79303}) = 0 <0.000006>
+brk(0x10ad000)                          = 0x10ad000 <0.000007>
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0 <0.000006>
+open("/usr/local/libexec/singularity/cli/run.exec", O_RDONLY) = 3 <0.000012>
+ioctl(3, TCGETS, 0x7ffeb905ce80)        = -1 ENOTTY (Inappropriate ioctl for device) <0.000006>
+lseek(3, 0, SEEK_CUR)                   = 0 <0.000005>
+read(3, "#!/bin/bash\n#\n# Copyright (c) 20"..., 80) = 80 <0.000007>
+lseek(3, 0, SEEK_SET)                   = 0 <0.000005>
+getrlimit(RLIMIT_NOFILE, {rlim_cur=1024, rlim_max=64*1024}) = 0 <0.000005>
+fcntl(255, F_GETFD)                     = -1 EBADF (Bad file descriptor) <0.000006>
+dup2(3, 255)                            = 255 <0.000006>
+close(3)                                = 0 <0.000005>
+fcntl(255, F_SETFD, FD_CLOEXEC)         = 0 <0.000005>
+fcntl(255, F_GETFL)                     = 0x8000 (flags O_RDONLY|O_LARGEFILE) <0.000005>
+fstat(255, {st_mode=S_IFREG|0755, st_size=2943, ...}) = 0 <0.000006>
+lseek(255, 0, SEEK_CUR)                 = 0 <0.000006>
+brk(0x10ae000)                          = 0x10ae000 <0.000007>
+brk(0x10af000)                          = 0x10af000 <0.000006>
+read(255, "#!/bin/bash\n#\n# Copyright (c) 20"..., 2943) = 2943 <0.000006>
+brk(0x10b0000)                          = 0x10b0000 <0.000006>
+stat("/usr/local/libexec/singularity/functions", {st_mode=S_IFREG|0755, st_size=11097, ...}) = 0 <0.000011>
+open("/usr/local/libexec/singularity/functions", O_RDONLY) = 3 <0.000010>
+fstat(3, {st_mode=S_IFREG|0755, st_size=11097, ...}) = 0 <0.000006>
+brk(0x10b4000)                          = 0x10b4000 <0.000006>
+read(3, "#!/bin/bash\n#\n# Copyright (c) 20"..., 11097) = 11097 <0.000008>
+close(3)                                = 0 <0.000006>
+brk(0x10b5000)                          = 0x10b5000 <0.000006>
+brk(0x10b6000)                          = 0x10b6000 <0.000006>
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0 <0.000005>
+brk(0x10b7000)                          = 0x10b7000 <0.000009>
+brk(0x10b8000)                          = 0x10b8000 <0.000007>
+brk(0x10b9000)                          = 0x10b9000 <0.000007>
+brk(0x10ba000)                          = 0x10ba000 <0.000006>
+brk(0x10bb000)                          = 0x10bb000 <0.000006>
+brk(0x10bc000)                          = 0x10bc000 <0.000005>
+brk(0x10bd000)                          = 0x10bd000 <0.000005>
+brk(0x10be000)                          = 0x10be000 <0.000005>
+brk(0x10bf000)                          = 0x10bf000 <0.000006>
+brk(0x10c0000)                          = 0x10c0000 <0.000005>
+brk(0x10c1000)                          = 0x10c1000 <0.000005>
+brk(0x10c2000)                          = 0x10c2000 <0.000006>
+brk(0x10c3000)                          = 0x10c3000 <0.000006>
+brk(0x10c4000)                          = 0x10c4000 <0.000008>
+brk(0x10c5000)                          = 0x10c5000 <0.000007>
+brk(0x10c6000)                          = 0x10c6000 <0.000006>
+brk(0x10c7000)                          = 0x10c7000 <0.000005>
+brk(0x10c8000)                          = 0x10c8000 <0.000007>
+brk(0x10c9000)                          = 0x10c9000 <0.000007>
+brk(0x10ca000)                          = 0x10ca000 <0.000007>
+brk(0x10cb000)                          = 0x10cb000 <0.000006>
+brk(0x10cc000)                          = 0x10cc000 <0.000007>
+brk(0x10cd000)                          = 0x10cd000 <0.000007>
+brk(0x10ce000)                          = 0x10ce000 <0.000005>
+brk(0x10cf000)                          = 0x10cf000 <0.000006>
+brk(0x10d0000)                          = 0x10d0000 <0.000007>
+brk(0x10d1000)                          = 0x10d1000 <0.000006>
+brk(0x10d2000)                          = 0x10d2000 <0.000006>
+brk(0x10d3000)                          = 0x10d3000 <0.000006>
+brk(0x10d4000)                          = 0x10d4000 <0.000005>
+brk(0x10d5000)                          = 0x10d5000 <0.000005>
+brk(0x10d6000)                          = 0x10d6000 <0.000006>
+brk(0x10d7000)                          = 0x10d7000 <0.000008>
+brk(0x10d8000)                          = 0x10d8000 <0.000006>
+brk(0x10d9000)                          = 0x10d9000 <0.000008>
+brk(0x10da000)                          = 0x10da000 <0.000008>
+brk(0x10db000)                          = 0x10db000 <0.000007>
+brk(0x10dc000)                          = 0x10dc000 <0.000006>
+brk(0x10dd000)                          = 0x10dd000 <0.000006>
+brk(0x10de000)                          = 0x10de000 <0.000007>
+brk(0x10df000)                          = 0x10df000 <0.000008>
+brk(0x10e0000)                          = 0x10e0000 <0.000006>
+brk(0x10e1000)                          = 0x10e1000 <0.000006>
+brk(0x10e2000)                          = 0x10e2000 <0.000007>
+brk(0x10e3000)                          = 0x10e3000 <0.000007>
+brk(0x10e4000)                          = 0x10e4000 <0.000006>
+brk(0x10e5000)                          = 0x10e5000 <0.000006>
+brk(0x10e6000)                          = 0x10e6000 <0.000005>
+brk(0x10e7000)                          = 0x10e7000 <0.000006>
+brk(0x10e8000)                          = 0x10e8000 <0.000007>
+brk(0x10e9000)                          = 0x10e9000 <0.000006>
+brk(0x10ea000)                          = 0x10ea000 <0.000007>
+brk(0x10eb000)                          = 0x10eb000 <0.000006>
+brk(0x10ec000)                          = 0x10ec000 <0.000006>
+stat("/home/vanessa/.singularity-init", 0x7ffeb905cac0) = -1 ENOENT (No such file or directory) <0.000011>
+stat("/usr/local/libexec/singularity/cli/action_argparser.sh", {st_mode=S_IFREG|0755, st_size=5737, ...}) = 0 <0.000013>
+open("/usr/local/libexec/singularity/cli/action_argparser.sh", O_RDONLY) = 3 <0.000012>
+fstat(3, {st_mode=S_IFREG|0755, st_size=5737, ...}) = 0 <0.000005>
+read(3, "#!/bin/bash\n#\n# Copyright (c) 20"..., 5737) = 5737 <0.000007>
+close(3)                                = 0 <0.000007>
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0 <0.000006>
+brk(0x10ed000)                          = 0x10ed000 <0.000008>
+brk(0x10ee000)                          = 0x10ee000 <0.000006>
+brk(0x10ef000)                          = 0x10ef000 <0.000008>
+brk(0x10f0000)                          = 0x10f0000 <0.000006>
+brk(0x10f1000)                          = 0x10f1000 <0.000007>
+brk(0x10f2000)                          = 0x10f2000 <0.000006>
+brk(0x10f3000)                          = 0x10f3000 <0.000007>
+brk(0x10f4000)                          = 0x10f4000 <0.000008>
+stat("/usr/local/etc/singularity/init", {st_mode=S_IFREG|0644, st_size=782, ...}) = 0 <0.000013>
+open("/usr/local/etc/singularity/init", O_RDONLY) = 3 <0.000011>
+fstat(3, {st_mode=S_IFREG|0644, st_size=782, ...}) = 0 <0.000005>
+read(3, "# This will be sourced before la"..., 782) = 782 <0.000006>
+close(3)                                = 0 <0.000007>
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0 <0.000005>
+faccessat(AT_FDCWD, "/usr/local/libexec/singularity/image-handler.sh", X_OK) = 0 <0.000012>
+open("/usr/local/libexec/singularity/image-handler.sh", O_RDONLY) = 3 <0.000010>
+fstat(3, {st_mode=S_IFREG|0755, st_size=1989, ...}) = 0 <0.000006>
+brk(0x10f5000)                          = 0x10f5000 <0.000007>
+read(3, "#!/bin/bash\n# \n# Copyright (c) 2"..., 1989) = 1989 <0.000007>
+close(3)                                = 0 <0.000006>
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0 <0.000006>
+stat("/usr/local/libexec/singularity/bin/action-suid", {st_mode=S_IFREG|S_ISUID|0755, st_size=523456, ...}) = 0 <0.000011>
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f7e497164b0}, {SIG_DFL, [], SA_RESTORER, 0x7f7e497164b0}, 8) = 0 <0.000007>
+rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f7e497164b0}, {SIG_IGN, [], SA_RESTORER, 0x7f7e497164b0}, 8) = 0 <0.000005>
+rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f7e497164b0}, {0x447ad0, [], SA_RESTORER|SA_RESTART, 0x7f7e497164b0}, 8) = 0 <0.000005>
+execve("/usr/local/libexec/singularity/bin/action-suid", ["/usr/local/libexec/singularity/b"...], [/* 30 vars */]) = 0 <0.000263>
+brk(NULL)                               = 0x15c3000 <0.000016>
+fcntl(0, F_GETFD)                       = 0 <0.000006>
+fcntl(1, F_GETFD)                       = 0 <0.000004>
+fcntl(2, F_GETFD)                       = 0 <0.000005>
+access("/etc/suid-debug", F_OK)         = -1 ENOENT (No such file or directory) <0.000009>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000007>
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6232c37000 <0.000007>
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory) <0.000009>
+open("/usr/local/lib/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000010>
+stat("/usr/local/lib/tls/x86_64", 0x7ffc1b407130) = -1 ENOENT (No such file or directory) <0.000007>
+open("/usr/local/lib/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000008>
+stat("/usr/local/lib/tls", 0x7ffc1b407130) = -1 ENOENT (No such file or directory) <0.000006>
+open("/usr/local/lib/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000007>
+stat("/usr/local/lib/x86_64", 0x7ffc1b407130) = -1 ENOENT (No such file or directory) <0.000006>
+open("/usr/local/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000007>
+stat("/usr/local/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000007>
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000008>
+fstat(3, {st_mode=S_IFREG|0644, st_size=170578, ...}) = 0 <0.000005>
+mmap(NULL, 170578, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6232c0d000 <0.000007>
+close(3)                                = 0 <0.000005>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000006>
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000010>
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832 <0.000006>
+fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0 <0.000006>
+mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f623264a000 <0.000010>
+mprotect(0x7f623280a000, 2097152, PROT_NONE) = 0 <0.000014>
+mmap(0x7f6232a0a000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f6232a0a000 <0.000013>
+mmap(0x7f6232a10000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6232a10000 <0.000009>
+close(3)                                = 0 <0.000005>
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6232c0c000 <0.000007>
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6232c0b000 <0.000006>
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6232c0a000 <0.000006>
+arch_prctl(ARCH_SET_FS, 0x7f6232c0b700) = 0 <0.000006>
+mprotect(0x7f6232a0a000, 16384, PROT_READ) = 0 <0.000012>
+mprotect(0x623000, 4096, PROT_READ)     = 0 <0.000008>
+mprotect(0x7f6232c39000, 4096, PROT_READ) = 0 <0.000011>
+munmap(0x7f6232c0d000, 170578)          = 0 <0.000022>
+stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0 <0.000012>
+stat("/home/vanessa/Documents/Dropbox/Code/ftw/hello-world-ftw", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0 <0.000012>
+brk(NULL)                               = 0x15c3000 <0.000005>
+brk(0x15e4000)                          = 0x15e4000 <0.000007>
+socket(PF_LOCAL, SOCK_DGRAM|SOCK_CLOEXEC, 0) = 3 <0.000016>
+connect(3, {sa_family=AF_LOCAL, sun_path="/dev/log"}, 110) = 0 <0.000029>
+stat("/usr/local/etc/singularity/singularity.conf", {st_mode=S_IFREG|0644, st_size=5904, ...}) = 0 <0.000010>
+open("/usr/local/etc/singularity/singularity.conf", O_RDONLY) = 4 <0.000011>
+fstat(4, {st_mode=S_IFREG|0644, st_size=5904, ...}) = 0 <0.000006>
+read(4, "# SINGULARITY.CONF\n# This is the"..., 4096) = 4096 <0.000007>
+read(4, "SET_NO_NEW_PRIVS)\nuser bind cont"..., 4096) = 1808 <0.000007>
+read(4, "", 4096)                       = 0 <0.000006>
+close(4)                                = 0 <0.000007>
+getuid()                                = 1000 <0.000005>
+getgid()                                = 1000 <0.000005>
+getgroups(0, NULL)                      = 9 <0.000005>
+getgroups(9, [4, 24, 27, 30, 46, 113, 128, 999, 1000]) = 9 <0.000006>
+socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4 <0.000011>
+connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory) <0.000016>
+close(4)                                = 0 <0.000009>
+socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4 <0.000007>
+connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory) <0.000013>
+close(4)                                = 0 <0.000008>
+open("/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 4 <0.000010>
+fstat(4, {st_mode=S_IFREG|0644, st_size=529, ...}) = 0 <0.000006>
+read(4, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 529 <0.000009>
+read(4, "", 4096)                       = 0 <0.000007>
+close(4)                                = 0 <0.000007>
+open("/usr/local/lib/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000015>
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4 <0.000011>
+fstat(4, {st_mode=S_IFREG|0644, st_size=170578, ...}) = 0 <0.000007>
+mmap(NULL, 170578, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f6232c0d000 <0.000016>
+close(4)                                = 0 <0.000008>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000014>
+open("/lib/x86_64-linux-gnu/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = 4 <0.000015>
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\22\0\0\0\0\0\0"..., 832) = 832 <0.000010>
+fstat(4, {st_mode=S_IFREG|0644, st_size=35688, ...}) = 0 <0.000007>
+mmap(NULL, 2131040, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f6232441000 <0.000014>
+mprotect(0x7f6232449000, 2093056, PROT_NONE) = 0 <0.000018>
+mmap(0x7f6232648000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x7000) = 0x7f6232648000 <0.000025>
+close(4)                                = 0 <0.000008>
+open("/usr/local/lib/libnsl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000013>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000008>
+open("/lib/x86_64-linux-gnu/libnsl.so.1", O_RDONLY|O_CLOEXEC) = 4 <0.000012>
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360?\0\0\0\0\0\0"..., 832) = 832 <0.000007>
+fstat(4, {st_mode=S_IFREG|0644, st_size=93128, ...}) = 0 <0.000008>
+mmap(NULL, 2198104, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f6232228000 <0.000013>
+mprotect(0x7f623223e000, 2093056, PROT_NONE) = 0 <0.000014>
+mmap(0x7f623243d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x15000) = 0x7f623243d000 <0.000016>
+mmap(0x7f623243f000, 6744, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f623243f000 <0.000011>
+close(4)                                = 0 <0.000006>
+mprotect(0x7f623243d000, 4096, PROT_READ) = 0 <0.000009>
+mprotect(0x7f6232648000, 4096, PROT_READ) = 0 <0.000013>
+munmap(0x7f6232c0d000, 170578)          = 0 <0.000019>
+open("/usr/local/lib/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000011>
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4 <0.000009>
+fstat(4, {st_mode=S_IFREG|0644, st_size=170578, ...}) = 0 <0.000007>
+mmap(NULL, 170578, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f6232c0d000 <0.000009>
+close(4)                                = 0 <0.000005>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000010>
+open("/lib/x86_64-linux-gnu/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = 4 <0.000010>
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260 \0\0\0\0\0\0"..., 832) = 832 <0.000006>
+fstat(4, {st_mode=S_IFREG|0644, st_size=47648, ...}) = 0 <0.000006>
+mmap(NULL, 2143624, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f623201c000 <0.000009>
+mprotect(0x7f6232027000, 2093056, PROT_NONE) = 0 <0.000011>
+mmap(0x7f6232226000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0xa000) = 0x7f6232226000 <0.000010>
+close(4)                                = 0 <0.000005>
+open("/usr/local/lib/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000009>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000007>
+open("/lib/x86_64-linux-gnu/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = 4 <0.000009>
+read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260!\0\0\0\0\0\0"..., 832) = 832 <0.000007>
+fstat(4, {st_mode=S_IFREG|0644, st_size=47600, ...}) = 0 <0.000006>
+mmap(NULL, 2168600, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f6231e0a000 <0.000011>
+mprotect(0x7f6231e15000, 2093056, PROT_NONE) = 0 <0.000010>
+mmap(0x7f6232014000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0xa000) = 0x7f6232014000 <0.000012>
+mmap(0x7f6232016000, 22296, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6232016000 <0.000008>
+close(4)                                = 0 <0.000005>
+mprotect(0x7f6232014000, 4096, PROT_READ) = 0 <0.000008>
+mprotect(0x7f6232226000, 4096, PROT_READ) = 0 <0.000008>
+munmap(0x7f6232c0d000, 170578)          = 0 <0.000015>
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4 <0.000008>
+lseek(4, 0, SEEK_CUR)                   = 0 <0.000005>
+fstat(4, {st_mode=S_IFREG|0644, st_size=2433, ...}) = 0 <0.000005>
+mmap(NULL, 2433, PROT_READ, MAP_SHARED, 4, 0) = 0x7f6232c36000 <0.000007>
+lseek(4, 2433, SEEK_SET)                = 2433 <0.000005>
+munmap(0x7f6232c36000, 2433)            = 0 <0.000008>
+close(4)                                = 0 <0.000005>
+stat("/proc/self/exe", {st_mode=S_IFREG|S_ISUID|0755, st_size=523456, ...}) = 0 <0.000019>
+stat("/proc/self/exe", {st_mode=S_IFREG|S_ISUID|0755, st_size=523456, ...}) = 0 <0.000009>
+stat("/usr/local/etc/singularity/singularity.conf", {st_mode=S_IFREG|0644, st_size=5904, ...}) = 0 <0.000008>
+geteuid()                               = 0 <0.000004>
+getuid()                                = 1000 <0.000004>
+stat("/proc/self/exe", {st_mode=S_IFREG|S_ISUID|0755, st_size=523456, ...}) = 0 <0.000009>
+stat("/proc/self/exe", {st_mode=S_IFREG|S_ISUID|0755, st_size=523456, ...}) = 0 <0.000007>
+geteuid()                               = 0 <0.000004>
+setresgid(-1, 1000, -1)                 = 0 <0.000006>
+setresuid(-1, 1000, -1)                 = 0 <0.000006>
+getgid()                                = 1000 <0.000005>
+getuid()                                = 1000 <0.000004>
+stat("container.ftw", {st_mode=S_IFREG|0755, st_size=8388608032, ...}) = 0 <0.000007>
+open("container.ftw", O_RDONLY)         = 4 <0.000008>
+fcntl(4, F_SETFD, FD_CLOEXEC)           = 0 <0.000005>
+fstat(4, {st_mode=S_IFREG|0755, st_size=8388608032, ...}) = 0 <0.000005>
+stat("/proc/self/exe", {st_mode=S_IFREG|S_ISUID|0755, st_size=523456, ...}) = 0 <0.000010>
+stat("/proc/self/exe", {st_mode=S_IFREG|S_ISUID|0755, st_size=523456, ...}) = 0 <0.000008>
+fstat(4, {st_mode=S_IFREG|0755, st_size=8388608032, ...}) = 0 <0.000006>
+dup(4)                                  = 5 <0.000004>
+fcntl(5, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE) <0.000005>
+fstat(5, {st_mode=S_IFREG|0755, st_size=8388608032, ...}) = 0 <0.000005>
+lseek(5, 0, SEEK_SET)                   = 0 <0.000006>
+read(5, "#!/usr/bin/env run-singularity\n\0"..., 4096) = 4096 <0.000007>
+close(5)                                = 0 <0.000005>
+stat("container.ftw", {st_mode=S_IFREG|0755, st_size=8388608032, ...}) = 0 <0.000007>
+dup(4)                                  = 5 <0.000005>
+fcntl(5, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE) <0.000004>
+fstat(5, {st_mode=S_IFREG|0755, st_size=8388608032, ...}) = 0 <0.000006>
+lseek(5, 0, SEEK_SET)                   = 0 <0.000005>
+read(5, "#!/usr/bin/env run-singularity\n\0"..., 4096) = 4096 <0.000007>
+close(5)                                = 0 <0.000005>
+getuid()                                = 1000 <0.000005>
+setresuid(-1, 0, -1)                    = 0 <0.000007>
+setresgid(-1, 0, -1)                    = 0 <0.000006>
+setgroups(0, [])                        = 0 <0.000007>
+stat("/dev/loop0", {st_mode=S_IFBLK|0660, st_rdev=makedev(7, 0), ...}) = 0 <0.000008>
+open("/dev/loop0", O_RDONLY)            = 5 <0.000012>
+ioctl(5, LOOP_SET_FD, 4)                = 0 <0.000824>
+ioctl(5, LOOP_SET_STATUS64, {offset=0x1f, number=0, flags=LO_FLAGS_AUTOCLEAR, file_name="", ...}) = 0 <0.023196>
+geteuid()                               = 0 <0.000015>
+setgroups(9, [4, 24, 27, 30, 46, 113, 128, 999, 1000]) = 0 <0.000177>
+setresgid(-1, 1000, -1)                 = 0 <0.000008>
+setresuid(-1, 1000, -1)                 = 0 <0.000008>
+getgid()                                = 1000 <0.000132>
+getuid()                                = 1000 <0.000007>
+fcntl(5, F_SETFD, FD_CLOEXEC)           = 0 <0.000010>
+getuid()                                = 1000 <0.003000>
+setresuid(-1, 0, -1)                    = 0 <0.000012>
+setresgid(-1, 0, -1)                    = 0 <0.000006>
+setgroups(0, [])                        = 0 <0.000006>
+unshare(CLONE_FS)                       = 0 <0.000008>
+unshare(CLONE_NEWNS)                    = 0 <0.000620>
+mount(NULL, "/", NULL, MS_REC|MS_SLAVE, NULL) = 0 <0.000015>
+geteuid()                               = 0 <0.000005>
+setgroups(9, [4, 24, 27, 30, 46, 113, 128, 999, 1000]) = 0 <0.000009>
+setresgid(-1, 1000, -1)                 = 0 <0.000007>
+setresuid(-1, 1000, -1)                 = 0 <0.000006>
+getgid()                                = 1000 <0.000005>
+getuid()                                = 1000 <0.000004>
+stat("/usr/local/var/singularity/mnt/session", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000011>
+getuid()                                = 1000 <0.000005>
+setresuid(-1, 0, -1)                    = 0 <0.000006>
+setresgid(-1, 0, -1)                    = 0 <0.000006>
+setgroups(0, [])                        = 0 <0.000006>
+mount("tmpfs", "/usr/local/var/singularity/mnt/session", "tmpfs", MS_NOSUID, "size=16m") = 0 <0.000112>
+geteuid()                               = 0 <0.000005>
+setgroups(9, [4, 24, 27, 30, 46, 113, 128, 999, 1000]) = 0 <0.000007>
+setresgid(-1, 1000, -1)                 = 0 <0.000006>
+setresuid(-1, 1000, -1)                 = 0 <0.000007>
+getgid()                                = 1000 <0.000005>
+getuid()                                = 1000 <0.000005>
+stat("/usr/local/var/singularity/mnt/container", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000008>
+stat("/usr/local/var/singularity/mnt/container", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000007>
+getuid()                                = 1000 <0.000005>
+getuid()                                = 1000 <0.000005>
+setresuid(-1, 0, -1)                    = 0 <0.000006>
+setresgid(-1, 0, -1)                    = 0 <0.000006>
+setgroups(0, [])                        = 0 <0.000006>
+mount("/dev/loop0", "/usr/local/var/singularity/mnt/container", "ext3", MS_RDONLY|MS_NOSUID|MS_NODEV, "errors=remount-ro") = 0 <0.005190>
+geteuid()                               = 0 <0.000005>
+setgroups(9, [4, 24, 27, 30, 46, 113, 128, 999, 1000]) = 0 <0.000009>
+setresgid(-1, 1000, -1)                 = 0 <0.000006>
+setresuid(-1, 1000, -1)                 = 0 <0.000007>
+getgid()                                = 1000 <0.000005>
+getuid()                                = 1000 <0.000004>
+stat("/usr/local/var/singularity/mnt/container/bin/sh", {st_mode=S_IFREG|0755, st_size=121272, ...}) = 0 <0.000137>
+stat("/usr/local/var/singularity/mnt/overlay", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000009>
+getuid()                                = 1000 <0.000005>
+setresuid(-1, 0, -1)                    = 0 <0.000012>
+setresgid(-1, 0, -1)                    = 0 <0.000005>
+setgroups(0, [])                        = 0 <0.000005>
+mount("tmpfs", "/usr/local/var/singularity/mnt/overlay", "tmpfs", MS_NOSUID|MS_NODEV, "size=1m") = 0 <0.000098>
+stat("/usr/local/var/singularity/mnt/overlay/upper", 0x7ffc1b407820) = -1 ENOENT (No such file or directory) <0.000010>
+stat("/usr/local/var/singularity/mnt/overlay", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=40, ...}) = 0 <0.000008>
+umask(0)                                = 022 <0.000004>
+mkdir("/usr/local/var/singularity/mnt/overlay/upper", 0755) = 0 <0.000011>
+umask(022)                              = 0 <0.000004>
+stat("/usr/local/var/singularity/mnt/overlay/work", 0x7ffc1b407820) = -1 ENOENT (No such file or directory) <0.000009>
+stat("/usr/local/var/singularity/mnt/overlay", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=60, ...}) = 0 <0.000007>
+umask(0)                                = 022 <0.000005>
+mkdir("/usr/local/var/singularity/mnt/overlay/work", 0755) = 0 <0.000010>
+umask(022)                              = 0 <0.000007>
+stat("/usr/local/var/singularity/mnt/overlay/final", 0x7ffc1b407820) = -1 ENOENT (No such file or directory) <0.000008>
+stat("/usr/local/var/singularity/mnt/overlay", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=80, ...}) = 0 <0.000006>
+umask(0)                                = 022 <0.000005>
+mkdir("/usr/local/var/singularity/mnt/overlay/final", 0755) = 0 <0.000008>
+umask(022)                              = 0 <0.000004>
+mount("OverlayFS", "/usr/local/var/singularity/mnt/overlay/final", "overlay", MS_NOSUID|MS_NODEV, "lowerdir=/usr/local/var/singular"...) = 0 <0.000109>
+geteuid()                               = 0 <0.000005>
+setgroups(9, [4, 24, 27, 30, 46, 113, 128, 999, 1000]) = 0 <0.000007>
+setresgid(-1, 1000, -1)                 = 0 <0.000006>
+setresuid(-1, 1000, -1)                 = 0 <0.000006>
+getgid()                                = 1000 <0.000005>
+getuid()                                = 1000 <0.000005>
+stat("/usr/local/var/singularity/mnt/overlay/final", {st_mode=S_IFDIR|0755, st_size=40, ...}) = 0 <0.000008>
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=2845, ...}) = 0 <0.000011>
+open("/proc/mounts", O_RDONLY)          = 6 <0.000024>
+fstat(6, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0 <0.000006>
+read(6, "/dev/nvme0n1p2 / ext4 rw,relatim"..., 1024) = 1024 <0.000037>
+read(6, "3fa0f6 nsfs rw 0 0\nsysfs /sys sy"..., 1024) = 1024 <0.000032>
+read(6, "\ncgroup /sys/fs/cgroup/blkio cgr"..., 1024) = 1024 <0.000035>
+read(6, "docker/aufs/mnt/d3fc1f6bfafa398f"..., 1024) = 1024 <0.000024>
+read(6, "5536k 0 0\nshm /var/lib/docker/co"..., 1024) = 1024 <0.000025>
+read(6, "/loop0 /usr/local/var/singularit"..., 1024) = 452 <0.000010>
+read(6, "", 1024)                       = 0 <0.000005>
+close(6)                                = 0 <0.000008>
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=2845, ...}) = 0 <0.000011>
+stat("/usr/local/var/singularity/mnt/overlay/final/etc/localtime", {st_mode=S_IFREG|0644, st_size=118, ...}) = 0 <0.000125>
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=2845, ...}) = 0 <0.000008>
+getuid()                                = 1000 <0.000004>
+setresuid(-1, 0, -1)                    = 0 <0.000006>
+setresgid(-1, 0, -1)                    = 0 <0.000006>
+setgroups(0, [])                        = 0 <0.000006>
+mount("/etc/localtime", "/usr/local/var/singularity/mnt/overlay/final/etc/localtime", NULL, MS_NOSUID|MS_NODEV|MS_BIND|MS_REC, NULL) = 0 <0.000022>
+mount(NULL, "/usr/local/var/singularity/mnt/overlay/final/etc/localtime", NULL, MS_NOSUID|MS_NODEV|MS_REMOUNT|MS_BIND|MS_REC, NULL) = 0 <0.000011>
+geteuid()                               = 0 <0.000005>
+setgroups(9, [4, 24, 27, 30, 46, 113, 128, 999, 1000]) = 0 <0.000008>
+setresgid(-1, 1000, -1)                 = 0 <0.000006>
+setresuid(-1, 1000, -1)                 = 0 <0.000006>
+getgid()                                = 1000 <0.000005>
+getuid()                                = 1000 <0.000004>
+stat("/etc/hosts", {st_mode=S_IFREG|0644, st_size=352, ...}) = 0 <0.000008>
+open("/proc/mounts", O_RDONLY)          = 6 <0.000018>
+fstat(6, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0 <0.000006>
+read(6, "/dev/nvme0n1p2 / ext4 rw,relatim"..., 1024) = 1024 <0.000034>
+read(6, "3fa0f6 nsfs rw 0 0\nsysfs /sys sy"..., 1024) = 1024 <0.000030>
+read(6, "\ncgroup /sys/fs/cgroup/blkio cgr"..., 1024) = 1024 <0.000033>
+read(6, "docker/aufs/mnt/d3fc1f6bfafa398f"..., 1024) = 1024 <0.000022>
+read(6, "5536k 0 0\nshm /var/lib/docker/co"..., 1024) = 1024 <0.000025>
+read(6, "/loop0 /usr/local/var/singularit"..., 1024) = 591 <0.000014>
+read(6, "", 1024)                       = 0 <0.000005>
+close(6)                                = 0 <0.000007>
+stat("/etc/hosts", {st_mode=S_IFREG|0644, st_size=352, ...}) = 0 <0.000007>
+stat("/usr/local/var/singularity/mnt/overlay/final/etc/hosts", {st_mode=S_IFREG|0644, st_size=0, ...}) = 0 <0.000019>
+stat("/etc/hosts", {st_mode=S_IFREG|0644, st_size=352, ...}) = 0 <0.000007>
+getuid()                                = 1000 <0.000005>
+setresuid(-1, 0, -1)                    = 0 <0.000006>
+setresgid(-1, 0, -1)                    = 0 <0.000005>
+setgroups(0, [])                        = 0 <0.000005>
+mount("/etc/hosts", "/usr/local/var/singularity/mnt/overlay/final/etc/hosts", NULL, MS_NOSUID|MS_NODEV|MS_BIND|MS_REC, NULL) = 0 <0.000017>
+mount(NULL, "/usr/local/var/singularity/mnt/overlay/final/etc/hosts", NULL, MS_NOSUID|MS_NODEV|MS_REMOUNT|MS_BIND|MS_REC, NULL) = 0 <0.000008>
+geteuid()                               = 0 <0.000004>
+setgroups(9, [4, 24, 27, 30, 46, 113, 128, 999, 1000]) = 0 <0.000007>
+setresgid(-1, 1000, -1)                 = 0 <0.000006>
+setresuid(-1, 1000, -1)                 = 0 <0.000005>
+getgid()                                = 1000 <0.000005>
+getuid()                                = 1000 <0.000005>
+stat("/usr/local/var/singularity/mnt/overlay/final/proc", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000097>
+getuid()                                = 1000 <0.000004>
+setresuid(-1, 0, -1)                    = 0 <0.000006>
+setresgid(-1, 0, -1)                    = 0 <0.000006>
+setgroups(0, [])                        = 0 <0.000006>
+mount("/proc", "/usr/local/var/singularity/mnt/overlay/final/proc", NULL, MS_NOSUID|MS_BIND|MS_REC, NULL) = 0 <0.000019>
+geteuid()                               = 0 <0.000005>
+setgroups(9, [4, 24, 27, 30, 46, 113, 128, 999, 1000]) = 0 <0.000008>
+setresgid(-1, 1000, -1)                 = 0 <0.000006>
+setresuid(-1, 1000, -1)                 = 0 <0.000006>
+getgid()                                = 1000 <0.000005>
+getuid()                                = 1000 <0.000005>
+stat("/usr/local/var/singularity/mnt/overlay/final/sys", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000095>
+getuid()                                = 1000 <0.000005>
+setresuid(-1, 0, -1)                    = 0 <0.000005>
+setresgid(-1, 0, -1)                    = 0 <0.000006>
+setgroups(0, [])                        = 0 <0.000006>
+mount("sysfs", "/usr/local/var/singularity/mnt/overlay/final/sys", "sysfs", MS_NOSUID, NULL) = 0 <0.000017>
+geteuid()                               = 0 <0.000004>
+setgroups(9, [4, 24, 27, 30, 46, 113, 128, 999, 1000]) = 0 <0.000007>
+setresgid(-1, 1000, -1)                 = 0 <0.000006>
+setresuid(-1, 1000, -1)                 = 0 <0.000005>
+getgid()                                = 1000 <0.000005>
+getuid()                                = 1000 <0.000005>
+stat("/usr/local/var/singularity/mnt/overlay/final/dev", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000122>
+getuid()                                = 1000 <0.000005>
+setresuid(-1, 0, -1)                    = 0 <0.000006>
+setresgid(-1, 0, -1)                    = 0 <0.000006>
+setgroups(0, [])                        = 0 <0.000006>
+mount("/dev", "/usr/local/var/singularity/mnt/overlay/final/dev", NULL, MS_NOSUID|MS_BIND|MS_REC, NULL) = 0 <0.000020>
+geteuid()                               = 0 <0.000005>
+setgroups(9, [4, 24, 27, 30, 46, 113, 128, 999, 1000]) = 0 <0.000007>
+setresgid(-1, 1000, -1)                 = 0 <0.000006>
+setresuid(-1, 1000, -1)                 = 0 <0.000006>
+getgid()                                = 1000 <0.000038>
+getuid()                                = 1000 <0.000005>
+stat("/home/vanessa", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000008>
+open("/proc/mounts", O_RDONLY)          = 6 <0.000020>
+fstat(6, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0 <0.000005>
+read(6, "/dev/nvme0n1p2 / ext4 rw,relatim"..., 1024) = 1024 <0.000034>
+read(6, "3fa0f6 nsfs rw 0 0\nsysfs /sys sy"..., 1024) = 1024 <0.000031>
+read(6, "\ncgroup /sys/fs/cgroup/blkio cgr"..., 1024) = 1024 <0.000033>
+read(6, "docker/aufs/mnt/d3fc1f6bfafa398f"..., 1024) = 1024 <0.000022>
+read(6, "5536k 0 0\nshm /var/lib/docker/co"..., 1024) = 1024 <0.000039>
+read(6, "/loop0 /usr/local/var/singularit"..., 1024) = 1024 <0.000022>
+read(6, "ay/final/proc/sys/fs/binfmt_misc"..., 1024) = 664 <0.000015>
+read(6, "", 1024)                       = 0 <0.000006>
+close(6)                                = 0 <0.000007>
+getuid()                                = 1000 <0.000005>
+setresuid(-1, 0, -1)                    = 0 <0.000006>
+setresgid(-1, 0, -1)                    = 0 <0.000006>
+setgroups(0, [])                        = 0 <0.000005>
+stat("/usr/local/var/singularity/mnt/overlay/final/home/vanessa", 0x7ffc1b407810) = -1 ENOENT (No such file or directory) <0.000116>
+stat("/usr/local/var/singularity/mnt/overlay/final/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000009>
+umask(0)                                = 022 <0.000005>
+mkdir("/usr/local/var/singularity/mnt/overlay/final/home/vanessa", 0755) = 0 <0.000026>
+umask(022)                              = 0 <0.000005>
+geteuid()                               = 0 <0.000005>
+setgroups(9, [4, 24, 27, 30, 46, 113, 128, 999, 1000]) = 0 <0.000007>
+setresgid(-1, 1000, -1)                 = 0 <0.000006>
+setresuid(-1, 1000, -1)                 = 0 <0.000005>
+getgid()                                = 1000 <0.000005>
+getuid()                                = 1000 <0.000005>
+getuid()                                = 1000 <0.000005>
+setresuid(-1, 0, -1)                    = 0 <0.000006>
+setresgid(-1, 0, -1)                    = 0 <0.000005>
+setgroups(0, [])                        = 0 <0.000006>
+mount("/home/vanessa", "/usr/local/var/singularity/mnt/overlay/final/home/vanessa", NULL, MS_NOSUID|MS_NODEV|MS_BIND|MS_REC, NULL) = 0 <0.000019>
+mount(NULL, "/usr/local/var/singularity/mnt/overlay/final/home/vanessa", NULL, MS_NOSUID|MS_NODEV|MS_REMOUNT|MS_BIND|MS_REC, NULL) = 0 <0.000008>
+geteuid()                               = 0 <0.000005>
+setgroups(9, [4, 24, 27, 30, 46, 113, 128, 999, 1000]) = 0 <0.000006>
+setresgid(-1, 1000, -1)                 = 0 <0.000005>
+setresuid(-1, 1000, -1)                 = 0 <0.000006>
+getgid()                                = 1000 <0.000005>
+getuid()                                = 1000 <0.000004>
+open("/proc/mounts", O_RDONLY)          = 6 <0.000019>
+fstat(6, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0 <0.000006>
+read(6, "/dev/nvme0n1p2 / ext4 rw,relatim"..., 1024) = 1024 <0.000033>
+read(6, "3fa0f6 nsfs rw 0 0\nsysfs /sys sy"..., 1024) = 1024 <0.000032>
+read(6, "\ncgroup /sys/fs/cgroup/blkio cgr"..., 1024) = 1024 <0.000034>
+read(6, "docker/aufs/mnt/d3fc1f6bfafa398f"..., 1024) = 1024 <0.000025>
+read(6, "5536k 0 0\nshm /var/lib/docker/co"..., 1024) = 1024 <0.000037>
+read(6, "/loop0 /usr/local/var/singularit"..., 1024) = 1024 <0.000023>
+read(6, "ay/final/proc/sys/fs/binfmt_misc"..., 1024) = 802 <0.000020>
+read(6, "", 1024)                       = 0 <0.000006>
+close(6)                                = 0 <0.000007>
+stat("/tmp", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=147456, ...}) = 0 <0.000008>
+stat("/tmp", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=147456, ...}) = 0 <0.000007>
+stat("/usr/local/var/singularity/mnt/overlay/final/tmp", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=4096, ...}) = 0 <0.000107>
+getuid()                                = 1000 <0.000005>
+setresuid(-1, 0, -1)                    = 0 <0.000007>
+setresgid(-1, 0, -1)                    = 0 <0.000006>
+setgroups(0, [])                        = 0 <0.000006>
+mount("/tmp", "/usr/local/var/singularity/mnt/overlay/final/tmp", NULL, MS_NOSUID|MS_NODEV|MS_BIND|MS_REC, NULL) = 0 <0.000020>
+mount(NULL, "/usr/local/var/singularity/mnt/overlay/final/tmp", NULL, MS_NOSUID|MS_NODEV|MS_REMOUNT|MS_BIND|MS_REC, NULL) = 0 <0.000009>
+geteuid()                               = 0 <0.000005>
+setgroups(9, [4, 24, 27, 30, 46, 113, 128, 999, 1000]) = 0 <0.000007>
+setresgid(-1, 1000, -1)                 = 0 <0.000006>
+setresuid(-1, 1000, -1)                 = 0 <0.000006>
+getgid()                                = 1000 <0.000005>
+getuid()                                = 1000 <0.000005>
+open("/proc/mounts", O_RDONLY)          = 6 <0.000019>
+fstat(6, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0 <0.000006>
+read(6, "/dev/nvme0n1p2 / ext4 rw,relatim"..., 1024) = 1024 <0.000056>
+read(6, "3fa0f6 nsfs rw 0 0\nsysfs /sys sy"..., 1024) = 1024 <0.000030>
+read(6, "\ncgroup /sys/fs/cgroup/blkio cgr"..., 1024) = 1024 <0.000032>
+read(6, "docker/aufs/mnt/d3fc1f6bfafa398f"..., 1024) = 1024 <0.000023>
+read(6, "5536k 0 0\nshm /var/lib/docker/co"..., 1024) = 1024 <0.000024>
+read(6, "/loop0 /usr/local/var/singularit"..., 1024) = 1024 <0.000022>
+read(6, "ay/final/proc/sys/fs/binfmt_misc"..., 1024) = 931 <0.000021>
+read(6, "", 1024)                       = 0 <0.000006>
+close(6)                                = 0 <0.000008>
+stat("/var/tmp", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000008>
+stat("/var/tmp", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000007>
+stat("/usr/local/var/singularity/mnt/overlay/final/var/tmp", {st_mode=S_IFDIR|S_ISVTX|0777, st_size=4096, ...}) = 0 <0.000142>
+getuid()                                = 1000 <0.000005>
+setresuid(-1, 0, -1)                    = 0 <0.000006>
+setresgid(-1, 0, -1)                    = 0 <0.000007>
+setgroups(0, [])                        = 0 <0.000007>
+mount("/var/tmp", "/usr/local/var/singularity/mnt/overlay/final/var/tmp", NULL, MS_NOSUID|MS_NODEV|MS_BIND|MS_REC, NULL) = 0 <0.000020>
+mount(NULL, "/usr/local/var/singularity/mnt/overlay/final/var/tmp", NULL, MS_NOSUID|MS_NODEV|MS_REMOUNT|MS_BIND|MS_REC, NULL) = 0 <0.000009>
+geteuid()                               = 0 <0.000006>
+setgroups(9, [4, 24, 27, 30, 46, 113, 128, 999, 1000]) = 0 <0.000008>
+setresgid(-1, 1000, -1)                 = 0 <0.000006>
+setresuid(-1, 1000, -1)                 = 0 <0.000006>
+getgid()                                = 1000 <0.000005>
+getuid()                                = 1000 <0.000005>
+stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0 <0.000008>
+stat("/home/vanessa/Documents/Dropbox/Code/ftw/hello-world-ftw", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0 <0.000010>
+stat("/usr/local/var/singularity/mnt/overlay/final/home/vanessa/Documents/Dropbox/Code/ftw/hello-world-ftw", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0 <0.000011>
+lstat("/home/vanessa/Documents/Dropbox/Code/ftw/hello-world-ftw", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0 <0.000008>
+lstat("/usr/local/var/singularity/mnt/overlay/final/home/vanessa/Documents/Dropbox/Code/ftw/hello-world-ftw", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0 <0.000009>
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 6 <0.000010>
+lseek(6, 0, SEEK_CUR)                   = 0 <0.000005>
+fstat(6, {st_mode=S_IFREG|0644, st_size=2433, ...}) = 0 <0.000005>
+mmap(NULL, 2433, PROT_READ, MAP_SHARED, 6, 0) = 0x7f6232c36000 <0.000009>
+lseek(6, 2433, SEEK_SET)                = 2433 <0.000006>
+munmap(0x7f6232c36000, 2433)            = 0 <0.000012>
+close(6)                                = 0 <0.000007>
+stat("/usr/local/var/singularity/mnt/overlay/final/etc/passwd", {st_mode=S_IFREG|0644, st_size=956, ...}) = 0 <0.000020>
+stat("/usr/local/var/singularity/mnt/overlay/final/etc/passwd", {st_mode=S_IFREG|0644, st_size=956, ...}) = 0 <0.000008>
+open("/usr/local/var/singularity/mnt/overlay/final/etc/passwd", O_RDONLY) = 6 <0.000011>
+open("/usr/local/var/singularity/mnt/session/passwd", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 7 <0.000015>
+fstat(6, {st_mode=S_IFREG|0644, st_size=956, ...}) = 0 <0.000006>
+fchmod(7, 0100644)                      = 0 <0.000007>
+fstat(6, {st_mode=S_IFREG|0644, st_size=956, ...}) = 0 <0.000005>
+read(6, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 956 <0.000027>
+fstat(7, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0 <0.000006>
+read(6, "", 4096)                       = 0 <0.000006>
+close(6)                                = 0 <0.000006>
+write(7, "root:x:0:0:root:/root:/bin/bash\n"..., 956) = 956 <0.000011>
+close(7)                                = 0 <0.000005>
+open("/usr/local/var/singularity/mnt/session/passwd", O_WRONLY|O_CREAT|O_APPEND, 0666) = 6 <0.000010>
+lseek(6, 0, SEEK_END)                   = 956 <0.000005>
+fstat(6, {st_mode=S_IFREG|0644, st_size=956, ...}) = 0 <0.000006>
+write(6, "vanessa:x:1000:1000:Vanessa Soch"..., 62) = 62 <0.000007>
+close(6)                                = 0 <0.000007>
+stat("/usr/local/var/singularity/mnt/session/passwd", {st_mode=S_IFREG|0644, st_size=1018, ...}) = 0 <0.000008>
+stat("/usr/local/var/singularity/mnt/overlay/final/etc/passwd", {st_mode=S_IFREG|0644, st_size=956, ...}) = 0 <0.000008>
+getuid()                                = 1000 <0.000004>
+setresuid(-1, 0, -1)                    = 0 <0.000007>
+setresgid(-1, 0, -1)                    = 0 <0.000006>
+setgroups(0, [])                        = 0 <0.000006>
+mount("/usr/local/var/singularity/mnt/session/passwd", "/usr/local/var/singularity/mnt/overlay/final/etc/passwd", NULL, MS_NOSUID|MS_NODEV|MS_BIND|MS_REC, NULL) = 0 <0.000017>
+mount(NULL, "/usr/local/var/singularity/mnt/overlay/final/etc/passwd", NULL, MS_NOSUID|MS_NODEV|MS_REMOUNT|MS_BIND|MS_REC, NULL) = 0 <0.000009>
+geteuid()                               = 0 <0.000005>
+setgroups(9, [4, 24, 27, 30, 46, 113, 128, 999, 1000]) = 0 <0.000008>
+setresgid(-1, 1000, -1)                 = 0 <0.000006>
+setresuid(-1, 1000, -1)                 = 0 <0.000006>
+getgid()                                = 1000 <0.000005>
+getuid()                                = 1000 <0.000005>
+stat("/usr/local/var/singularity/mnt/overlay/final/etc/group", {st_mode=S_IFREG|0644, st_size=537, ...}) = 0 <0.000105>
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 6 <0.000011>
+lseek(6, 0, SEEK_CUR)                   = 0 <0.000005>
+fstat(6, {st_mode=S_IFREG|0644, st_size=2433, ...}) = 0 <0.000006>
+mmap(NULL, 2433, PROT_READ, MAP_SHARED, 6, 0) = 0x7f6232c36000 <0.000010>
+lseek(6, 2433, SEEK_SET)                = 2433 <0.000005>
+munmap(0x7f6232c36000, 2433)            = 0 <0.000012>
+close(6)                                = 0 <0.000007>
+stat("/usr/local/var/singularity/mnt/overlay/final/etc/group", {st_mode=S_IFREG|0644, st_size=537, ...}) = 0 <0.000009>
+open("/usr/local/var/singularity/mnt/overlay/final/etc/group", O_RDONLY) = 6 <0.000012>
+open("/usr/local/var/singularity/mnt/session/group", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 7 <0.000015>
+fstat(6, {st_mode=S_IFREG|0644, st_size=537, ...}) = 0 <0.000006>
+fchmod(7, 0100644)                      = 0 <0.000006>
+fstat(6, {st_mode=S_IFREG|0644, st_size=537, ...}) = 0 <0.000005>
+read(6, "root:x:0:\ndaemon:x:1:\nbin:x:2:\ns"..., 4096) = 537 <0.000024>
+fstat(7, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0 <0.000005>
+read(6, "", 4096)                       = 0 <0.000006>
+close(6)                                = 0 <0.000006>
+write(7, "root:x:0:\ndaemon:x:1:\nbin:x:2:\ns"..., 537) = 537 <0.000010>
+close(7)                                = 0 <0.000006>
+open("/usr/local/var/singularity/mnt/session/group", O_WRONLY|O_CREAT|O_APPEND, 0666) = 6 <0.000010>
+lseek(6, 0, SEEK_END)                   = 537 <0.000005>
+socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 7 <0.000012>
+connect(7, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory) <0.000018>
+close(7)                                = 0 <0.000010>
+socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 7 <0.000007>
+connect(7, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory) <0.000011>
+close(7)                                = 0 <0.000007>
+open("/etc/group", O_RDONLY|O_CLOEXEC)  = 7 <0.000009>
+lseek(7, 0, SEEK_CUR)                   = 0 <0.000005>
+fstat(7, {st_mode=S_IFREG|0644, st_size=1088, ...}) = 0 <0.000005>
+mmap(NULL, 1088, PROT_READ, MAP_SHARED, 7, 0) = 0x7f6232c36000 <0.000008>
+lseek(7, 1088, SEEK_SET)                = 1088 <0.000005>
+munmap(0x7f6232c36000, 1088)            = 0 <0.000009>
+close(7)                                = 0 <0.000006>
+fstat(6, {st_mode=S_IFREG|0644, st_size=537, ...}) = 0 <0.000006>
+open("/etc/group", O_RDONLY|O_CLOEXEC)  = 7 <0.000008>
+lseek(7, 0, SEEK_CUR)                   = 0 <0.000006>
+fstat(7, {st_mode=S_IFREG|0644, st_size=1088, ...}) = 0 <0.000005>
+mmap(NULL, 1088, PROT_READ, MAP_SHARED, 7, 0) = 0x7f6232c36000 <0.000007>
+lseek(7, 1088, SEEK_SET)                = 1088 <0.000006>
+munmap(0x7f6232c36000, 1088)            = 0 <0.000007>
+close(7)                                = 0 <0.000006>
+open("/etc/group", O_RDONLY|O_CLOEXEC)  = 7 <0.000028>
+lseek(7, 0, SEEK_CUR)                   = 0 <0.000005>
+fstat(7, {st_mode=S_IFREG|0644, st_size=1088, ...}) = 0 <0.000006>
+mmap(NULL, 1088, PROT_READ, MAP_SHARED, 7, 0) = 0x7f6232c36000 <0.000008>
+lseek(7, 1088, SEEK_SET)                = 1088 <0.000005>
+munmap(0x7f6232c36000, 1088)            = 0 <0.000007>
+close(7)                                = 0 <0.000007>
+open("/etc/group", O_RDONLY|O_CLOEXEC)  = 7 <0.000010>
+lseek(7, 0, SEEK_CUR)                   = 0 <0.000005>
+fstat(7, {st_mode=S_IFREG|0644, st_size=1088, ...}) = 0 <0.000006>
+mmap(NULL, 1088, PROT_READ, MAP_SHARED, 7, 0) = 0x7f6232c36000 <0.000008>
+lseek(7, 1088, SEEK_SET)                = 1088 <0.000005>
+munmap(0x7f6232c36000, 1088)            = 0 <0.000008>
+close(7)                                = 0 <0.000006>
+open("/etc/group", O_RDONLY|O_CLOEXEC)  = 7 <0.000009>
+lseek(7, 0, SEEK_CUR)                   = 0 <0.000005>
+fstat(7, {st_mode=S_IFREG|0644, st_size=1088, ...}) = 0 <0.000005>
+mmap(NULL, 1088, PROT_READ, MAP_SHARED, 7, 0) = 0x7f6232c36000 <0.000007>
+lseek(7, 1088, SEEK_SET)                = 1088 <0.000005>
+munmap(0x7f6232c36000, 1088)            = 0 <0.000008>
+close(7)                                = 0 <0.000007>
+open("/etc/group", O_RDONLY|O_CLOEXEC)  = 7 <0.000008>
+lseek(7, 0, SEEK_CUR)                   = 0 <0.000006>
+fstat(7, {st_mode=S_IFREG|0644, st_size=1088, ...}) = 0 <0.000005>
+mmap(NULL, 1088, PROT_READ, MAP_SHARED, 7, 0) = 0x7f6232c36000 <0.000007>
+lseek(7, 1088, SEEK_SET)                = 1088 <0.000005>
+munmap(0x7f6232c36000, 1088)            = 0 <0.000008>
+close(7)                                = 0 <0.000006>
+open("/etc/group", O_RDONLY|O_CLOEXEC)  = 7 <0.000009>
+lseek(7, 0, SEEK_CUR)                   = 0 <0.000005>
+fstat(7, {st_mode=S_IFREG|0644, st_size=1088, ...}) = 0 <0.000006>
+mmap(NULL, 1088, PROT_READ, MAP_SHARED, 7, 0) = 0x7f6232c36000 <0.000007>
+lseek(7, 1088, SEEK_SET)                = 1088 <0.000006>
+munmap(0x7f6232c36000, 1088)            = 0 <0.000007>
+close(7)                                = 0 <0.000007>
+open("/etc/group", O_RDONLY|O_CLOEXEC)  = 7 <0.000008>
+lseek(7, 0, SEEK_CUR)                   = 0 <0.000005>
+fstat(7, {st_mode=S_IFREG|0644, st_size=1088, ...}) = 0 <0.000005>
+mmap(NULL, 1088, PROT_READ, MAP_SHARED, 7, 0) = 0x7f6232c36000 <0.000007>
+lseek(7, 1088, SEEK_SET)                = 1088 <0.000006>
+munmap(0x7f6232c36000, 1088)            = 0 <0.000007>
+close(7)                                = 0 <0.000006>
+open("/etc/group", O_RDONLY|O_CLOEXEC)  = 7 <0.000009>
+lseek(7, 0, SEEK_CUR)                   = 0 <0.000005>
+fstat(7, {st_mode=S_IFREG|0644, st_size=1088, ...}) = 0 <0.000005>
+mmap(NULL, 1088, PROT_READ, MAP_SHARED, 7, 0) = 0x7f6232c36000 <0.000007>
+lseek(7, 1088, SEEK_SET)                = 1088 <0.000006>
+munmap(0x7f6232c36000, 1088)            = 0 <0.000008>
+close(7)                                = 0 <0.000006>
+write(6, "\nvanessa:x:1000:vanessa\nadm:x:4:"..., 183) = 183 <0.000009>
+close(6)                                = 0 <0.000007>
+stat("/usr/local/var/singularity/mnt/session/group", {st_mode=S_IFREG|0644, st_size=720, ...}) = 0 <0.000011>
+stat("/usr/local/var/singularity/mnt/overlay/final/etc/group", {st_mode=S_IFREG|0644, st_size=537, ...}) = 0 <0.000012>
+getuid()                                = 1000 <0.000005>
+setresuid(-1, 0, -1)                    = 0 <0.000008>
+setresgid(-1, 0, -1)                    = 0 <0.000006>
+setgroups(0, [])                        = 0 <0.000006>
+mount("/usr/local/var/singularity/mnt/session/group", "/usr/local/var/singularity/mnt/overlay/final/etc/group", NULL, MS_NOSUID|MS_NODEV|MS_BIND|MS_REC, NULL) = 0 <0.000020>
+mount(NULL, "/usr/local/var/singularity/mnt/overlay/final/etc/group", NULL, MS_NOSUID|MS_NODEV|MS_REMOUNT|MS_BIND|MS_REC, NULL) = 0 <0.000008>
+geteuid()                               = 0 <0.000005>
+setgroups(9, [4, 24, 27, 30, 46, 113, 128, 999, 1000]) = 0 <0.000007>
+setresgid(-1, 1000, -1)                 = 0 <0.000005>
+setresuid(-1, 1000, -1)                 = 0 <0.000007>
+getgid()                                = 1000 <0.000004>
+getuid()                                = 1000 <0.000005>
+stat("/etc/resolv.conf", {st_mode=S_IFREG|0644, st_size=68, ...}) = 0 <0.000008>
+stat("/usr/local/var/singularity/mnt/overlay/final/etc/resolv.conf", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0 <0.000023>
+getuid()                                = 1000 <0.000005>
+setresuid(-1, 0, -1)                    = 0 <0.000006>
+setresgid(-1, 0, -1)                    = 0 <0.000006>
+setgroups(0, [])                        = 0 <0.000006>
+mount("/etc/resolv.conf", "/usr/local/var/singularity/mnt/overlay/final/etc/resolv.conf", NULL, MS_NOSUID|MS_NODEV|MS_BIND|MS_REC, NULL) = 0 <0.000019>
+mount(NULL, "/usr/local/var/singularity/mnt/overlay/final/etc/resolv.conf", NULL, MS_NOSUID|MS_NODEV|MS_REMOUNT|MS_BIND|MS_REC, NULL) = 0 <0.000009>
+geteuid()                               = 0 <0.000005>
+setgroups(9, [4, 24, 27, 30, 46, 113, 128, 999, 1000]) = 0 <0.000008>
+setresgid(-1, 1000, -1)                 = 0 <0.000006>
+setresuid(-1, 1000, -1)                 = 0 <0.000007>
+getgid()                                = 1000 <0.000005>
+getuid()                                = 1000 <0.000005>
+getuid()                                = 1000 <0.000005>
+setresuid(-1, 0, -1)                    = 0 <0.000007>
+setresgid(-1, 0, -1)                    = 0 <0.000007>
+setgroups(0, [])                        = 0 <0.000007>
+chroot("/usr/local/var/singularity/mnt/overlay/final") = 0 <0.000009>
+geteuid()                               = 0 <0.000005>
+setgroups(9, [4, 24, 27, 30, 46, 113, 128, 999, 1000]) = 0 <0.000008>
+setresgid(-1, 1000, -1)                 = 0 <0.000006>
+setresuid(-1, 1000, -1)                 = 0 <0.000006>
+getgid()                                = 1000 <0.000005>
+getuid()                                = 1000 <0.000005>
+chdir("/")                              = 0 <0.000008>
+getuid()                                = 1000 <0.000006>
+setresuid(-1, 0, -1)                    = 0 <0.000007>
+setresgid(-1, 0, -1)                    = 0 <0.000007>
+setgroups(0, [])                        = 0 <0.000006>
+setgroups(9, [4, 24, 27, 30, 46, 113, 128, 999, 1000]) = 0 <0.000007>
+setgid(1000)                            = 0 <0.000007>
+setregid(1000, 1000)                    = 0 <0.000007>
+setreuid(1000, 1000)                    = 0 <0.000007>
+getgid()                                = 1000 <0.000005>
+getuid()                                = 1000 <0.000005>
+prctl(PR_SET_NO_NEW_PRIVS, 1, 0, 0, 0)  = 0 <0.000007>
+chdir("/home/vanessa/Documents/Dropbox/Code/ftw/hello-world-ftw") = 0 <0.000011>
+getpid()                                = 4031 <0.000005>
+geteuid()                               = 1000 <0.000004>
+open("/etc/localtime", O_RDONLY|O_CLOEXEC) = 6 <0.000012>
+fstat(6, {st_mode=S_IFREG|0644, st_size=2845, ...}) = 0 <0.000006>
+fstat(6, {st_mode=S_IFREG|0644, st_size=2845, ...}) = 0 <0.000005>
+read(6, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0\5\0\0\0\0"..., 4096) = 2845 <0.000007>
+lseek(6, -1811, SEEK_CUR)               = 1034 <0.000005>
+read(6, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0\5\0\0\0\0"..., 4096) = 1811 <0.000007>
+close(6)                                = 0 <0.000007>
+sendto(3, "<133>Sep 10 06:59:46 Singularity"..., 114, MSG_NOSIGNAL, NULL, 0) = 114 <0.000279>
+stat("/.singularity.d/actions/run", {st_mode=S_IFREG|0755, st_size=603, ...}) = 0 <0.000219>
+execve("/.singularity.d/actions/run", ["/usr/local/libexec/singularity/b"...], [/* 22 vars */]) = 0 <0.001176>
+brk(NULL)                               = 0x7323870000 <0.000006>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000017>
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2823acd000 <0.000007>
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory) <0.000012>
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000020>
+fstat(3, {st_mode=S_IFREG|0644, st_size=37006, ...}) = 0 <0.000006>
+mmap(NULL, 37006, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f2823ac3000 <0.000008>
+close(3)                                = 0 <0.000006>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000009>
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000021>
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P \2\0\0\0\0\0"..., 832) = 832 <0.000021>
+fstat(3, {st_mode=S_IFREG|0755, st_size=1857312, ...}) = 0 <0.000006>
+mmap(NULL, 3965632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f28234e4000 <0.000008>
+mprotect(0x7f28236a2000, 2097152, PROT_NONE) = 0 <0.000009>
+mmap(0x7f28238a2000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1be000) = 0x7f28238a2000 <0.000011>
+mmap(0x7f28238a8000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f28238a8000 <0.000010>
+close(3)                                = 0 <0.000006>
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2823ac2000 <0.000008>
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2823ac0000 <0.000007>
+arch_prctl(ARCH_SET_FS, 0x7f2823ac0740) = 0 <0.000006>
+mprotect(0x7f28238a2000, 16384, PROT_READ) = 0 <0.000014>
+mprotect(0x7322770000, 8192, PROT_READ) = 0 <0.000009>
+mprotect(0x7f2823acf000, 4096, PROT_READ) = 0 <0.000007>
+munmap(0x7f2823ac3000, 37006)           = 0 <0.000019>
+getpid()                                = 4031 <0.000006>
+rt_sigaction(SIGCHLD, {0x7322567460, ~[RTMIN RT_1], SA_RESTORER, 0x7f282351acb0}, NULL, 8) = 0 <0.000005>
+geteuid()                               = 1000 <0.000005>
+brk(NULL)                               = 0x7323870000 <0.000005>
+brk(0x7323891000)                       = 0x7323891000 <0.000007>
+getppid()                               = 4029 <0.000005>
+stat("/home/vanessa/Documents/Dropbox/Code/ftw/hello-world-ftw", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0 <0.000018>
+stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0 <0.000007>
+open("/.singularity.d/actions/run", O_RDONLY) = 3 <0.000016>
+fcntl(3, F_DUPFD, 10)                   = 10 <0.000006>
+close(3)                                = 0 <0.000006>
+fcntl(10, F_SETFD, FD_CLOEXEC)          = 0 <0.000005>
+rt_sigaction(SIGINT, NULL, {SIG_DFL, [], 0}, 8) = 0 <0.000005>
+rt_sigaction(SIGINT, {0x7322567460, ~[RTMIN RT_1], SA_RESTORER, 0x7f282351acb0}, NULL, 8) = 0 <0.000005>
+rt_sigaction(SIGQUIT, NULL, {SIG_DFL, [], 0}, 8) = 0 <0.000005>
+rt_sigaction(SIGQUIT, {SIG_DFL, ~[RTMIN RT_1], SA_RESTORER, 0x7f282351acb0}, NULL, 8) = 0 <0.000005>
+rt_sigaction(SIGTERM, NULL, {SIG_DFL, [], 0}, 8) = 0 <0.000005>
+rt_sigaction(SIGTERM, {SIG_DFL, ~[RTMIN RT_1], SA_RESTORER, 0x7f282351acb0}, NULL, 8) = 0 <0.000005>
+read(10, "#!/bin/sh\n\nfor script in /.singu"..., 8192) = 603 <0.000006>
+openat(AT_FDCWD, "/.singularity.d/env", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3 <0.000028>
+getdents(3, /* 7 entries */, 32768)     = 216 <0.000030>
+getdents(3, /* 0 entries */, 32768)     = 0 <0.000006>
+close(3)                                = 0 <0.000011>
+stat("/.singularity.d/env/01-base.sh", {st_mode=S_IFREG|0755, st_size=1061, ...}) = 0 <0.000016>
+open("/.singularity.d/env/01-base.sh", O_RDONLY) = 3 <0.000009>
+fcntl(3, F_DUPFD, 10)                   = 11 <0.000005>
+close(3)                                = 0 <0.000005>
+fcntl(11, F_SETFD, FD_CLOEXEC)          = 0 <0.000005>
+read(11, "#!/bin/bash\n# \n# Copyright (c) 2"..., 8192) = 1061 <0.000019>
+read(11, "", 8192)                      = 0 <0.000006>
+close(11)                               = 0 <0.000006>
+stat("/.singularity.d/env/10-docker.sh", {st_mode=S_IFREG|0755, st_size=72, ...}) = 0 <0.000015>
+open("/.singularity.d/env/10-docker.sh", O_RDONLY) = 3 <0.000010>
+fcntl(3, F_DUPFD, 10)                   = 11 <0.000005>
+close(3)                                = 0 <0.000006>
+fcntl(11, F_SETFD, FD_CLOEXEC)          = 0 <0.000005>
+read(11, "export PATH=/usr/local/sbin:/usr"..., 8192) = 72 <0.000020>
+read(11, "", 8192)                      = 0 <0.000006>
+close(11)                               = 0 <0.000007>
+stat("/.singularity.d/env/90-environment.sh", {st_mode=S_IFREG|0755, st_size=176, ...}) = 0 <0.000014>
+open("/.singularity.d/env/90-environment.sh", O_RDONLY) = 3 <0.000009>
+fcntl(3, F_DUPFD, 10)                   = 11 <0.000006>
+close(3)                                = 0 <0.000005>
+fcntl(11, F_SETFD, FD_CLOEXEC)          = 0 <0.000005>
+read(11, "# Custom environment shell code "..., 8192) = 176 <0.000024>
+read(11, "", 8192)                      = 0 <0.000006>
+close(11)                               = 0 <0.000006>
+stat("/.singularity.d/env/95-apps.sh", {st_mode=S_IFREG|0755, st_size=1915, ...}) = 0 <0.000015>
+open("/.singularity.d/env/95-apps.sh", O_RDONLY) = 3 <0.000010>
+fcntl(3, F_DUPFD, 10)                   = 11 <0.000005>
+close(3)                                = 0 <0.000005>
+fcntl(11, F_SETFD, FD_CLOEXEC)          = 0 <0.000005>
+read(11, "#!/bin/bash\n#\n# Copyright (c) 20"..., 8192) = 1915 <0.000021>
+stat("/scif/apps/zsh/", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0 <0.000136>
+stat("/scif/apps/zsh/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0 <0.000026>
+stat("/scif/apps/zsh/lib", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0 <0.000015>
+stat("/scif/apps/zsh/scif/env/01-base.sh", {st_mode=S_IFREG|0664, st_size=394, ...}) = 0 <0.000044>
+open("/scif/apps/zsh/scif/env/01-base.sh", O_RDONLY) = 3 <0.000012>
+fcntl(3, F_DUPFD, 10)                   = 12 <0.000005>
+close(3)                                = 0 <0.000005>
+fcntl(12, F_SETFD, FD_CLOEXEC)          = 0 <0.000005>
+read(12, "\n    SINGULARITY_APPNAME=zsh\n   "..., 8192) = 394 <0.000019>
+read(12, "", 8192)                      = 0 <0.000006>
+close(12)                               = 0 <0.000006>
+stat("/scif/apps/zsh/scif/env/90-environment.sh", 0x7ffd8f437be0) = -1 ENOENT (No such file or directory) <0.000012>
+read(11, "", 8192)                      = 0 <0.000006>
+close(11)                               = 0 <0.000006>
+stat("/.singularity.d/env/99-base.sh", {st_mode=S_IFREG|0755, st_size=1255, ...}) = 0 <0.000017>
+open("/.singularity.d/env/99-base.sh", O_RDONLY) = 3 <0.000010>
+fcntl(3, F_DUPFD, 10)                   = 11 <0.000005>
+close(3)                                = 0 <0.000005>
+fcntl(11, F_SETFD, FD_CLOEXEC)          = 0 <0.000005>
+read(11, "#!/bin/bash\n# \n# Copyright (c) 2"..., 8192) = 1255 <0.000021>
+read(11, "", 8192)                      = 0 <0.000006>
+close(11)                               = 0 <0.000007>
+geteuid()                               = 1000 <0.000005>
+faccessat(AT_FDCWD, "/scif/apps/zsh/scif/runscript", X_OK) = 0 <0.000018>
+execve("/scif/apps/zsh/scif/runscript", ["/scif/apps/zsh/scif/runscript"], [/* 30 vars */]) = -1 ENOEXEC (Exec format error) <0.000075>
+execve("/bin/sh", ["/bin/sh", "/scif/apps/zsh/scif/runscript"], [/* 30 vars */]) = 0 <0.000348>
+brk(NULL)                               = 0xaf8e8d5000 <0.000007>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000013>
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9e00da7000 <0.000008>
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory) <0.000013>
+open("/scif/apps/zsh/lib/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000085>
+stat("/scif/apps/zsh/lib/tls/x86_64", 0x7ffd23170c60) = -1 ENOENT (No such file or directory) <0.000009>
+open("/scif/apps/zsh/lib/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000008>
+stat("/scif/apps/zsh/lib/tls", 0x7ffd23170c60) = -1 ENOENT (No such file or directory) <0.000007>
+open("/scif/apps/zsh/lib/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000013>
+stat("/scif/apps/zsh/lib/x86_64", 0x7ffd23170c60) = -1 ENOENT (No such file or directory) <0.000006>
+open("/scif/apps/zsh/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000011>
+stat("/scif/apps/zsh/lib", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0 <0.000008>
+open("tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000009>
+open("tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000007>
+open("x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000007>
+open("libc.so.6", O_RDONLY|O_CLOEXEC)   = -1 ENOENT (No such file or directory) <0.000007>
+open("/.singularity.d/libs/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000056>
+stat("/.singularity.d/libs/tls/x86_64", 0x7ffd23170c60) = -1 ENOENT (No such file or directory) <0.000007>
+open("/.singularity.d/libs/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000008>
+stat("/.singularity.d/libs/tls", 0x7ffd23170c60) = -1 ENOENT (No such file or directory) <0.000007>
+open("/.singularity.d/libs/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000010>
+stat("/.singularity.d/libs/x86_64", 0x7ffd23170c60) = -1 ENOENT (No such file or directory) <0.000006>
+open("/.singularity.d/libs/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000010>
+stat("/.singularity.d/libs", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000007>
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000012>
+fstat(3, {st_mode=S_IFREG|0644, st_size=37006, ...}) = 0 <0.000006>
+mmap(NULL, 37006, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f9e00d9d000 <0.000010>
+close(3)                                = 0 <0.000005>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000008>
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000012>
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P \2\0\0\0\0\0"..., 832) = 832 <0.000006>
+fstat(3, {st_mode=S_IFREG|0755, st_size=1857312, ...}) = 0 <0.000005>
+mmap(NULL, 3965632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f9e007be000 <0.000008>
+mprotect(0x7f9e0097c000, 2097152, PROT_NONE) = 0 <0.000021>
+mmap(0x7f9e00b7c000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1be000) = 0x7f9e00b7c000 <0.000012>
+mmap(0x7f9e00b82000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f9e00b82000 <0.000008>
+close(3)                                = 0 <0.000006>
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9e00d9c000 <0.000008>
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f9e00d9a000 <0.000007>
+arch_prctl(ARCH_SET_FS, 0x7f9e00d9a740) = 0 <0.000005>
+mprotect(0x7f9e00b7c000, 16384, PROT_READ) = 0 <0.000010>
+mprotect(0xaf8dba5000, 8192, PROT_READ) = 0 <0.000010>
+mprotect(0x7f9e00da9000, 4096, PROT_READ) = 0 <0.000008>
+munmap(0x7f9e00d9d000, 37006)           = 0 <0.000015>
+getpid()                                = 4031 <0.000005>
+rt_sigaction(SIGCHLD, {0xaf8d99c460, ~[RTMIN RT_1], SA_RESTORER, 0x7f9e007f4cb0}, NULL, 8) = 0 <0.000005>
+geteuid()                               = 1000 <0.000005>
+brk(NULL)                               = 0xaf8e8d5000 <0.000005>
+brk(0xaf8e8f6000)                       = 0xaf8e8f6000 <0.000007>
+getppid()                               = 4029 <0.000006>
+stat("/home/vanessa/Documents/Dropbox/Code/ftw/hello-world-ftw", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0 <0.000014>
+stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0 <0.000007>
+open("/scif/apps/zsh/scif/runscript", O_RDONLY) = 3 <0.000013>
+fcntl(3, F_DUPFD, 10)                   = 10 <0.000006>
+close(3)                                = 0 <0.000006>
+fcntl(10, F_SETFD, FD_CLOEXEC)          = 0 <0.000005>
+rt_sigaction(SIGINT, NULL, {SIG_DFL, [], 0}, 8) = 0 <0.000006>
+rt_sigaction(SIGINT, {0xaf8d99c460, ~[RTMIN RT_1], SA_RESTORER, 0x7f9e007f4cb0}, NULL, 8) = 0 <0.000006>
+rt_sigaction(SIGQUIT, NULL, {SIG_DFL, [], 0}, 8) = 0 <0.000005>
+rt_sigaction(SIGQUIT, {SIG_DFL, ~[RTMIN RT_1], SA_RESTORER, 0x7f9e007f4cb0}, NULL, 8) = 0 <0.000006>
+rt_sigaction(SIGTERM, NULL, {SIG_DFL, [], 0}, 8) = 0 <0.000006>
+rt_sigaction(SIGTERM, {SIG_DFL, ~[RTMIN RT_1], SA_RESTORER, 0x7f9e007f4cb0}, NULL, 8) = 0 <0.000006>
+read(10, "exec /bin/zsh $SINGULARITY_APPRO"..., 8192) = 51 <0.000007>
+execve("/bin/zsh", ["/bin/zsh", "/scif/apps/zsh/hello-world.zsh"], [/* 30 vars */]) = 0 <0.007377>
+brk(NULL)                               = 0x25e6000 <0.000007>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000012>
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6ed0a0f000 <0.000008>
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory) <0.000009>
+open("/scif/apps/zsh/lib/tls/x86_64/libcap.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000016>
+stat("/scif/apps/zsh/lib/tls/x86_64", 0x7ffe647c0d30) = -1 ENOENT (No such file or directory) <0.000009>
+open("/scif/apps/zsh/lib/tls/libcap.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000033>
+stat("/scif/apps/zsh/lib/tls", 0x7ffe647c0d30) = -1 ENOENT (No such file or directory) <0.000050>
+open("/scif/apps/zsh/lib/x86_64/libcap.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000011>
+stat("/scif/apps/zsh/lib/x86_64", 0x7ffe647c0d30) = -1 ENOENT (No such file or directory) <0.000008>
+open("/scif/apps/zsh/lib/libcap.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000018>
+stat("/scif/apps/zsh/lib", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0 <0.000008>
+open("tls/x86_64/libcap.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000008>
+open("tls/libcap.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000008>
+open("x86_64/libcap.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000008>
+open("libcap.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000012>
+open("/.singularity.d/libs/tls/x86_64/libcap.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000010>
+stat("/.singularity.d/libs/tls/x86_64", 0x7ffe647c0d30) = -1 ENOENT (No such file or directory) <0.000007>
+open("/.singularity.d/libs/tls/libcap.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000009>
+stat("/.singularity.d/libs/tls", 0x7ffe647c0d30) = -1 ENOENT (No such file or directory) <0.000007>
+open("/.singularity.d/libs/x86_64/libcap.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000008>
+stat("/.singularity.d/libs/x86_64", 0x7ffe647c0d30) = -1 ENOENT (No such file or directory) <0.000007>
+open("/.singularity.d/libs/libcap.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000014>
+stat("/.singularity.d/libs", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000008>
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000012>
+fstat(3, {st_mode=S_IFREG|0644, st_size=37006, ...}) = 0 <0.000007>
+mmap(NULL, 37006, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6ed0a05000 <0.000011>
+close(3)                                = 0 <0.000006>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000008>
+open("/lib/x86_64-linux-gnu/libcap.so.2", O_RDONLY|O_CLOEXEC) = 3 <0.000028>
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \26\0\0\0\0\0\0"..., 832) = 832 <0.002979>
+fstat(3, {st_mode=S_IFREG|0644, st_size=18952, ...}) = 0 <0.000367>
+mmap(NULL, 2114160, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6ed05ea000 <0.000019>
+mprotect(0x7f6ed05ee000, 2093056, PROT_NONE) = 0 <0.000015>
+mmap(0x7f6ed07ed000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f6ed07ed000 <0.000014>
+close(3)                                = 0 <0.000007>
+open("/scif/apps/zsh/lib/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000024>
+open("tls/x86_64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000009>
+open("tls/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000008>
+open("x86_64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000008>
+open("libdl.so.2", O_RDONLY|O_CLOEXEC)  = -1 ENOENT (No such file or directory) <0.000008>
+open("/.singularity.d/libs/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000016>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000009>
+open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3 <0.000034>
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\16\0\0\0\0\0\0"..., 832) = 832 <0.000052>
+fstat(3, {st_mode=S_IFREG|0644, st_size=14664, ...}) = 0 <0.000008>
+mmap(NULL, 2109744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6ed03e6000 <0.000010>
+mprotect(0x7f6ed03e9000, 2093056, PROT_NONE) = 0 <0.000012>
+mmap(0x7f6ed05e8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f6ed05e8000 <0.000012>
+close(3)                                = 0 <0.000006>
+open("/scif/apps/zsh/lib/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000016>
+open("tls/x86_64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000009>
+open("tls/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000008>
+open("x86_64/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000008>
+open("libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000008>
+open("/.singularity.d/libs/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000012>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000009>
+open("/lib/x86_64-linux-gnu/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = 3 <0.000024>
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\303\0\0\0\0\0\0"..., 832) = 832 <0.000027>
+fstat(3, {st_mode=S_IFREG|0644, st_size=167096, ...}) = 0 <0.000008>
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6ed0a04000 <0.000009>
+mmap(NULL, 2264288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6ed01bd000 <0.000008>
+mprotect(0x7f6ed01e2000, 2093056, PROT_NONE) = 0 <0.000012>
+mmap(0x7f6ed03e1000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x24000) = 0x7f6ed03e1000 <0.000010>
+close(3)                                = 0 <0.000007>
+open("/scif/apps/zsh/lib/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000015>
+open("tls/x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000008>
+open("tls/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000008>
+open("x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000007>
+open("libm.so.6", O_RDONLY|O_CLOEXEC)   = -1 ENOENT (No such file or directory) <0.000008>
+open("/.singularity.d/libs/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000013>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000008>
+open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000022>
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20V\0\0\0\0\0\0"..., 832) = 832 <0.000026>
+fstat(3, {st_mode=S_IFREG|0644, st_size=1071552, ...}) = 0 <0.000008>
+mmap(NULL, 3166568, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6ecfeb7000 <0.000009>
+mprotect(0x7f6ecffbc000, 2093056, PROT_NONE) = 0 <0.000012>
+mmap(0x7f6ed01bb000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x104000) = 0x7f6ed01bb000 <0.000011>
+close(3)                                = 0 <0.000007>
+open("/scif/apps/zsh/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000012>
+open("tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000008>
+open("tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000007>
+open("x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000008>
+open("libc.so.6", O_RDONLY|O_CLOEXEC)   = -1 ENOENT (No such file or directory) <0.000008>
+open("/.singularity.d/libs/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000010>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000009>
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000013>
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P \2\0\0\0\0\0"..., 832) = 832 <0.000008>
+fstat(3, {st_mode=S_IFREG|0755, st_size=1857312, ...}) = 0 <0.000007>
+mmap(NULL, 3965632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6ecfaee000 <0.000009>
+mprotect(0x7f6ecfcac000, 2097152, PROT_NONE) = 0 <0.000011>
+mmap(0x7f6ecfeac000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1be000) = 0x7f6ecfeac000 <0.000011>
+mmap(0x7f6ecfeb2000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6ecfeb2000 <0.000009>
+close(3)                                = 0 <0.000007>
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6ed0a03000 <0.000010>
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6ed0a01000 <0.000008>
+arch_prctl(ARCH_SET_FS, 0x7f6ed0a01740) = 0 <0.000007>
+mprotect(0x7f6ecfeac000, 16384, PROT_READ) = 0 <0.000012>
+mprotect(0x7f6ed01bb000, 4096, PROT_READ) = 0 <0.000010>
+mprotect(0x7f6ed03e1000, 16384, PROT_READ) = 0 <0.000009>
+mprotect(0x7f6ed05e8000, 4096, PROT_READ) = 0 <0.000009>
+mprotect(0x7f6ed07ed000, 4096, PROT_READ) = 0 <0.000009>
+mprotect(0x6a2000, 4096, PROT_READ)     = 0 <0.000009>
+mprotect(0x7f6ed0a11000, 4096, PROT_READ) = 0 <0.000009>
+munmap(0x7f6ed0a05000, 37006)           = 0 <0.000017>
+brk(NULL)                               = 0x25e6000 <0.000010>
+brk(0x2607000)                          = 0x2607000 <0.000010>
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3 <0.000412>
+fstat(3, {st_mode=S_IFREG|0644, st_size=1607664, ...}) = 0 <0.000009>
+mmap(NULL, 1607664, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6ed0878000 <0.000010>
+close(3)                                = 0 <0.000007>
+getrlimit(RLIMIT_NOFILE, {rlim_cur=1024, rlim_max=64*1024}) = 0 <0.000009>
+getuid()                                = 1000 <0.000007>
+geteuid()                               = 1000 <0.000006>
+getgid()                                = 1000 <0.000096>
+getegid()                               = 1000 <0.000007>
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0 <0.000009>
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0 <0.000008>
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0 <0.000007>
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 27), ...}) = 0 <0.000008>
+readlink("/proc/self/fd/0", "/dev/pts/27", 4095) = 11 <0.000027>
+stat("/dev/pts/27", {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 27), ...}) = 0 <0.000010>
+open("/dev/pts/27", O_RDWR|O_NOCTTY)    = 3 <0.000014>
+fcntl(3, F_DUPFD, 10)                   = 10 <0.000007>
+close(3)                                = 0 <0.000007>
+fcntl(10, F_GETFD)                      = 0 <0.000007>
+fcntl(10, F_SETFD, FD_CLOEXEC)          = 0 <0.000006>
+getpid()                                = 4031 <0.000007>
+pipe([3, 4])                            = 0 <0.000010>
+dup(0)                                  = 5 <0.000007>
+dup(0)                                  = 6 <0.000007>
+dup(0)                                  = 7 <0.000007>
+dup(0)                                  = 8 <0.000007>
+dup(0)                                  = 9 <0.000006>
+getppid()                               = 4029 <0.000007>
+getuid()                                = 1000 <0.000006>
+socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 11 <0.000012>
+connect(11, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory) <0.000391>
+close(11)                               = 0 <0.000011>
+socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 11 <0.000009>
+connect(11, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory) <0.000012>
+close(11)                               = 0 <0.000008>
+open("/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 11 <0.000019>
+fstat(11, {st_mode=S_IFREG|0644, st_size=475, ...}) = 0 <0.000007>
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6ed0a0e000 <0.000011>
+read(11, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 475 <0.000402>
+read(11, "", 4096)                      = 0 <0.002491>
+close(11)                               = 0 <0.000012>
+munmap(0x7f6ed0a0e000, 4096)            = 0 <0.000016>
+open("/scif/apps/zsh/lib/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000027>
+open("tls/x86_64/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000009>
+open("tls/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000008>
+open("x86_64/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000009>
+open("libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000021>
+open("/.singularity.d/libs/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000024>
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 11 <0.000013>
+fstat(11, {st_mode=S_IFREG|0644, st_size=37006, ...}) = 0 <0.000008>
+mmap(NULL, 37006, PROT_READ, MAP_PRIVATE, 11, 0) = 0x7f6ed0a05000 <0.000011>
+close(11)                               = 0 <0.000006>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000009>
+open("/lib/x86_64-linux-gnu/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = 11 <0.000028>
+read(11, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260\23\0\0\0\0\0\0"..., 832) = 832 <0.000034>
+fstat(11, {st_mode=S_IFREG|0644, st_size=39824, ...}) = 0 <0.000008>
+mmap(NULL, 2135368, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 11, 0) = 0x7f6ecf8e4000 <0.000010>
+mprotect(0x7f6ecf8ed000, 2093056, PROT_NONE) = 0 <0.000012>
+mmap(0x7f6ecfaec000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 11, 0x8000) = 0x7f6ecfaec000 <0.000012>
+close(11)                               = 0 <0.000007>
+open("/scif/apps/zsh/lib/libnsl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000017>
+open("tls/x86_64/libnsl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000011>
+open("tls/libnsl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000008>
+open("x86_64/libnsl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000008>
+open("libnsl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000009>
+open("/.singularity.d/libs/libnsl.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000014>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000009>
+open("/lib/x86_64-linux-gnu/libnsl.so.1", O_RDONLY|O_CLOEXEC) = 11 <0.000023>
+read(11, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`A\0\0\0\0\0\0"..., 832) = 832 <0.000025>
+fstat(11, {st_mode=S_IFREG|0644, st_size=97296, ...}) = 0 <0.000007>
+mmap(NULL, 2202328, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 11, 0) = 0x7f6ecf6ca000 <0.000010>
+mprotect(0x7f6ecf6e1000, 2093056, PROT_NONE) = 0 <0.000011>
+mmap(0x7f6ecf8e0000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 11, 0x16000) = 0x7f6ecf8e0000 <0.000012>
+mmap(0x7f6ecf8e2000, 6872, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6ecf8e2000 <0.000011>
+close(11)                               = 0 <0.000007>
+mprotect(0x7f6ecf8e0000, 4096, PROT_READ) = 0 <0.002272>
+mprotect(0x7f6ecfaec000, 4096, PROT_READ) = 0 <0.000012>
+munmap(0x7f6ed0a05000, 37006)           = 0 <0.000020>
+open("/scif/apps/zsh/lib/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000026>
+open("tls/x86_64/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000009>
+open("tls/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000008>
+open("x86_64/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000008>
+open("libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000008>
+open("/.singularity.d/libs/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000014>
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 11 <0.000012>
+fstat(11, {st_mode=S_IFREG|0644, st_size=37006, ...}) = 0 <0.000008>
+mmap(NULL, 37006, PROT_READ, MAP_PRIVATE, 11, 0) = 0x7f6ed0a05000 <0.000020>
+close(11)                               = 0 <0.000007>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000010>
+open("/lib/x86_64-linux-gnu/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = 11 <0.000027>
+read(11, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240!\0\0\0\0\0\0"..., 832) = 832 <0.000036>
+fstat(11, {st_mode=S_IFREG|0644, st_size=47760, ...}) = 0 <0.000007>
+mmap(NULL, 2143784, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 11, 0) = 0x7f6ecf4be000 <0.000011>
+mprotect(0x7f6ecf4c9000, 2093056, PROT_NONE) = 0 <0.000011>
+mmap(0x7f6ecf6c8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 11, 0xa000) = 0x7f6ecf6c8000 <0.000010>
+close(11)                               = 0 <0.000007>
+open("/scif/apps/zsh/lib/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000015>
+open("tls/x86_64/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000009>
+open("tls/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000009>
+open("x86_64/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000008>
+open("libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000010>
+open("/.singularity.d/libs/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000013>
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory) <0.000010>
+open("/lib/x86_64-linux-gnu/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = 11 <0.000023>
+read(11, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\"\0\0\0\0\0\0"..., 832) = 832 <0.000026>
+fstat(11, {st_mode=S_IFREG|0644, st_size=43616, ...}) = 0 <0.000008>
+mmap(NULL, 2139944, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 11, 0) = 0x7f6ecf2b3000 <0.000010>
+mprotect(0x7f6ecf2bd000, 2093056, PROT_NONE) = 0 <0.000011>
+mmap(0x7f6ecf4bc000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 11, 0x9000) = 0x7f6ecf4bc000 <0.000010>
+close(11)                               = 0 <0.000008>
+mprotect(0x7f6ecf4bc000, 4096, PROT_READ) = 0 <0.000010>
+mprotect(0x7f6ecf6c8000, 4096, PROT_READ) = 0 <0.000009>
+munmap(0x7f6ed0a05000, 37006)           = 0 <0.000014>
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 11 <0.000013>
+lseek(11, 0, SEEK_CUR)                  = 0 <0.000008>
+fstat(11, {st_mode=S_IFREG|0644, st_size=1018, ...}) = 0 <0.000007>
+mmap(NULL, 1018, PROT_READ, MAP_SHARED, 11, 0) = 0x7f6ed0a0e000 <0.000010>
+lseek(11, 1018, SEEK_SET)               = 1018 <0.000007>
+munmap(0x7f6ed0a0e000, 1018)            = 0 <0.000010>
+close(11)                               = 0 <0.000008>
+stat("/home/vanessa", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0 <0.000011>
+stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0 <0.000009>
+stat("/home/vanessa/Documents/Dropbox/Code/ftw/hello-world-ftw", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0 <0.000011>
+stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0 <0.000008>
+open("/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 11 <0.000223>
+fstat(11, {st_mode=S_IFREG|0644, st_size=26258, ...}) = 0 <0.000008>
+mmap(NULL, 26258, PROT_READ, MAP_SHARED, 11, 0) = 0x7f6ed0a08000 <0.000010>
+close(11)                               = 0 <0.000007>
+uname({sysname="Linux", nodename="vanessa-ThinkPad-T460s", ...}) = 0 <0.000009>
+open("/proc/self/loginuid", O_RDONLY)   = 11 <0.000017>
+read(11, "4294967295", 12)              = 10 <0.000008>
+close(11)                               = 0 <0.000008>
+open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 11 <0.000010>
+lseek(11, 0, SEEK_CUR)                  = 0 <0.000007>
+fstat(11, {st_mode=S_IFREG|0644, st_size=1018, ...}) = 0 <0.000007>
+mmap(NULL, 1018, PROT_READ, MAP_SHARED, 11, 0) = 0x7f6ed0a07000 <0.000009>
+lseek(11, 1018, SEEK_SET)               = 1018 <0.000007>
+fstat(11, {st_mode=S_IFREG|0644, st_size=1018, ...}) = 0 <0.000008>
+munmap(0x7f6ed0a07000, 1018)            = 0 <0.000011>
+close(11)                               = 0 <0.000008>
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0 <0.000010>
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 27), ...}) = 0 <0.000008>
+readlink("/proc/self/fd/0", "/dev/pts/27", 511) = 11 <0.000017>
+stat("/dev/pts/27", {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 27), ...}) = 0 <0.000010>
+access("/var/run/utmpx", F_OK)          = -1 ENOENT (No such file or directory) <0.000019>
+open("/var/run/utmp", O_RDONLY|O_CLOEXEC) = 11 <0.000017>
+lseek(11, 0, SEEK_SET)                  = 0 <0.000007>
+alarm(0)                                = 0 <0.000008>
+rt_sigaction(SIGALRM, {0x7f6ecfc25870, [], SA_RESTORER, 0x7f6ecfb24cb0}, {SIG_DFL, [], 0}, 8) = 0 <0.000007>
+alarm(10)                               = 0 <0.000009>
+fcntl(11, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0 <0.000280>
+read(11, "", 384)                       = 0 <0.000012>
+fcntl(11, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0 <0.000008>
+alarm(0)                                = 10 <0.000007>
+rt_sigaction(SIGALRM, {SIG_DFL, [], SA_RESTORER, 0x7f6ecfb24cb0}, NULL, 8) = 0 <0.000010>
+close(11)                               = 0 <0.000009>
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6ed0874000 <0.000011>
+munmap(0x7f6ed0874000, 16384)           = 0 <0.000060>
+uname({sysname="Linux", nodename="vanessa-ThinkPad-T460s", ...}) = 0 <0.000009>
+ioctl(10, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0 <0.000012>
+getrlimit(RLIMIT_CPU, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0 <0.000009>
+getrlimit(RLIMIT_FSIZE, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0 <0.000007>
+getrlimit(RLIMIT_DATA, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0 <0.000007>
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0 <0.000007>
+getrlimit(RLIMIT_CORE, {rlim_cur=0, rlim_max=RLIM64_INFINITY}) = 0 <0.000009>
+getrlimit(RLIMIT_RSS, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0 <0.000007>
+getrlimit(RLIMIT_NPROC, {rlim_cur=79303, rlim_max=79303}) = 0 <0.000008>
+getrlimit(RLIMIT_NOFILE, {rlim_cur=1024, rlim_max=64*1024}) = 0 <0.000008>
+getrlimit(RLIMIT_MEMLOCK, {rlim_cur=64*1024, rlim_max=64*1024}) = 0 <0.000008>
+getrlimit(RLIMIT_AS, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0 <0.000007>
+getrlimit(RLIMIT_LOCKS, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0 <0.000007>
+getrlimit(RLIMIT_SIGPENDING, {rlim_cur=79303, rlim_max=79303}) = 0 <0.000007>
+getrlimit(RLIMIT_MSGQUEUE, {rlim_cur=800*1024, rlim_max=800*1024}) = 0 <0.000007>
+getrlimit(RLIMIT_NICE, {rlim_cur=0, rlim_max=0}) = 0 <0.000008>
+getrlimit(RLIMIT_RTPRIO, {rlim_cur=0, rlim_max=0}) = 0 <0.000008>
+getrlimit(RLIMIT_RTTIME, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0 <0.000007>
+getrusage(RUSAGE_CHILDREN, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0 <0.000010>
+close(3)                                = 0 <0.000011>
+close(4)                                = 0 <0.000029>
+close(5)                                = 0 <0.000007>
+close(6)                                = 0 <0.000007>
+close(7)                                = 0 <0.000007>
+close(8)                                = 0 <0.000007>
+close(9)                                = 0 <0.000009>
+rt_sigaction(SIGQUIT, {SIG_IGN, [QUIT], SA_RESTORER|SA_RESTART, 0x7f6ecfb24cb0}, {SIG_DFL, [], 0}, 8) = 0 <0.000009>
+rt_sigaction(SIGHUP, {SIG_IGN, [HUP], SA_RESTORER|SA_RESTART, 0x7f6ecfb24cb0}, {SIG_DFL, [], 0}, 8) = 0 <0.000008>
+rt_sigaction(SIGHUP, {0x4729d0, [], SA_RESTORER, 0x7f6ecfb24cb0}, NULL, 8) = 0 <0.000008>
+rt_sigaction(SIGCHLD, {0x4729d0, [], SA_RESTORER, 0x7f6ecfb24cb0}, NULL, 8) = 0 <0.000010>
+rt_sigaction(SIGWINCH, {0x4729d0, [], SA_RESTORER, 0x7f6ecfb24cb0}, NULL, 8) = 0 <0.000009>
+mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6ed0874000 <0.000014>
+stat("/etc/zsh/zshenv.zwc", 0x7ffe647c1300) = -1 ENOENT (No such file or directory) <0.000221>
+stat("/etc/zsh/zshenv", {st_mode=S_IFREG|0644, st_size=623, ...}) = 0 <0.000018>
+open("/etc/zsh/zshenv", O_RDONLY|O_NOCTTY) = 3 <0.000013>
+fcntl(3, F_DUPFD, 10)                   = 11 <0.000008>
+close(3)                                = 0 <0.000007>
+fcntl(11, F_GETFL)                      = 0x8000 (flags O_RDONLY|O_LARGEFILE) <0.000007>
+fstat(11, {st_mode=S_IFREG|0644, st_size=623, ...}) = 0 <0.000007>
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6ed0a07000 <0.000010>
+lseek(11, 0, SEEK_CUR)                  = 0 <0.000008>
+read(11, "# /etc/zsh/zshenv: system-wide ."..., 4096) = 623 <0.000178>
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0 <0.000009>
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0 <0.000008>
+rt_sigprocmask(SIG_UNBLOCK, [CHLD], [CHLD], 8) = 0 <0.000007>
+read(11, "", 4096)                      = 0 <0.000008>
+close(11)                               = 0 <0.000009>
+munmap(0x7f6ed0a07000, 4096)            = 0 <0.000012>
+stat("/home/vanessa/.zshenv.zwc", 0x7ffe647c1130) = -1 ENOENT (No such file or directory) <0.000019>
+stat("/home/vanessa/.zshenv", 0x7ffe647c11c0) = -1 ENOENT (No such file or directory) <0.000011>
+open("/home/vanessa/.zshenv", O_RDONLY|O_NOCTTY) = -1 ENOENT (No such file or directory) <0.000010>
+access("/scif/apps/zsh/hello-world.zsh", F_OK) = 0 <0.000023>
+stat("/scif/apps/zsh/hello-world.zsh", {st_mode=S_IFREG|0764, st_size=35, ...}) = 0 <0.000010>
+open("/scif/apps/zsh/hello-world.zsh", O_RDONLY|O_NOCTTY) = 3 <0.000012>
+fcntl(3, F_DUPFD, 10)                   = 11 <0.000007>
+close(3)                                = 0 <0.000007>
+fcntl(11, F_GETFL)                      = 0x8000 (flags O_RDONLY|O_LARGEFILE) <0.000007>
+fstat(11, {st_mode=S_IFREG|0764, st_size=35, ...}) = 0 <0.000007>
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6ed0a07000 <0.000011>
+lseek(11, 0, SEEK_CUR)                  = 0 <0.000007>
+read(11, "#!/bin/zsh\necho \"RaawwWWWWWRRRR!"..., 4096) = 35 <0.000029>
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0 <0.000007>
+write(1, "RaawwWWWWWRRRR!!\n", 17)      = 17 <0.000100>
+rt_sigprocmask(SIG_BLOCK, [CHLD], [CHLD], 8) = 0 <0.000007>
+rt_sigprocmask(SIG_UNBLOCK, [CHLD], [CHLD], 8) = 0 <0.000007>
+read(11, "", 4096)                      = 0 <0.000008>
+exit_group(0)                           = ?
++++ exited with 0 +++
+% time     seconds  usecs/call     calls    errors syscall
+------ ----------- ----------- --------- --------- ----------------
+100.00    0.000024           0       104           read
+  0.00    0.000000           0         5           write
+  0.00    0.000000           0       172        81 open
+  0.00    0.000000           0       112           close
+  0.00    0.000000           0       112        24 stat
+  0.00    0.000000           0        86           fstat
+  0.00    0.000000           0         2           lstat
+  0.00    0.000000           0        42           lseek
+  0.00    0.000000           0       112           mmap
+  0.00    0.000000           0        56           mprotect
+  0.00    0.000000           0        27           munmap
+  0.00    0.000000           0       171           brk
+  0.00    0.000000           0        43           rt_sigaction
+  0.00    0.000000           0        17           rt_sigprocmask
+  0.00    0.000000           0         9         2 ioctl
+  0.00    0.000000           0        37        36 access
+  0.00    0.000000           0         1           pipe
+  0.00    0.000000           0         7           dup
+  0.00    0.000000           0         2           dup2
+  0.00    0.000000           0         3           alarm
+  0.00    0.000000           0         6           getpid
+  0.00    0.000000           0         7           socket
+  0.00    0.000000           0         7         6 connect
+  0.00    0.000000           0         1           sendto
+  0.00    0.000000           0         7         1 execve
+  0.00    0.000000           0         4           uname
+  0.00    0.000000           0        38         2 fcntl
+  0.00    0.000000           0         2           getdents
+  0.00    0.000000           0         1           getcwd
+  0.00    0.000000           0         2           chdir
+  0.00    0.000000           0         4           mkdir
+  0.00    0.000000           0         2           readlink
+  0.00    0.000000           0         2           fchmod
+  0.00    0.000000           0         8           umask
+  0.00    0.000000           0        21           getrlimit
+  0.00    0.000000           0         1           getrusage
+  0.00    0.000000           0         2           sysinfo
+  0.00    0.000000           0        46           getuid
+  0.00    0.000000           0        24           getgid
+  0.00    0.000000           0         1           setgid
+  0.00    0.000000           0        27           geteuid
+  0.00    0.000000           0         3           getegid
+  0.00    0.000000           0         5           getppid
+  0.00    0.000000           0         2           getpgrp
+  0.00    0.000000           0         1           setreuid
+  0.00    0.000000           0         1           setregid
+  0.00    0.000000           0         2           getgroups
+  0.00    0.000000           0        38           setgroups
+  0.00    0.000000           0        38           setresuid
+  0.00    0.000000           0        38           setresgid
+  0.00    0.000000           0         1           prctl
+  0.00    0.000000           0         6           arch_prctl
+  0.00    0.000000           0         1           chroot
+  0.00    0.000000           0        24           mount
+  0.00    0.000000           0         1           openat
+  0.00    0.000000           0         3           faccessat
+  0.00    0.000000           0         2           unshare
+------ ----------- ----------- --------- --------- ----------------
+100.00    0.000024                  1499       152 total

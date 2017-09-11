@@ -1,0 +1,580 @@
+12:50:58 execve("/usr/bin/ruby", ["ruby", "/scif/apps/ruby/hello-world.rb"], [/* 76 vars */]) = 0
+12:50:58 brk(0)                         = 0x16f1000
+12:50:58 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:58 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5d48b9a000
+12:50:58 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+12:50:58 open("/scif/apps/ruby/lib/tls/x86_64/libruby-1.9.1.so.1.9", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 stat("/scif/apps/ruby/lib/tls/x86_64", 0x7ffe100ffd60) = -1 ENOENT (No such file or directory)
+12:50:58 open("/scif/apps/ruby/lib/tls/libruby-1.9.1.so.1.9", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 stat("/scif/apps/ruby/lib/tls", 0x7ffe100ffd60) = -1 ENOENT (No such file or directory)
+12:50:58 open("/scif/apps/ruby/lib/x86_64/libruby-1.9.1.so.1.9", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 stat("/scif/apps/ruby/lib/x86_64", 0x7ffe100ffd60) = -1 ENOENT (No such file or directory)
+12:50:58 open("/scif/apps/ruby/lib/libruby-1.9.1.so.1.9", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 stat("/scif/apps/ruby/lib", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:58 open("tls/x86_64/libruby-1.9.1.so.1.9", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("tls/libruby-1.9.1.so.1.9", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("x86_64/libruby-1.9.1.so.1.9", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("libruby-1.9.1.so.1.9", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("/.singularity.d/libs/tls/x86_64/libruby-1.9.1.so.1.9", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 stat("/.singularity.d/libs/tls/x86_64", 0x7ffe100ffd60) = -1 ENOENT (No such file or directory)
+12:50:58 open("/.singularity.d/libs/tls/libruby-1.9.1.so.1.9", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 stat("/.singularity.d/libs/tls", 0x7ffe100ffd60) = -1 ENOENT (No such file or directory)
+12:50:58 open("/.singularity.d/libs/x86_64/libruby-1.9.1.so.1.9", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 stat("/.singularity.d/libs/x86_64", 0x7ffe100ffd60) = -1 ENOENT (No such file or directory)
+12:50:58 open("/.singularity.d/libs/libruby-1.9.1.so.1.9", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 stat("/.singularity.d/libs", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+12:50:58 fstat(3, {st_mode=S_IFREG|0644, st_size=37006, ...}) = 0
+12:50:58 mmap(NULL, 37006, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f5d48b90000
+12:50:58 close(3)                       = 0
+12:50:58 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/libruby-1.9.1.so.1.9", O_RDONLY|O_CLOEXEC) = 3
+12:50:58 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0Pu\2\0\0\0\0\0"..., 832) = 832
+12:50:58 fstat(3, {st_mode=S_IFREG|0644, st_size=2087600, ...}) = 0
+12:50:58 mmap(NULL, 4297112, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5d48560000
+12:50:58 mprotect(0x7f5d48756000, 2093056, PROT_NONE) = 0
+12:50:58 mmap(0x7f5d48955000, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1f5000) = 0x7f5d48955000
+12:50:58 mmap(0x7f5d4895e000, 111000, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f5d4895e000
+12:50:58 close(3)                       = 0
+12:50:58 open("/scif/apps/ruby/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("/.singularity.d/libs/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:58 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+12:50:58 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P \2\0\0\0\0\0"..., 832) = 832
+12:50:58 fstat(3, {st_mode=S_IFREG|0755, st_size=1857312, ...}) = 0
+12:50:58 mmap(NULL, 3965632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5d48197000
+12:50:58 mprotect(0x7f5d48355000, 2097152, PROT_NONE) = 0
+12:50:58 mmap(0x7f5d48555000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1be000) = 0x7f5d48555000
+12:50:58 mmap(0x7f5d4855b000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f5d4855b000
+12:50:58 close(3)                       = 0
+12:50:58 open("/scif/apps/ruby/lib/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("tls/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("tls/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("/.singularity.d/libs/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:58 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+12:50:58 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0po\0\0\0\0\0\0"..., 832) = 832
+12:50:58 fstat(3, {st_mode=S_IFREG|0755, st_size=141574, ...}) = 0
+12:50:58 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5d48b8f000
+12:50:58 mmap(NULL, 2217264, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5d47f79000
+12:50:58 mprotect(0x7f5d47f92000, 2093056, PROT_NONE) = 0
+12:50:58 mmap(0x7f5d48191000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18000) = 0x7f5d48191000
+12:50:58 mmap(0x7f5d48193000, 13616, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f5d48193000
+12:50:58 close(3)                       = 0
+12:50:58 open("/scif/apps/ruby/lib/librt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("tls/x86_64/librt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("tls/librt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("x86_64/librt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("librt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("/.singularity.d/libs/librt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:58 open("/lib/x86_64-linux-gnu/librt.so.1", O_RDONLY|O_CLOEXEC) = 3
+12:50:58 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P#\0\0\0\0\0\0"..., 832) = 832
+12:50:58 fstat(3, {st_mode=S_IFREG|0644, st_size=31792, ...}) = 0
+12:50:58 mmap(NULL, 2129016, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5d47d71000
+12:50:58 mprotect(0x7f5d47d78000, 2093056, PROT_NONE) = 0
+12:50:58 mmap(0x7f5d47f77000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f5d47f77000
+12:50:58 close(3)                       = 0
+12:50:58 open("/scif/apps/ruby/lib/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("tls/x86_64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("tls/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("x86_64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("/.singularity.d/libs/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:58 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+12:50:58 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\16\0\0\0\0\0\0"..., 832) = 832
+12:50:58 fstat(3, {st_mode=S_IFREG|0644, st_size=14664, ...}) = 0
+12:50:58 mmap(NULL, 2109744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5d47b6d000
+12:50:58 mprotect(0x7f5d47b70000, 2093056, PROT_NONE) = 0
+12:50:58 mmap(0x7f5d47d6f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f5d47d6f000
+12:50:58 close(3)                       = 0
+12:50:58 open("/scif/apps/ruby/lib/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("tls/x86_64/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("tls/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("x86_64/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("libcrypt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("/.singularity.d/libs/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:58 open("/lib/x86_64-linux-gnu/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = 3
+12:50:58 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\f\0\0\0\0\0\0"..., 832) = 832
+12:50:58 fstat(3, {st_mode=S_IFREG|0644, st_size=43368, ...}) = 0
+12:50:58 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5d48b8e000
+12:50:58 mmap(NULL, 2327072, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5d47934000
+12:50:58 mprotect(0x7f5d4793d000, 2097152, PROT_NONE) = 0
+12:50:58 mmap(0x7f5d47b3d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7f5d47b3d000
+12:50:58 mmap(0x7f5d47b3f000, 184864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f5d47b3f000
+12:50:58 close(3)                       = 0
+12:50:58 open("/scif/apps/ruby/lib/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("tls/x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("tls/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 open("/.singularity.d/libs/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+12:50:58 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:50:58 open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+12:50:58 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20V\0\0\0\0\0\0"..., 832) = 832
+12:50:58 fstat(3, {st_mode=S_IFREG|0644, st_size=1071552, ...}) = 0
+12:50:58 mmap(NULL, 3166568, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5d4762e000
+12:50:58 mprotect(0x7f5d47733000, 2093056, PROT_NONE) = 0
+12:50:58 mmap(0x7f5d47932000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x104000) = 0x7f5d47932000
+12:50:58 close(3)                       = 0
+12:50:58 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5d48b8d000
+12:50:58 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5d48b8b000
+12:50:58 arch_prctl(ARCH_SET_FS, 0x7f5d48b8b740) = 0
+12:50:58 mprotect(0x7f5d48555000, 16384, PROT_READ) = 0
+12:50:58 mprotect(0x7f5d47932000, 4096, PROT_READ) = 0
+12:50:58 mprotect(0x7f5d47b3d000, 4096, PROT_READ) = 0
+12:50:58 mprotect(0x7f5d47d6f000, 4096, PROT_READ) = 0
+12:50:58 mprotect(0x7f5d48191000, 4096, PROT_READ) = 0
+12:50:58 mprotect(0x7f5d47f77000, 4096, PROT_READ) = 0
+12:50:58 mprotect(0x7f5d48955000, 20480, PROT_READ) = 0
+12:50:58 mprotect(0x600000, 4096, PROT_READ) = 0
+12:50:58 mprotect(0x7f5d48b9c000, 4096, PROT_READ) = 0
+12:50:58 munmap(0x7f5d48b90000, 37006)  = 0
+12:50:58 set_tid_address(0x7f5d48b8ba10) = 16506
+12:50:58 set_robust_list(0x7f5d48b8ba20, 24) = 0
+12:50:58 futex(0x7ffe101005a0, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 1, NULL, 7f5d48b8b740) = -1 EAGAIN (Resource temporarily unavailable)
+12:50:58 rt_sigaction(SIGRTMIN, {0x7f5d47f7f9f0, [], SA_RESTORER|SA_SIGINFO, 0x7f5d47f89330}, NULL, 8) = 0
+12:50:58 rt_sigaction(SIGRT_1, {0x7f5d47f7fa80, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f5d47f89330}, NULL, 8) = 0
+12:50:58 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+12:50:58 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+12:50:58 brk(0)                         = 0x16f1000
+12:50:58 brk(0x1712000)                 = 0x1712000
+12:50:58 open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+12:50:58 fstat(3, {st_mode=S_IFREG|0644, st_size=1607664, ...}) = 0
+12:50:58 mmap(NULL, 1607664, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f5d48a02000
+12:50:58 close(3)                       = 0
+12:50:58 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 28), ...}) = 0
+12:50:58 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 28), ...}) = 0
+12:50:58 fstat(2, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 28), ...}) = 0
+12:50:58 open("/proc/self/maps", O_RDONLY|O_CLOEXEC) = 3
+12:50:58 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+12:50:58 fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+12:50:58 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5d48b99000
+12:50:58 read(3, "00400000-00401000 r-xp 00000000 "..., 1024) = 1024
+12:50:58 read(3, "-7f5d47b3e000 r--p 00009000 07:0"..., 1024) = 1024
+12:50:58 read(3, "7f5d47f78000-7f5d47f79000 rw-p 0"..., 1024) = 1024
+12:50:58 read(3, "inux-gnu/libc-2.19.so\n7f5d4855b0"..., 1024) = 1024
+12:50:58 read(3, "   /lib/x86_64-linux-gnu/ld-2.19"..., 1024) = 410
+12:50:58 close(3)                       = 0
+12:50:58 munmap(0x7f5d48b99000, 4096)   = 0
+12:50:58 sched_getaffinity(16506, 32, {f, 0, 0, 0}) = 32
+12:50:58 open("/proc/self/maps", O_RDONLY|O_CLOEXEC) = 3
+12:50:58 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+12:50:58 fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+12:50:58 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5d48b99000
+12:50:58 read(3, "00400000-00401000 r-xp 00000000 "..., 1024) = 1024
+12:50:58 read(3, "-7f5d47b3e000 r--p 00009000 07:0"..., 1024) = 1024
+12:50:58 read(3, "7f5d47f78000-7f5d47f79000 rw-p 0"..., 1024) = 1024
+12:50:58 read(3, "inux-gnu/libc-2.19.so\n7f5d4855b0"..., 1024) = 1024
+12:50:58 read(3, "   /lib/x86_64-linux-gnu/ld-2.19"..., 1024) = 410
+12:50:58 close(3)                       = 0
+12:50:58 munmap(0x7f5d48b99000, 4096)   = 0
+12:50:58 sched_getaffinity(16506, 32, {f, 0, 0, 0}) = 32
+12:50:58 rt_sigaction(SIGVTALRM, {0x7f5d486b5e50, [], SA_RESTORER|SA_SIGINFO, 0x7f5d481cdcb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:58 mmap(NULL, 1052672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5d4752d000
+12:50:58 brk(0x1733000)                 = 0x1733000
+12:50:58 brk(0x1757000)                 = 0x1757000
+12:50:58 brk(0x1778000)                 = 0x1778000
+12:50:58 getrusage(RUSAGE_SELF, {ru_utime={0, 0}, ru_stime={0, 0}, ...}) = 0
+12:50:58 open("/dev/urandom", O_RDONLY|O_NOCTTY|O_NONBLOCK) = 3
+12:50:58 fstat(3, {st_mode=S_IFCHR|0666, st_rdev=makedev(1, 9), ...}) = 0
+12:50:58 fstat(3, {st_mode=S_IFCHR|0666, st_rdev=makedev(1, 9), ...}) = 0
+12:50:58 read(3, "E\225\33\216\267n\216\235\250\201\234\272\330\32\7\325", 16) = 16
+12:50:58 close(3)                       = 0
+12:50:58 brk(0x1799000)                 = 0x1799000
+12:50:58 brk(0x17ba000)                 = 0x17ba000
+12:50:58 brk(0x17db000)                 = 0x17db000
+12:50:58 ioctl(0, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+12:50:58 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 28), ...}) = 0
+12:50:58 ioctl(1, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+12:50:58 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 28), ...}) = 0
+12:50:58 ioctl(2, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+12:50:58 fstat(2, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 28), ...}) = 0
+12:50:58 brk(0x17fc000)                 = 0x17fc000
+12:50:58 rt_sigaction(SIGINT, {0x7f5d48657370, [], SA_RESTORER|SA_SIGINFO, 0x7f5d481cdcb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:58 rt_sigaction(SIGHUP, {0x7f5d48657370, [], SA_RESTORER|SA_SIGINFO, 0x7f5d481cdcb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:58 rt_sigaction(SIGQUIT, {0x7f5d48657370, [], SA_RESTORER|SA_SIGINFO, 0x7f5d481cdcb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:58 rt_sigaction(SIGTERM, {0x7f5d48657370, [], SA_RESTORER|SA_SIGINFO, 0x7f5d481cdcb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:58 rt_sigaction(SIGALRM, {0x7f5d48657370, [], SA_RESTORER|SA_SIGINFO, 0x7f5d481cdcb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:58 rt_sigaction(SIGUSR1, {0x7f5d48657370, [], SA_RESTORER|SA_SIGINFO, 0x7f5d481cdcb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:58 rt_sigaction(SIGUSR2, {0x7f5d48657370, [], SA_RESTORER|SA_SIGINFO, 0x7f5d481cdcb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:58 rt_sigaction(SIGBUS, {0x7f5d486571a0, [], SA_RESTORER|SA_STACK|SA_SIGINFO, 0x7f5d481cdcb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:58 sigaltstack({ss_sp=0x175c090, ss_flags=0, ss_size=16384}, {ss_sp=0, ss_flags=SS_DISABLE, ss_size=0}) = 0
+12:50:58 rt_sigaction(SIGSEGV, {0x7f5d48657390, [], SA_RESTORER|SA_STACK|SA_SIGINFO, 0x7f5d481cdcb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:58 rt_sigaction(SIGPIPE, {SIG_IGN, [], SA_RESTORER|SA_SIGINFO, 0x7f5d481cdcb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:58 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1], [], 8) = 0
+12:50:58 rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_SIGINFO, 0x7f5d481cdcb0}, {SIG_DFL, [], 0}, 8) = 0
+12:50:58 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+12:50:58 geteuid()                      = 1000
+12:50:58 getegid()                      = 1000
+12:50:58 brk(0x181d000)                 = 0x181d000
+12:50:58 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+12:50:58 pipe([3, 4])                   = 0
+12:50:58 fstat(3, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+12:50:58 fstat(4, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+12:50:58 fcntl(4, F_GETFL)              = 0x1 (flags O_WRONLY)
+12:50:58 fcntl(4, F_SETFL, O_WRONLY|O_NONBLOCK) = 0
+12:50:58 fcntl(3, F_GETFD)              = 0
+12:50:58 fcntl(3, F_SETFD, FD_CLOEXEC)  = 0
+12:50:58 fcntl(4, F_GETFD)              = 0
+12:50:58 fcntl(4, F_SETFD, FD_CLOEXEC)  = 0
+12:50:58 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f5d48b96000
+12:50:58 mprotect(0x7f5d48b96000, 4096, PROT_NONE) = 0
+12:50:58 clone(child_stack=0x7f5d48b98fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tidptr=0x7f5d48b999d0, tls=0x7f5d48b99700, child_tidptr=0x7f5d48b999d0) = 16507
+12:50:58 rt_sigprocmask(SIG_SETMASK, ~[SEGV VTALRM RTMIN RT_1], NULL, 8) = 0
+12:50:58 brk(0x183e000)                 = 0x183e000
+12:50:58 open("/proc/self/maps", O_RDONLY|O_CLOEXEC) = 5
+12:50:58 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+12:50:58 fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+12:50:58 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5d48b95000
+12:50:58 read(5, "00400000-00401000 r-xp 00000000 "..., 1024) = 1024
+12:50:58 read(5, "ib/x86_64-linux-gnu/libcrypt-2.1"..., 1024) = 1024
+12:50:58 read(5, "             /lib/x86_64-linux-g"..., 1024) = 1024
+12:50:58 read(5, "00 07:00 463466                 "..., 1024) = 1024
+12:50:58 read(5, "p 00022000 07:00 463446         "..., 1024) = 557
+12:50:58 close(5)                       = 0
+12:50:58 munmap(0x7f5d48b95000, 4096)   = 0
+12:50:58 sched_getaffinity(16506, 32, {f, 0, 0, 0}) = 32
+12:50:58 getuid()                       = 1000
+12:50:58 geteuid()                      = 1000
+12:50:58 getgid()                       = 1000
+12:50:58 getegid()                      = 1000
+12:50:58 open("/usr/local/lib/site_ruby/1.9.1/enc/encdb.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/local/lib/site_ruby/1.9.1/x86_64-linux/enc/encdb.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/local/lib/site_ruby/enc/encdb.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/1.9.1/enc/encdb.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/1.9.1/x86_64-linux/enc/encdb.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/enc/encdb.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/1.9.1/enc/encdb.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/1.9.1/x86_64-linux/enc/encdb.so", O_RDONLY) = 5
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=10232, ...}) = 0
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=10232, ...}) = 0
+12:50:58 close(5)                       = 0
+12:50:58 futex(0x7f5d47d700d0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+12:50:58 open("/usr/lib/ruby/1.9.1/x86_64-linux/enc/encdb.so", O_RDONLY|O_CLOEXEC) = 5
+12:50:58 read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\7\0\0\0\0\0\0"..., 832) = 832
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=10232, ...}) = 0
+12:50:58 mmap(NULL, 2105440, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f5d4732a000
+12:50:58 mprotect(0x7f5d4732c000, 2093056, PROT_NONE) = 0
+12:50:58 mmap(0x7f5d4752b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x1000) = 0x7f5d4752b000
+12:50:58 close(5)                       = 0
+12:50:58 mprotect(0x7f5d4752b000, 4096, PROT_READ) = 0
+12:50:58 brk(0x185f000)                 = 0x185f000
+12:50:58 open("/usr/local/lib/site_ruby/1.9.1/enc/trans/transdb.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/local/lib/site_ruby/1.9.1/x86_64-linux/enc/trans/transdb.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/local/lib/site_ruby/enc/trans/transdb.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/1.9.1/enc/trans/transdb.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/1.9.1/x86_64-linux/enc/trans/transdb.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/enc/trans/transdb.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/1.9.1/enc/trans/transdb.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/1.9.1/x86_64-linux/enc/trans/transdb.so", O_RDONLY) = 5
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=14296, ...}) = 0
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=14296, ...}) = 0
+12:50:58 close(5)                       = 0
+12:50:58 open("/usr/lib/ruby/1.9.1/x86_64-linux/enc/trans/transdb.so", O_RDONLY|O_CLOEXEC) = 5
+12:50:58 read(5, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\6\0\0\0\0\0\0"..., 832) = 832
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=14296, ...}) = 0
+12:50:58 mmap(NULL, 2109504, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 5, 0) = 0x7f5d47126000
+12:50:58 mprotect(0x7f5d47128000, 2097152, PROT_NONE) = 0
+12:50:58 mmap(0x7f5d47328000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 5, 0x2000) = 0x7f5d47328000
+12:50:58 close(5)                       = 0
+12:50:58 mprotect(0x7f5d47328000, 4096, PROT_READ) = 0
+12:50:58 brk(0x1880000)                 = 0x1880000
+12:50:58 open("/usr/local/lib/site_ruby/1.9.1/rubygems.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/local/lib/site_ruby/1.9.1/x86_64-linux/rubygems.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/local/lib/site_ruby/rubygems.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/1.9.1/rubygems.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/1.9.1/x86_64-linux/rubygems.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/rubygems.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/1.9.1/rubygems.rb", O_RDONLY) = 5
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=34951, ...}) = 0
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=34951, ...}) = 0
+12:50:58 close(5)                       = 0
+12:50:58 getuid()                       = 1000
+12:50:58 geteuid()                      = 1000
+12:50:58 getgid()                       = 1000
+12:50:58 getegid()                      = 1000
+12:50:58 open("/usr/lib/ruby/1.9.1/rubygems.rb", O_RDONLY) = 5
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=34951, ...}) = 0
+12:50:58 ioctl(5, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe100feaf0) = -1 ENOTTY (Inappropriate ioctl for device)
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=34951, ...}) = 0
+12:50:58 read(5, "# -*- ruby -*-\n#--\n# Copyright 2"..., 8192) = 8192
+12:50:58 read(5, "ame+.  If the +exec_name+\n  # is"..., 8192) = 8192
+12:50:58 read(5, "hen it inserts the activated gem"..., 8192) = 8192
+12:50:58 read(5, "latform.match p\n    }.sort_by { "..., 8192) = 8192
+12:50:58 read(5, "r.join ':'}:Warning: \" \\\n    \"Rb"..., 8192) = 2183
+12:50:58 read(5, "", 8192)              = 0
+12:50:58 close(5)                       = 0
+12:50:58 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib/ruby", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib/ruby/1.9.1", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib/ruby/1.9.1/rubygems.rb", {st_mode=S_IFREG|0644, st_size=34951, ...}) = 0
+12:50:58 brk(0x18a1000)                 = 0x18a1000
+12:50:58 brk(0x18c8000)                 = 0x18c8000
+12:50:58 open("/usr/local/lib/site_ruby/1.9.1/rubygems/defaults.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/local/lib/site_ruby/1.9.1/x86_64-linux/rubygems/defaults.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/local/lib/site_ruby/rubygems/defaults.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/1.9.1/rubygems/defaults.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/1.9.1/x86_64-linux/rubygems/defaults.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/rubygems/defaults.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/1.9.1/rubygems/defaults.rb", O_RDONLY) = 5
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=3098, ...}) = 0
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=3098, ...}) = 0
+12:50:58 close(5)                       = 0
+12:50:58 getuid()                       = 1000
+12:50:58 geteuid()                      = 1000
+12:50:58 getgid()                       = 1000
+12:50:58 getegid()                      = 1000
+12:50:58 open("/usr/lib/ruby/1.9.1/rubygems/defaults.rb", O_RDONLY) = 5
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=3098, ...}) = 0
+12:50:58 ioctl(5, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe100fe580) = -1 ENOTTY (Inappropriate ioctl for device)
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=3098, ...}) = 0
+12:50:58 read(5, "module Gem\n\n  # TODO: move this "..., 8192) = 3098
+12:50:58 read(5, "", 8192)              = 0
+12:50:58 close(5)                       = 0
+12:50:58 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib/ruby", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib/ruby/1.9.1", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib/ruby/1.9.1/rubygems", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib/ruby/1.9.1/rubygems/defaults.rb", {st_mode=S_IFREG|0644, st_size=3098, ...}) = 0
+12:50:58 brk(0x18e9000)                 = 0x18e9000
+12:50:58 open("/usr/local/lib/site_ruby/1.9.1/rbconfig.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/local/lib/site_ruby/1.9.1/x86_64-linux/rbconfig.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/local/lib/site_ruby/rbconfig.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/1.9.1/rbconfig.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/1.9.1/x86_64-linux/rbconfig.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/rbconfig.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/1.9.1/rbconfig.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/1.9.1/x86_64-linux/rbconfig.rb", O_RDONLY) = 5
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=10295, ...}) = 0
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=10295, ...}) = 0
+12:50:58 close(5)                       = 0
+12:50:58 getuid()                       = 1000
+12:50:58 geteuid()                      = 1000
+12:50:58 getgid()                       = 1000
+12:50:58 getegid()                      = 1000
+12:50:58 open("/usr/lib/ruby/1.9.1/x86_64-linux/rbconfig.rb", O_RDONLY) = 5
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=10295, ...}) = 0
+12:50:58 ioctl(5, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe100fe580) = -1 ENOTTY (Inappropriate ioctl for device)
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=10295, ...}) = 0
+12:50:58 read(5, "\n# This file was created by mkco"..., 8192) = 8192
+12:50:58 read(5, "ONFIG[\"oldincludedir\"] = \"/usr/i"..., 8192) = 2103
+12:50:58 read(5, "", 8192)              = 0
+12:50:58 close(5)                       = 0
+12:50:58 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib/ruby", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib/ruby/1.9.1", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib/ruby/1.9.1/x86_64-linux", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib/ruby/1.9.1/x86_64-linux/rbconfig.rb", {st_mode=S_IFREG|0644, st_size=10295, ...}) = 0
+12:50:58 brk(0x190a000)                 = 0x190a000
+12:50:58 brk(0x192b000)                 = 0x192b000
+12:50:58 open("/usr/local/lib/site_ruby/1.9.1/rubygems/deprecate.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/local/lib/site_ruby/1.9.1/x86_64-linux/rubygems/deprecate.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/local/lib/site_ruby/rubygems/deprecate.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/1.9.1/rubygems/deprecate.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/1.9.1/x86_64-linux/rubygems/deprecate.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/rubygems/deprecate.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/1.9.1/rubygems/deprecate.rb", O_RDONLY) = 5
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=1851, ...}) = 0
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=1851, ...}) = 0
+12:50:58 close(5)                       = 0
+12:50:58 getuid()                       = 1000
+12:50:58 geteuid()                      = 1000
+12:50:58 getgid()                       = 1000
+12:50:58 getegid()                      = 1000
+12:50:58 open("/usr/lib/ruby/1.9.1/rubygems/deprecate.rb", O_RDONLY) = 5
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=1851, ...}) = 0
+12:50:58 ioctl(5, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe100fe580) = -1 ENOTTY (Inappropriate ioctl for device)
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=1851, ...}) = 0
+12:50:58 read(5, "##\n# Provides a single method +d"..., 8192) = 1851
+12:50:58 read(5, "", 8192)              = 0
+12:50:58 close(5)                       = 0
+12:50:58 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib/ruby", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib/ruby/1.9.1", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib/ruby/1.9.1/rubygems", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib/ruby/1.9.1/rubygems/deprecate.rb", {st_mode=S_IFREG|0644, st_size=1851, ...}) = 0
+12:50:58 open("/usr/local/lib/site_ruby/1.9.1/rubygems/exceptions.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/local/lib/site_ruby/1.9.1/x86_64-linux/rubygems/exceptions.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/local/lib/site_ruby/rubygems/exceptions.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/1.9.1/rubygems/exceptions.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/1.9.1/x86_64-linux/rubygems/exceptions.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/rubygems/exceptions.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/1.9.1/rubygems/exceptions.rb", O_RDONLY) = 5
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=2393, ...}) = 0
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=2393, ...}) = 0
+12:50:58 close(5)                       = 0
+12:50:58 getuid()                       = 1000
+12:50:58 geteuid()                      = 1000
+12:50:58 getgid()                       = 1000
+12:50:58 getegid()                      = 1000
+12:50:58 open("/usr/lib/ruby/1.9.1/rubygems/exceptions.rb", O_RDONLY) = 5
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=2393, ...}) = 0
+12:50:58 ioctl(5, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe100fe580) = -1 ENOTTY (Inappropriate ioctl for device)
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=2393, ...}) = 0
+12:50:58 read(5, "##\n# Base exception class for Ru"..., 8192) = 2393
+12:50:58 read(5, "", 8192)              = 0
+12:50:58 close(5)                       = 0
+12:50:58 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib/ruby", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib/ruby/1.9.1", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib/ruby/1.9.1/rubygems", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib/ruby/1.9.1/rubygems/exceptions.rb", {st_mode=S_IFREG|0644, st_size=2393, ...}) = 0
+12:50:58 brk(0x194c000)                 = 0x194c000
+12:50:58 open("/usr/local/lib/site_ruby/1.9.1/rubygems/defaults/operating_system.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/local/lib/site_ruby/1.9.1/x86_64-linux/rubygems/defaults/operating_system.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/local/lib/site_ruby/rubygems/defaults/operating_system.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/1.9.1/rubygems/defaults/operating_system.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/1.9.1/x86_64-linux/rubygems/defaults/operating_system.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/1.9.1/rubygems/defaults/operating_system.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/1.9.1/x86_64-linux/rubygems/defaults/operating_system.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/local/lib/site_ruby/1.9.1/rubygems/defaults/operating_system.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/local/lib/site_ruby/1.9.1/x86_64-linux/rubygems/defaults/operating_system.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/local/lib/site_ruby/rubygems/defaults/operating_system.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/1.9.1/rubygems/defaults/operating_system.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/1.9.1/x86_64-linux/rubygems/defaults/operating_system.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/1.9.1/rubygems/defaults/operating_system.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/1.9.1/x86_64-linux/rubygems/defaults/operating_system.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+12:50:58 open("/usr/local/lib/site_ruby/1.9.1/rubygems/defaults/ruby.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/local/lib/site_ruby/1.9.1/x86_64-linux/rubygems/defaults/ruby.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/local/lib/site_ruby/rubygems/defaults/ruby.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/1.9.1/rubygems/defaults/ruby.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/1.9.1/x86_64-linux/rubygems/defaults/ruby.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/rubygems/defaults/ruby.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/1.9.1/rubygems/defaults/ruby.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/1.9.1/x86_64-linux/rubygems/defaults/ruby.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/local/lib/site_ruby/1.9.1/rubygems/defaults/ruby.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/local/lib/site_ruby/1.9.1/x86_64-linux/rubygems/defaults/ruby.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/local/lib/site_ruby/rubygems/defaults/ruby.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/1.9.1/rubygems/defaults/ruby.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/1.9.1/x86_64-linux/rubygems/defaults/ruby.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/rubygems/defaults/ruby.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/1.9.1/rubygems/defaults/ruby.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/1.9.1/x86_64-linux/rubygems/defaults/ruby.so", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+12:50:58 open("/usr/local/lib/site_ruby/1.9.1/rubygems/custom_require.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/local/lib/site_ruby/1.9.1/x86_64-linux/rubygems/custom_require.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/local/lib/site_ruby/rubygems/custom_require.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/1.9.1/rubygems/custom_require.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/1.9.1/x86_64-linux/rubygems/custom_require.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/vendor_ruby/rubygems/custom_require.rb", O_RDONLY) = -1 ENOENT (No such file or directory)
+12:50:58 open("/usr/lib/ruby/1.9.1/rubygems/custom_require.rb", O_RDONLY) = 5
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=1871, ...}) = 0
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=1871, ...}) = 0
+12:50:58 close(5)                       = 0
+12:50:58 getuid()                       = 1000
+12:50:58 geteuid()                      = 1000
+12:50:58 getgid()                       = 1000
+12:50:58 getegid()                      = 1000
+12:50:58 open("/usr/lib/ruby/1.9.1/rubygems/custom_require.rb", O_RDONLY) = 5
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=1871, ...}) = 0
+12:50:58 ioctl(5, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe100fe580) = -1 ENOTTY (Inappropriate ioctl for device)
+12:50:58 fstat(5, {st_mode=S_IFREG|0644, st_size=1871, ...}) = 0
+12:50:58 read(5, "#--\n# Copyright 2006 by Chad Fow"..., 8192) = 1871
+12:50:58 read(5, "", 8192)              = 0
+12:50:58 close(5)                       = 0
+12:50:58 lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 brk(0x196e000)                 = 0x196e000
+12:50:58 lstat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib/ruby", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib/ruby/1.9.1", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib/ruby/1.9.1/rubygems", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+12:50:58 lstat("/usr/lib/ruby/1.9.1/rubygems/custom_require.rb", {st_mode=S_IFREG|0644, st_size=1871, ...}) = 0
+12:50:58 open("/scif/apps/ruby/hello-world.rb", O_RDONLY) = 5
+12:50:58 fstat(5, {st_mode=S_IFREG|0764, st_size=44, ...}) = 0
+12:50:58 ioctl(5, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe100ff120) = -1 ENOTTY (Inappropriate ioctl for device)
+12:50:58 fstat(5, {st_mode=S_IFREG|0764, st_size=44, ...}) = 0
+12:50:58 read(5, "#!/usr/bin/env ruby\nputs \"RaawwW"..., 8192) = 44
+12:50:58 read(5, "", 8192)              = 0
+12:50:58 close(5)                       = 0
+12:50:58 lstat("/scif", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:58 lstat("/scif/apps", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:58 lstat("/scif/apps/ruby", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+12:50:58 lstat("/scif/apps/ruby/hello-world.rb", {st_mode=S_IFREG|0764, st_size=44, ...}) = 0
+12:50:58 open("/proc/self/maps", O_RDONLY|O_CLOEXEC) = 5
+12:50:58 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+12:50:58 fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+12:50:58 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5d48b95000
+12:50:58 read(5, "00400000-00401000 r-xp 00000000 "..., 1024) = 1024
+12:50:58 read(5, "7:00 179583                     "..., 1024) = 1024
+12:50:58 read(5, "d47b3d000-7f5d47b3e000 r--p 0000"..., 1024) = 1024
+12:50:58 read(5, "-2.19.so\n7f5d47f78000-7f5d47f790"..., 1024) = 1024
+12:50:58 read(5, "/x86_64-linux-gnu/libc-2.19.so\n7"..., 1024) = 1024
+12:50:58 read(5, "    /lib/x86_64-linux-gnu/ld-2.1"..., 1024) = 517
+12:50:58 close(5)                       = 0
+12:50:58 munmap(0x7f5d48b95000, 4096)   = 0
+12:50:58 sched_getaffinity(16506, 32, {f, 0, 0, 0}) = 32
+12:50:58 write(1, "RaawwWWWWWRRRR!!", 16) = 16
+12:50:58 write(1, "\n", 1)              = 1
+12:50:58 open("/proc/self/maps", O_RDONLY|O_CLOEXEC) = 5
+12:50:58 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+12:50:58 fstat(5, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+12:50:58 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5d48b95000
+12:50:58 read(5, "00400000-00401000 r-xp 00000000 "..., 1024) = 1024
+12:50:58 read(5, "7:00 179583                     "..., 1024) = 1024
+12:50:58 read(5, "d47b3d000-7f5d47b3e000 r--p 0000"..., 1024) = 1024
+12:50:58 read(5, "-2.19.so\n7f5d47f78000-7f5d47f790"..., 1024) = 1024
+12:50:58 read(5, "/x86_64-linux-gnu/libc-2.19.so\n7"..., 1024) = 1024
+12:50:58 read(5, "    /lib/x86_64-linux-gnu/ld-2.1"..., 1024) = 517
+12:50:58 close(5)                       = 0
+12:50:58 munmap(0x7f5d48b95000, 4096)   = 0
+12:50:58 sched_getaffinity(16506, 32, {f, 0, 0, 0}) = 32
+12:50:58 rt_sigaction(SIGINT, {SIG_IGN, [], SA_RESTORER|SA_SIGINFO, 0x7f5d481cdcb0}, {0x7f5d48657370, [], SA_RESTORER|SA_SIGINFO, 0x7f5d481cdcb0}, 8) = 0
+12:50:58 rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER|SA_SIGINFO, 0x7f5d481cdcb0}, {SIG_IGN, [], SA_RESTORER|SA_SIGINFO, 0x7f5d481cdcb0}, 8) = 0
+12:50:58 brk(0x1992000)                 = 0x1992000
+12:50:58 write(4, "!", 1)               = 1
+12:50:58 futex(0x7f5d48b999d0, FUTEX_WAIT, 16507, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+12:50:58 munmap(0x7f5d4752d000, 1052672) = 0
+12:50:58 exit_group(0)                  = ?
+12:50:58 +++ exited with 0 +++
+% time     seconds  usecs/call     calls    errors syscall
+------ ----------- ----------- --------- --------- ----------------
+  0.00    0.000000           0        56           read
+  0.00    0.000000           0         3           write
+  0.00    0.000000           0       163       131 open
+  0.00    0.000000           0        32           close
+  0.00    0.000000           0         8         6 stat
+  0.00    0.000000           0        56           fstat
+  0.00    0.000000           0        39           lstat
+  0.00    0.000000           0        36           mmap
+  0.00    0.000000           0        21           mprotect
+  0.00    0.000000           0         7           munmap
+  0.00    0.000000           0        22           brk
+  0.00    0.000000           0        16           rt_sigaction
+  0.00    0.000000           0         7           rt_sigprocmask
+  0.00    0.000000           0        10         7 ioctl
+  0.00    0.000000           0         9         9 access
+  0.00    0.000000           0         1           pipe
+  0.00    0.000000           0         1           clone
+  0.00    0.000000           0         1           execve
+  0.00    0.000000           0         6           fcntl
+  0.00    0.000000           0         6           getrlimit
+  0.00    0.000000           0         1           getrusage
+  0.00    0.000000           0         7           getuid
+  0.00    0.000000           0         7           getgid
+  0.00    0.000000           0         8           geteuid
+  0.00    0.000000           0         8           getegid
+  0.00    0.000000           0         1           sigaltstack
+  0.00    0.000000           0         1           arch_prctl
+  0.00    0.000000           0         3         2 futex
+  0.00    0.000000           0         5           sched_getaffinity
+  0.00    0.000000           0         1           set_tid_address
+  0.00    0.000000           0         1           set_robust_list
+------ ----------- ----------- --------- --------- ----------------
+100.00    0.000000                   543       155 total
