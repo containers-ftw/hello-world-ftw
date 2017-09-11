@@ -6,8 +6,22 @@ From: ubuntu:14.04
 # sudo singularity bootstrap container.ftw Singularity
 #
 
-%runscript
+%help
+This container will say hello-world (in dinosaur)!
 
+Examples:
+
+     # See all installed languages
+     singularity apps <container>
+
+     # See help for a specific language
+     singularity --app <language> <container> help to see help  |or|
+
+     # Run a specific languages
+     singularity --app <language> <container>
+
+
+%runscript
     echo "This container will say hello-world (in dinosaur)!"
     echo "The languages provided include:"
     tree /scif/apps

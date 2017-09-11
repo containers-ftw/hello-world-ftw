@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 
-'''This script will generate modular "sections" for the singularity
-   build recipe, and save as <specfile>.json to some output folder'''
+'''This script an an example "post processing" step to
+   parse all strace results into a common dataframe
+'''
 
 from glob import glob
 from io import StringIO
@@ -113,7 +114,7 @@ for log_file in files:
     lines,table = load_log(log_file)
     # First handle the pre-recorded table
     df = update_times_table(df, table, language)
-    #fdf = update_features_table(fdf, lines, language)
+    fdf = update_features_table(fdf, lines, language)
 
 
 df.to_csv('logs/language-times.tsv',sep='\t')

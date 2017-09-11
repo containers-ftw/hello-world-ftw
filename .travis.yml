@@ -21,7 +21,6 @@ before_install:
 
 install:
   - mkdir -p assets/data && cp -R $TRAVIS_BUILD_DIR/data assets/data
-  - ls assets/data
   - chmod u+x $TRAVIS_BUILD_DIR/test.sh
 
 script:
