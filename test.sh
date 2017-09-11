@@ -1,14 +1,9 @@
 #!/bin/sh
 
-if [ ! -f "container-ftw.img" ] 
-  then
-    echo "Please generate container.ftw before running."
-    echo "singularity create --size 8000 container-ftw.img"
-    echo "sudo singularity bootstrap container-ftw.img Singularity"
-    exit 0
-else
-   container=container-ftw.img
-fi
+# Create initial container
+container=container-ftw.img
+singularity create --size 8000 $container
+sudo singularity bootstrap $container Singularity
 
 if [ $# -eq 0 ]
     then
@@ -62,15 +57,10 @@ for app in $(singularity apps $container)
     sudo strace -u $USER -C -T -o logs/strace-$app.log singularity run --app $app $container
 done
 
-if [ ! -f "container-ftw.test" ] 
-  then
-    echo "Please generate container-ftw.test before running."
-    echo "singularity create --size 8000 container-ftw.test"
-    echo "sudo singularity bootstrap container-ftw.test Singularity.test"
-    exit 0
-else
-   container=container-ftw.test
-fi
+rm $container
+container=container-ftw.test
+singularity create --size 8000 $container
+sudo singularity bootstrap $container Singularity.test 
 
 for app in $(singularity apps $container)
     do
@@ -89,4 +79,4 @@ python helpers/generate_result.py $TIME_LOG
 # json of recipe to render sections folder into generate.html
 python helpers/generate_sections.py assets/data
 
-python helpers/parse_strace.py logs 
+#python helpers/parse_strace.py logs
