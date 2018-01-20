@@ -20,7 +20,6 @@ before_install:
   - cd $TRAVIS_BUILD_DIR/
 
 install:
-  - mkdir -p assets/data && cp -R $TRAVIS_BUILD_DIR/data assets/data
   - chmod u+x $TRAVIS_BUILD_DIR/test.sh
 
 script:

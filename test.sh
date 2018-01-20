@@ -1,20 +1,25 @@
 #!/bin/sh
 
-# Create initial container
-container=container-ftw.img
-singularity create --size 8000 $container
-sudo singularity bootstrap $container Singularity
+usage() {
+   echo "./test.sh <container>"
+}
 
-if [ $# -eq 0 ]
+mkdir -p logs
+
+if [ $# -eq 1 ]
     then
-    TIME_LOG=$PWD/container-ftw.results
-    else
-    TIME_LOG=$1
+    container=$1
+else
+   usage
+   exit 1
 fi
+
+TIME_LOG=logs/$container.results
+STRACE_LOG=logs/strace-$container
 
 echo ""
 echo "Languages available include:"
-for app in $(singularity apps $container)
+for app in $(./$container apps)
     do
     echo $app
 done
@@ -22,17 +27,24 @@ done
 echo ""
 echo "Display running commands:"
 echo "###################################"
-for app in $(singularity apps $container)
+for app in $(./$container apps)
     do
-    echo "singularity run --app $app $container"
+    echo "./$container run $app"
 done
+
+echo "--quiet will be added to suppress extra output."
+echo "./$container --quiet run $app"
+
 
 echo ""
 echo "Running for each language..."
 echo "###################################"
-for app in $(singularity apps $container)
+for app in $(./$container apps)
     do
-    singularity run --app $app $container
+    if [ "$app" != "trace" ]
+        then
+        ./$container --quiet run $app
+    fi   
 done
 
 
@@ -46,37 +58,45 @@ echo ""
 echo "Performing Tests"
 echo "###################################"
 
-for app in $(singularity apps $container)
+# Time metrics for the container
+
+for app in $(./$container apps)
     do
-    /usr/bin/time -a -o $TIME_LOG singularity run --app $app $container >> $TIME_LOG
+    if [ "$app" != "trace" ]
+        then
+        /usr/bin/time -a -o $TIME_LOG ./$container --quiet run $app >> $TIME_LOG
+    fi
 done
 
-mkdir -p logs
-for app in $(singularity apps $container)
+# Running strace from outside container (not as useful)
+
+echo ""
+echo "Trace results will be written to ${STRACE_LOG}"
+
+for app in $(./$container apps)
     do
-    sudo strace -u $USER -C -T -o logs/strace-$app.log singularity run --app $app $container
+    if [ "$app" != "trace" ]
+        then
+        sudo strace -u $USER -C -T -o ${STRACE_LOG}-$app.log ./$container --quiet run $app
+    fi
 done
 
-rm $container
-container=container-ftw.test
-singularity create --size 8000 $container
-sudo singularity bootstrap $container Singularity.test 
+# Running strace from inside the container (more useful) with a trace app
 
-for app in $(singularity apps $container)
+for app in $(./$container apps)
     do
-    singularity run --app $app $container logs/strace-$app-internal.log
+    if [ "$app" != "trace" ]
+        then
+        ./$container run trace $app $PWD/${STRACE_LOG}-$app-internal.log
+    fi
 done
 
-
-# Remove empty lines
+# Remove empty lines, and roar output
 sed -i '/^$/d' $TIME_LOG
+sed -i '/RaawwWWWWWRRRR!!/d' $TIME_LOG
 
-## Generate static output
+## Generate tab separated files
+python helpers/parse_strace.py logs
 
-# json of TIME_LOG to render into index.html
-python helpers/generate_result.py $TIME_LOG 
-
-# json of recipe to render sections folder into generate.html
-python helpers/generate_sections.py assets/data
-
-#python helpers/parse_strace.py logs
+# Generate data.json for web visualization
+python helpers/generate_result.py $TIME_LOG
