@@ -4,6 +4,14 @@ addons:
   apt:
     packages:
       - python-pip
+      - build-essential
+      - libtool
+      - squashfs-tools
+      - automake
+      - autoconf
+      - debootstrap
+      - uuid-dev
+      - libssl-dev
 
 sudo: true
 
@@ -15,16 +23,6 @@ compiler:
 before_install:
   - sudo sed -i -e 's/^Defaults\tsecure_path.*$//' /etc/sudoers
   - pip install pandas
-  - sudo apt-get -y install build-essential \
-                   libtool \
-                   squashfs-tools \
-                   autotools-dev \
-                   automake \
-                   autoconf \
-                   debootstrap \
-                   yum \
-                   uuid-dev \
-                   libssl-dev
   - cd /tmp && git clone -b development https://www.github.com/singularityware/singularity.git && cd singularity
   - ./autogen.sh && ./configure --prefix=/usr/local && make && sudo make install
   - cd $TRAVIS_BUILD_DIR/
