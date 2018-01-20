@@ -15,20 +15,31 @@ compiler:
 before_install:
   - sudo sed -i -e 's/^Defaults\tsecure_path.*$//' /etc/sudoers
   - pip install pandas
+  - sudo apt-get -y install build-essential \
+                   libtool \
+                   squashfs-tools \
+                   autotools-dev \
+                   automake \
+                   autoconf \
+                   debootstrap \
+                   yum \
+                   uuid-dev \
+                   libssl-dev
   - cd /tmp && git clone -b development https://www.github.com/singularityware/singularity.git && cd singularity
   - ./autogen.sh && ./configure --prefix=/usr/local && make && sudo make install
   - cd $TRAVIS_BUILD_DIR/
 
 install:
   - chmod u+x $TRAVIS_BUILD_DIR/test.sh
+  - make build
 
 script:
-  - /bin/bash $TRAVIS_BUILD_DIR/test.sh $TRAVIS_BUILD_DIR/container-ftw.results
+  - /bin/bash $TRAVIS_BUILD_DIR/test.sh hello-world
 
 # containers-ftw.surge.sh
 
 deploy:
   skip_cleanup: true
   provider: surge
-  project: ./assets
+  project: ./docs
   domain: containers-ftw.surge.sh

@@ -10,7 +10,5 @@ run: clean build
 	/bin/bash test.sh $(CONTAINER)
 	
 web: run
-	cp -R data web/data
-	singularity exec python /opt/generate_result.py logs/$(CONTAINER).results
-	singularity exec python /opt/generate_sections.py web/data
-	singularity exec python /opt/parse_strace.py logs
+	python helpers/generate_result.py logs/$(CONTAINER).results
+	python helpers/parse_strace.py logs
