@@ -1,0 +1,157 @@
+%appinstall trace
+    apt-get install -y strace
+%apprun trace
+    if [ $# -eq 2 ]
+        then
+        app=$1
+        output=$2
+    else
+        echo "Please enter an app name, and output file to trace"
+        echo "trace <app> <output>"
+        exit 1
+    fi
+    exec strace -C -t -o $output scif run $app
+    
+
+%apprun awk
+    exec awk -f $SCIF_APPROOT/hello-world.awk
+%appfiles awk
+    data/hello-world.awk
+
+
+%apprun bash
+    exec /bin/bash hello-world.bash
+%appfiles bash
+    data/hello-world.bash bin/hello-world.bash
+
+
+%apprun c
+    exec hello-world.c
+%appfiles c
+    data/hello-world.c
+%appinstall c
+    gcc hello-world.c -o bin/hello-world.c
+
+
+%apprun cat
+    exec cat $SCIF_APPROOT/hello-world.cat
+%appfiles cat
+    data/hello-world.cat
+
+
+%apprun cpp
+    exec hello-world.cpp
+%appfiles cpp
+    data/hello-world.cpp
+%appinstall cpp
+    g++ hello-world.cpp -o bin/hello-world.cpp
+
+
+%apprun clisp
+    exec sbcl --script $SCIF_APPROOT/hello-world.clisp
+%appfiles clisp
+    data/hello-world.clisp
+%appinstall clisp
+    apt-get install -y sbcl
+
+
+%apprun csh
+    exec csh $SCIF_APPROOT/hello-world.csh
+%appfiles csh
+    data/hello-world.csh
+%appinstall csh
+    apt-get install -y csh
+
+
+
+%apprun go
+    exec hello-world.go
+%appenv go
+    GOROOT=/scif/apps/go
+    export GOROOT
+%appfiles go
+    data/hello-world.go
+%appinstall go
+    GOROOT=/scif/apps/go
+    export GOROOT
+    wget https://storage.googleapis.com/golang/go1.8.3.linux-amd64.tar.gz
+    tar --strip-components=1 -zxf go1.8.3.linux-amd64.tar.gz
+    bin/go build hello-world.go && mv hello-world bin/hello-world.go
+        
+
+%apprun julia
+    exec julia $SCIF_APPROOT/hello-world.jl
+%appfiles julia
+    data/hello-world.jl
+%appinstall julia
+    apt-get install -y julia
+    
+   
+%apprun octave
+    exec octave --no-gui --silent $SCIF_APPROOT/hello-world.octave
+%appenv octave
+    DISPLAY=localhost:0.0
+    export DISPLAY
+%appfiles octave
+    data/hello-world.octave
+%appinstall octave
+    apt-get install -y octave
+
+
+%apprun perl
+    exec perl6 $SCIF_APPROOT/hello-world.pl
+%appfiles perl
+    data/hello-world.pl
+%appinstall perl
+    apt-get install -y perl6
+    
+
+%apprun python
+    exec python $SCIF_APPROOT/hello-world.py
+%appfiles python
+    data/hello-world.py
+%appinstall python
+    apt-get install -y python python-dev
+    
+
+%apprun R
+    exec Rscript $SCIF_APPROOT/hello-world.R
+%appfiles R
+    data/hello-world.R
+%appinstall R
+    apt-get install -y r-base
+
+
+%apprun ruby
+    exec ruby $SCIF_APPROOT/hello-world.rb
+%appfiles ruby
+    data/hello-world.rb
+%appinstall ruby
+    apt-get install -y ruby
+
+
+%apprun rust
+    exec hello-world.rust
+%appfiles rust
+    data/hello-world.rs
+%appinstall rust
+    curl -f -L https://static.rust-lang.org/rustup.sh -O
+    chmod u+x rustup.sh
+    RUSTUP_PREFIX=$PWD ./rustup.sh --disable-sudo
+    bin/rustc hello-world.rs -o bin/hello-world.rust
+
+
+%apprun tcsh
+    exec tcsh $SCIF_APPROOT/hello-world.tcsh
+%appfiles tcsh
+    data/hello-world.tcsh
+%appinstall tcsh
+    apt-get install -y tcsh
+
+
+%apprun zsh
+    exec /bin/zsh $SCIF_APPROOT/hello-world.zsh
+%appfiles zsh
+    data/hello-world.zsh
+%appinstall zsh
+    apt-get install -y zsh > /dev/null 2>&1

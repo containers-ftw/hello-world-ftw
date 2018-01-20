@@ -7,12 +7,12 @@
 from glob import glob
 from io import StringIO
 from datetime import datetime
+import pandas
 
 import sys
 import os
 import re
 import json
-
 
 logs_folder = os.path.abspath(sys.argv[1])
 files = glob('%s/strace*internal.log' %logs_folder)
@@ -116,6 +116,5 @@ for log_file in files:
     df = update_times_table(df, table, language)
     fdf = update_features_table(fdf, lines, language)
 
-
-df.to_csv('logs/language-times.tsv',sep='\t')
-fdf.to_csv('logs/language-features.tsv',sep='\t')
+df.to_csv('%s/language-times.tsv' %logs_folder,sep='\t')
+fdf.to_csv('%s/language-features.tsv' %logs_folder,sep='\t')
