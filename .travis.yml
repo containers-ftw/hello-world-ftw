@@ -11,6 +11,7 @@ addons:
       - autoconf
       - debootstrap
       - uuid-dev
+      - libarchive-dev
       - libssl-dev
 
 sudo: true
