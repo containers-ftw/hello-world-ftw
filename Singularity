@@ -22,10 +22,7 @@ Examples:
     apt-get update && apt-get install -y wget vim curl unzip git build-essential
     apt-get install -y cpp gcc g++
 
-    git clone https://www.github.com/vsoch/scif.git
-    cd scif && /opt/conda/bin/python setup.py install && cd /
-
-    #/opt/conda/bin/pip install scif
+    /opt/conda/bin/pip install scif
     /opt/conda/bin/scif install /hello-world.scif
 
 %files
